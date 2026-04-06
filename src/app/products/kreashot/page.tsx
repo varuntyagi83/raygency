@@ -98,6 +98,28 @@ export default function KreashotPage() {
               Kreashot fixes that. One product photo in, Meta-ready creatives out.
             </p>
           </div>
+          <ul className="mt-8 space-y-3 max-w-2xl fade-up">
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Multiple creative variants per product photo — no extra work</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Meta-optimized formats: Feed, Stories, and Reels</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Ad copy variations included with every creative set</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">No design skills or software required</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Creatives ready to download and launch in minutes</span>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -124,7 +146,7 @@ export default function KreashotPage() {
                 Upload your product photo
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Any product shot. Kreashot handles the rest.
+                Any product shot. No editing or preparation required — Kreashot handles the rest.
               </p>
             </div>
 
@@ -135,7 +157,7 @@ export default function KreashotPage() {
                 AI generates ad creatives
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Multiple variants, formats, and ad copy. Optimized for Meta.
+                Multiple variants, formats, and ad copy. Optimized for Meta Feed, Stories, and Reels.
               </p>
             </div>
 
@@ -143,10 +165,10 @@ export default function KreashotPage() {
               <Download className="w-8 h-8 text-teal-lt mb-4" />
               <div className="text-3xl font-semibold text-copper-bright mb-4">03</div>
               <h3 className="text-xl font-medium mb-3 text-[#EAE8F4]">
-                Export to Meta
+                Export and launch
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Download ready-to-run creatives. Launch your campaign.
+                Download ready-to-run creatives in all Meta formats. Launch your campaign immediately.
               </p>
             </div>
           </div>
@@ -178,10 +200,53 @@ export default function KreashotPage() {
 
       <div className="section-divider" />
 
-      {/* UPSELL — Dark */}
-      <section className="relative bg-bg z-30 py-16 md:py-20 px-6 md:px-16 overflow-hidden">
-        <div className="orb w-[300px] h-[300px] bg-[rgba(240,160,48,0.06)] top-[-60px] right-[15%]" />
+      {/* FAQ — Dark */}
+      <section className="relative bg-bg z-30 py-24 md:py-32 px-6 md:px-16 overflow-hidden">
+        <div className="orb w-[300px] h-[300px] bg-[rgba(13,155,176,0.06)] top-[-60px] right-[10%]" />
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <span className="text-xs font-medium tracking-widest uppercase text-teal-lt fade-up">
+            Common questions
+          </span>
+          <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-12 text-[#EAE8F4] fade-up">
+            Everything you need to know about Kreashot.
+          </h2>
 
+          <div className="space-y-10">
+            <div className="fade-up">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is Kreashot?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Kreashot is an AI-powered ad creative generator that turns product photos into Meta-ready ad creatives in minutes. It produces multiple variants, formats (Feed, Stories, Reels), and ad copy variations — no design skills, no software, no waiting for a designer.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What ad formats does Kreashot produce?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Kreashot generates creatives optimized for Meta Feed, Stories, and Reels. Each creative set includes multiple visual variants and ad copy options so you can A/B test without any extra effort.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How long does it take to create ad creatives with Kreashot?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Kreashot produces a full set of ad creatives in minutes. Upload a product photo, and your Meta-ready creatives are ready to download almost immediately — no briefing, no revision rounds, no waiting.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How much does Kreashot cost?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Kreashot costs $150/month with a 7-day free trial included — no credit card required. An annual plan is available at 20% off, with pricing locked for life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* UPSELL — Dark alt */}
+      <section className="relative bg-[#0a0f1a] z-30 py-16 md:py-20 px-6 md:px-16 overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="glass-card p-8 md:p-10 fade-up">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
@@ -191,14 +256,14 @@ export default function KreashotPage() {
                   You&apos;re making great ads. Now see what your competitors are running.
                 </h3>
                 <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                  Add Voltic to get real-time competitive intelligence on every Meta ad in your space.
+                  Add Volticlens to get real-time competitive intelligence on every Meta ad in your space.
                 </p>
               </div>
               <Link
-                href="/products/voltic"
+                href="/products/volticlens"
                 className="inline-flex items-center gap-2 bg-coral hover:bg-coral-hover text-white px-8 py-3.5 rounded-full font-medium transition-colors whitespace-nowrap btn-hover"
               >
-                See Voltic <ArrowRight className="w-4 h-4" />
+                See Volticlens <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>

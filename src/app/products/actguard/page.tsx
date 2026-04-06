@@ -62,9 +62,9 @@ export default function ActGuardPage() {
             AI compliance documentation in minutes, not months.
           </h1>
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] max-w-3xl mb-4 leading-relaxed">
-            From AI system description to audit-ready documentation in minutes.
+            From AI system description to audit-ready EU AI Act documentation in minutes.
             Built for compliance officers who can&apos;t wait on lawyers. Classify your
-            risk tier — get a full EU AI Act compliance package instantly.
+            risk tier — get a full compliance package instantly.
           </p>
           <p className="text-2xl font-semibold text-copper-bright mb-8">
             Free to Start<span className="text-base font-normal text-[rgba(234,232,244,0.75)]"> · 1 AI system included</span>
@@ -93,15 +93,34 @@ export default function ActGuardPage() {
           </h2>
           <div className="max-w-3xl space-y-4 fade-up">
             <p className="text-base md:text-lg text-[rgba(234,232,244,0.55)] leading-relaxed">
-              The EU AI Act is here. You need to classify your AI systems, document
-              their risk tiers, and produce audit-ready compliance packages. The
-              traditional process takes weeks and expensive legal hours. ActGuard
-              does it in minutes.
+              The EU AI Act is here. You need to classify your AI systems, document their risk tiers, and produce audit-ready compliance packages. The traditional process takes weeks and expensive legal hours. ActGuard does it in minutes.
             </p>
             <p className="text-base md:text-lg text-[#EAE8F4] font-medium">
               Describe your AI system. Get your compliance package. Done.
             </p>
           </div>
+          <ul className="mt-8 space-y-3 max-w-2xl fade-up">
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Automatic risk tier classification: minimal, limited, high, or unacceptable</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Full audit-ready documentation package generated instantly</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Technical documentation, conformity assessment records, and transparency disclosures</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Formatted for regulators, auditors, and legal review</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Free for your first AI system — no credit card required</span>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -128,7 +147,7 @@ export default function ActGuardPage() {
                 Describe your AI system
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Tell ActGuard what your AI system does, who it affects, and how it makes decisions.
+                Tell ActGuard what your AI system does, who it affects, and how it makes decisions. No technical jargon required.
               </p>
             </div>
 
@@ -139,7 +158,7 @@ export default function ActGuardPage() {
                 AI classifies your risk tier
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                ActGuard applies EU AI Act criteria to classify your system — minimal, limited, high, or unacceptable risk.
+                ActGuard applies EU AI Act criteria to classify your system — minimal, limited, high, or unacceptable risk — instantly.
               </p>
             </div>
 
@@ -184,10 +203,53 @@ export default function ActGuardPage() {
 
       <div className="section-divider" />
 
-      {/* UPSELL — Dark */}
-      <section className="relative bg-bg z-30 py-16 md:py-20 px-6 md:px-16 overflow-hidden">
-        <div className="orb w-[300px] h-[300px] bg-[rgba(240,160,48,0.06)] top-[-60px] right-[15%]" />
+      {/* FAQ — Dark */}
+      <section className="relative bg-bg z-30 py-24 md:py-32 px-6 md:px-16 overflow-hidden">
+        <div className="orb w-[300px] h-[300px] bg-[rgba(13,155,176,0.06)] top-[-60px] right-[10%]" />
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <span className="text-xs font-medium tracking-widest uppercase text-teal-lt fade-up">
+            Common questions
+          </span>
+          <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-12 text-[#EAE8F4] fade-up">
+            Everything you need to know about ActGuard.
+          </h2>
 
+          <div className="space-y-10">
+            <div className="fade-up">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is the EU AI Act?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                The EU AI Act is a regulation that classifies AI systems by risk tier — minimal, limited, high, and unacceptable risk — and requires organizations to produce compliance documentation for each AI system they deploy in the EU. Non-compliance carries significant penalties.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How does ActGuard generate compliance documentation?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                You describe your AI system — what it does, who it affects, and how it makes decisions. ActGuard applies EU AI Act criteria to classify your risk tier, then generates a full audit-ready compliance package instantly. No lawyers, no weeks of work.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What does the ActGuard compliance package include?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                ActGuard generates a complete EU AI Act compliance package including risk tier classification, technical documentation, conformity assessment records, and transparency disclosures — all formatted for regulatory audit, legal review, and internal governance.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Is ActGuard free to use?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Yes. ActGuard is free to start — your first AI system is documented at no cost. Additional AI systems require a subscription. No credit card required to get started.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* UPSELL — Dark alt */}
+      <section className="relative bg-[#0a0f1a] z-30 py-16 md:py-20 px-6 md:px-16 overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="glass-card p-8 md:p-10 fade-up">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">

@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { Zap, Search, BarChart3, Bell, ArrowRight } from 'lucide-react'
+import { Zap, Eye, BarChart2, TrendingUp, ArrowRight } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -45,11 +45,11 @@ export default function VolticlensPage() {
       <section className="relative min-h-[70vh] flex flex-col justify-center bg-bg z-0 overflow-hidden">
         <Navigation />
 
-        <div className="orb w-[500px] h-[500px] bg-[rgba(240,160,48,0.12)] top-[-120px] right-[-80px]" />
-        <div className="orb w-[350px] h-[350px] bg-[rgba(22,58,196,0.18)] bottom-[-60px] left-[8%]" />
+        <div className="orb w-[500px] h-[500px] bg-[rgba(240,160,48,0.12)] top-[-100px] right-[-60px]" />
+        <div className="orb w-[350px] h-[350px] bg-[rgba(22,58,196,0.18)] bottom-[-70px] left-[6%]" />
 
-        <div className="glass-shape w-[160px] h-[160px] top-[90px] right-[110px] rounded-full" />
-        <div className="glass-shape w-[90px] h-[90px] bottom-[130px] right-[280px] rounded-3xl rotate-[25deg]" />
+        <div className="glass-shape w-[170px] h-[170px] top-[80px] right-[100px] rounded-full" />
+        <div className="glass-shape w-[95px] h-[95px] bottom-[120px] right-[250px] rounded-3xl rotate-[18deg]" />
 
         <div className="relative z-10 px-6 md:px-16 max-w-5xl hero-fade-in pt-24">
           <div className="flex items-center gap-3 mb-6">
@@ -59,12 +59,10 @@ export default function VolticlensPage() {
             </p>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-[#EAE8F4] mb-6">
-            See every ad your competitors are running. In real time.
+            See every ad your competitors run on Meta. In real time.
           </h1>
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] max-w-3xl mb-4 leading-relaxed">
-            Stop guessing what&apos;s working for the competition. Volticlens gives you
-            real-time intelligence on every Meta ad in your space. See their creatives,
-            copy, targeting signals, and spend patterns.
+            Know exactly what your competitors are testing on Meta — creative, copy, targeting signals, launch dates. Volticlens gives you real-time intelligence so you can move faster than they do.
           </p>
           <p className="text-2xl font-semibold text-copper-bright mb-8">
             $100<span className="text-base font-normal text-[rgba(234,232,244,0.75)]">/month</span>
@@ -89,18 +87,38 @@ export default function VolticlensPage() {
             Built for
           </span>
           <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-8 text-[#EAE8F4] fade-up">
-            Performance marketers who need competitive intel on Meta.
+            Performance marketers who need competitive intelligence on Meta.
           </h2>
           <div className="max-w-3xl space-y-4 fade-up">
             <p className="text-base md:text-lg text-[rgba(234,232,244,0.55)] leading-relaxed">
-              You&apos;re spending real money on Meta ads. You know competitors are
-              testing creatives, shifting budgets, launching new campaigns. But you
-              can&apos;t see any of it. You&apos;re making decisions blind.
+              Your competitors are running ads right now. You have no idea what creative is working for them, what angles they&apos;re testing, or how hard they&apos;re pushing. That information asymmetry costs you budget and time.
             </p>
             <p className="text-base md:text-lg text-[#EAE8F4] font-medium">
-              Volticlens opens the window. Every competitor ad, every creative, every move.
+              Volticlens closes the gap. See everything they&apos;re running. React the same day.
             </p>
           </div>
+          <ul className="mt-8 space-y-3 max-w-2xl fade-up">
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Real-time view of every active competitor ad on Meta</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Creative, copy, format, and launch date for each ad</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Targeting signal indicators to understand competitor audience strategy</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Monitor multiple competitors simultaneously from one dashboard</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Identify winning creative patterns before spending to test</span>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -116,40 +134,40 @@ export default function VolticlensPage() {
             How it works
           </span>
           <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-16 text-[#EAE8F4] fade-up">
-            Three steps. Full visibility.
+            Three steps. Full competitor picture.
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             <div className="glass-card glass-card-hover p-8 md:p-10 fade-up">
-              <Search className="w-8 h-8 text-teal-lt mb-4" />
+              <Eye className="w-8 h-8 text-teal-lt mb-4" />
               <div className="text-3xl font-semibold text-copper-bright mb-4">01</div>
               <h3 className="text-xl font-medium mb-3 text-[#EAE8F4]">
-                Add your competitors
+                Connect your Meta account
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Tell Volticlens who you&apos;re watching. Brands, categories, or specific advertisers.
+                Link your Meta ad account and set the competitors you want to monitor. Setup takes minutes, no technical configuration needed.
               </p>
             </div>
 
             <div className="glass-card glass-card-hover p-8 md:p-10 fade-up">
-              <BarChart3 className="w-8 h-8 text-teal-lt mb-4" />
+              <BarChart2 className="w-8 h-8 text-teal-lt mb-4" />
               <div className="text-3xl font-semibold text-copper-bright mb-4">02</div>
               <h3 className="text-xl font-medium mb-3 text-[#EAE8F4]">
-                See their ads in real time
+                See every competitor ad
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Every creative, every copy variant, every active campaign. Updated continuously.
+                Volticlens surfaces all active competitor ads on Meta — creative, copy, targeting signals, and launch dates updated in real time.
               </p>
             </div>
 
             <div className="glass-card glass-card-hover p-8 md:p-10 fade-up">
-              <Bell className="w-8 h-8 text-teal-lt mb-4" />
+              <TrendingUp className="w-8 h-8 text-teal-lt mb-4" />
               <div className="text-3xl font-semibold text-copper-bright mb-4">03</div>
               <h3 className="text-xl font-medium mb-3 text-[#EAE8F4]">
-                Act on the intelligence
+                React faster than they do
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Spot trends, find gaps, and adjust your campaigns with data instead of guesswork.
+                Understand what competitors are testing, spot winning patterns, and launch your response before they scale a winner.
               </p>
             </div>
           </div>
@@ -183,20 +201,63 @@ export default function VolticlensPage() {
 
       <div className="section-divider" />
 
-      {/* UPSELL — Dark */}
-      <section className="relative bg-bg z-30 py-16 md:py-20 px-6 md:px-16 overflow-hidden">
-        <div className="orb w-[300px] h-[300px] bg-[rgba(240,160,48,0.06)] top-[-60px] right-[15%]" />
+      {/* FAQ — Dark */}
+      <section className="relative bg-bg z-30 py-24 md:py-32 px-6 md:px-16 overflow-hidden">
+        <div className="orb w-[300px] h-[300px] bg-[rgba(13,155,176,0.06)] top-[-60px] right-[10%]" />
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <span className="text-xs font-medium tracking-widest uppercase text-teal-lt fade-up">
+            Common questions
+          </span>
+          <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-12 text-[#EAE8F4] fade-up">
+            Everything you need to know about Volticlens.
+          </h2>
 
+          <div className="space-y-10">
+            <div className="fade-up">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is Volticlens?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Volticlens is a real-time Meta competitor ad intelligence tool. It shows you every ad your competitors are running on Meta — creative, copy, targeting signals, and launch dates — so you can understand what&apos;s working in your category and move faster than the competition.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Which platforms does Volticlens monitor?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Volticlens monitors the Meta advertising ecosystem — Facebook and Instagram ads across Feed, Stories, and Reels placements. It tracks active competitor ads in real time so you always have a current view of what is running in your space.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How often is competitor ad data updated?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Volticlens provides real-time competitor ad data. New competitor ads are surfaced as soon as they go live, and paused or stopped ads are flagged immediately — giving you an accurate, up-to-date view of what each competitor is actively spending on.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How much does Volticlens cost?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Volticlens costs $100/month with a 7-day free trial included — no credit card required. An annual plan is available at 20% off with pricing locked for life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* UPSELL — Dark alt */}
+      <section className="relative bg-[#0a0f1a] z-30 py-16 md:py-20 px-6 md:px-16 overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="glass-card p-8 md:p-10 fade-up">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               <div>
                 <p className="text-sm text-teal-lt mb-2">Next step</p>
                 <h3 className="text-xl md:text-2xl font-semibold text-[#EAE8F4] mb-2">
-                  Winning on paid social? Make sure you own AI search too.
+                  You know what competitors are running. Now track where your brand appears in AI search.
                 </h3>
                 <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                  Add GeoRaydar to track your brand visibility across ChatGPT, Gemini, Perplexity, and Claude.
+                  Add GeoRaydar to monitor your brand visibility across ChatGPT, Gemini, Perplexity, and Claude.
                 </p>
               </div>
               <Link

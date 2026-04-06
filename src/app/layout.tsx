@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: 'Raygency | AI that ships.',
     template: '%s | Raygency',
   },
-  description: 'AI-powered tools for performance marketers. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard — built by practitioners, shipped in production. Free trial, no credit card.',
+  description: 'Six AI tools for performance marketers. Free trials, no credit card. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe.',
   keywords: 'AI ad creative, Meta ad intelligence, competitor ad research, AI brand visibility, performance marketing tools, ad ROI optimization, EU AI Act compliance, code quality scanning, Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe',
   metadataBase: new URL('https://www.raygency.com'),
   alternates: {

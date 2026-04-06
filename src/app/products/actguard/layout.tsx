@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'ActGuard – EU AI Act Compliance Automation',
-  description: 'From AI system description to audit-ready EU AI Act compliance documentation in minutes. Free to start — 1 AI system included. No credit card required.',
+  title: 'ActGuard: EU AI Act Compliance Documentation | Raygency',
+  description: 'From AI system description to audit-ready EU AI Act docs in minutes. Classify risk tier, generate compliance package. Free to start — 1 AI system included.',
   alternates: { canonical: 'https://www.raygency.com/products/actguard' },
   openGraph: {
-    title: 'ActGuard – EU AI Act Compliance Automation | Raygency',
+    title: 'ActGuard: EU AI Act Compliance Documentation | Raygency',
     description: 'Classify your AI risk tier and get a full EU AI Act compliance package in minutes. Built for compliance officers.',
     url: 'https://www.raygency.com/products/actguard',
     type: 'website',
@@ -13,8 +13,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'ActGuard – EU AI Act Compliance Automation | Raygency',
-    description: 'AI system description to audit-ready EU AI Act docs in minutes. Free to start.',
+    title: 'ActGuard: EU AI Act Compliance | Raygency',
+    description: 'AI system to audit-ready EU AI Act docs in minutes. Free to start.',
     images: ['/logo.png'],
   },
 }
@@ -37,6 +37,18 @@ const productSchema = {
   provider: { '@type': 'Organization', name: 'Raygency', url: 'https://www.raygency.com' },
 }
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to generate EU AI Act compliance documentation with ActGuard',
+  description: 'Produce audit-ready EU AI Act compliance documentation in three steps using ActGuard.',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Describe your AI system', text: 'Tell ActGuard what your AI system does, who it affects, and how it makes decisions.' },
+    { '@type': 'HowToStep', position: 2, name: 'AI classifies your risk tier', text: 'ActGuard applies EU AI Act criteria to classify your system as minimal, limited, high, or unacceptable risk.' },
+    { '@type': 'HowToStep', position: 3, name: 'Download your compliance package', text: 'Receive full audit-ready documentation generated instantly — ready for regulators, auditors, and legal review.' },
+  ],
+}
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -44,26 +56,22 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'What is the EU AI Act?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The EU AI Act is a regulation that classifies AI systems by risk tier — minimal, limited, high, and unacceptable risk — and requires organizations to produce compliance documentation for each system they deploy.',
-      },
+      acceptedAnswer: { '@type': 'Answer', text: 'The EU AI Act is a regulation that classifies AI systems by risk tier — minimal, limited, high, and unacceptable risk — and requires organizations to produce compliance documentation for each system they deploy in the EU.' },
     },
     {
       '@type': 'Question',
       name: 'How does ActGuard generate compliance documentation?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'You describe your AI system — what it does, who it affects, how it makes decisions. ActGuard applies EU AI Act criteria to classify your risk tier, then generates a full audit-ready compliance package instantly.',
-      },
+      acceptedAnswer: { '@type': 'Answer', text: 'You describe your AI system — what it does, who it affects, and how it makes decisions. ActGuard applies EU AI Act criteria to classify your risk tier, then generates a full audit-ready compliance package instantly.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What does ActGuard\'s compliance package include?',
+      acceptedAnswer: { '@type': 'Answer', text: 'ActGuard generates a complete EU AI Act compliance package including risk tier classification, technical documentation, conformity assessment records, and transparency disclosures — all formatted for regulatory audit.' },
     },
     {
       '@type': 'Question',
       name: 'Is ActGuard free to use?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. ActGuard is free to start — 1 AI system is included at no cost. Additional AI systems require a subscription. No credit card required.',
-      },
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. ActGuard is free to start — 1 AI system is documented at no cost. Additional AI systems require a subscription. No credit card required to get started.' },
     },
   ],
 }
@@ -71,14 +79,9 @@ const faqSchema = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {children}
     </>
   )

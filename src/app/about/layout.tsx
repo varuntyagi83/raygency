@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About – The Team Behind Raygency',
-  description: 'Raygency builds AI-powered tools that actually ship — Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, and LintVibe. Built by practitioners for practitioners.',
+  description: 'Raygency builds AI tools that ship. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe. Built by practitioners for practitioners.',
   alternates: { canonical: 'https://www.raygency.com/about' },
   openGraph: {
     title: 'About – The Team Behind Raygency',

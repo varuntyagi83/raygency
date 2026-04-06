@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Products – AI Tools for Marketers & Builders',
-  description: 'Six AI-powered tools: Kreashot (ad creative), Volticlens (competitor intel), GeoRaydar (AI search visibility), Rayprofit (ROI optimization), ActGuard (EU AI Act), LintVibe (code quality).',
+  description: 'Six AI tools for marketers and builders: Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe. All include a free trial.',
   alternates: { canonical: 'https://www.raygency.com/products' },
   openGraph: {
     title: 'Products – AI Tools for Marketers & Builders | Raygency',

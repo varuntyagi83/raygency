@@ -90,7 +90,7 @@ export default function ContactPage() {
               Two ways to get started.
             </h1>
             <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] leading-relaxed fade-up">
-              Try a product with a free trial. Or tell us about a custom build.
+              Try any product with a 7-day free trial — no credit card required. Or tell us about a custom build and we&apos;ll get back to you within 48 hours.
             </p>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function ContactPage() {
       <div className="section-divider" />
 
       {/* Two Paths — Dark alt */}
-      <section className="relative bg-[#0a0f1a] py-16 md:py-24 px-6 md:px-16 transition-light-to-dark">
+      <section className="relative bg-[#0a0f1a] py-16 md:py-24 px-6 md:px-16">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16">
             {/* Path 1: Free Trial */}
@@ -115,22 +115,34 @@ export default function ContactPage() {
                 <ul className="space-y-3 text-white/90 mb-8">
                   <li className="flex items-start gap-2">
                     <span className="text-white font-medium mt-0.5">·</span>
-                    <span><strong>Kreashot</strong> — AI ad creative production. $150/month.</span>
+                    <span><strong>Kreashot</strong> — AI ad creative generation. $150/month.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-white font-medium mt-0.5">·</span>
-                    <span><strong>Voltic</strong> — Meta ad intelligence. $100/month.</span>
+                    <span><strong>Volticlens</strong> — Meta competitor ad intelligence. $100/month.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-white font-medium mt-0.5">·</span>
-                    <span><strong>GeoRaydar</strong> — AI brand visibility. $100/month.</span>
+                    <span><strong>GeoRaydar</strong> — AI brand visibility tracking. $100/month.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-white font-medium mt-0.5">·</span>
+                    <span><strong>Rayprofit</strong> — Ad ROI optimization. $200/month.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-white font-medium mt-0.5">·</span>
+                    <span><strong>ActGuard</strong> — EU AI Act compliance. Free to start.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-white font-medium mt-0.5">·</span>
+                    <span><strong>LintVibe</strong> — Code quality and security scanning. $40/month.</span>
                   </li>
                 </ul>
                 <Link
-                  href="/products/kreashot"
+                  href="/products"
                   className="inline-flex items-center gap-2 bg-white text-copper-bright hover:bg-white/90 px-8 py-4 rounded-full font-medium transition-colors btn-hover"
                 >
-                  Start free trial
+                  See all products
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
@@ -236,6 +248,58 @@ export default function ContactPage() {
                   </form>
                 )}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* FAQ — Dark */}
+      <section className="relative bg-[#020810] py-24 md:py-32 px-6 md:px-16 overflow-hidden">
+        <div className="orb w-[300px] h-[300px] bg-[rgba(13,155,176,0.06)] top-[-60px] right-[10%]" />
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <span className="text-xs font-medium tracking-widest uppercase text-teal-lt fade-up">
+            Common questions
+          </span>
+          <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-12 text-[#EAE8F4] fade-up">
+            Frequently asked questions.
+          </h2>
+
+          <div className="space-y-10">
+            <div className="fade-up">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How quickly will I get a response?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Studio inquiries are reviewed within 48 hours on business days. Product support questions are typically answered same day. If you&apos;re asking about a specific product, the fastest path is to start a free trial directly from the product page.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What products does Raygency offer?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Raygency builds six AI-powered tools: Kreashot (ad creative generation), Volticlens (Meta competitor ad intelligence), GeoRaydar (AI search brand visibility), Rayprofit (ad ROI optimization), ActGuard (EU AI Act compliance), and LintVibe (code quality and security scanning). All products are built for practitioners who need results, not demos.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Do all products include a free trial?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Yes. Kreashot, Volticlens, GeoRaydar, and Rayprofit each include a 7-day free trial with no credit card required. ActGuard is free for your first AI system. LintVibe offers a free initial scan so you can see what it finds before committing.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What kind of custom builds does Raygency Studio take on?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Raygency Studio builds custom AI automations, workflows, and tools for businesses that need something specific to their use case. If the problem you&apos;re solving doesn&apos;t fit an existing product, use the form above to tell us what you&apos;re working on.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Can I cancel my subscription at any time?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Yes. All Raygency product subscriptions can be cancelled at any time. There are no long-term contracts or cancellation fees. Annual plans are billed yearly but you can cancel before renewal.
+              </p>
             </div>
           </div>
         </div>

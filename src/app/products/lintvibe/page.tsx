@@ -93,14 +93,34 @@ export default function LintVibePage() {
           </h2>
           <div className="max-w-3xl space-y-4 fade-up">
             <p className="text-base md:text-lg text-[rgba(234,232,244,0.55)] leading-relaxed">
-              You moved fast. You built something real. But now you&apos;re launching to
-              real users and you need to know: what&apos;s broken, what&apos;s exploitable,
-              what&apos;s going to cause an incident at 2am. LintVibe tells you — before your users do.
+              You moved fast. You built something real with AI coding assistants. But now you&apos;re launching to real users and you need to know: what&apos;s broken, what&apos;s exploitable, what&apos;s going to cause an incident at 2am. LintVibe tells you — before your users do.
             </p>
             <p className="text-base md:text-lg text-[#EAE8F4] font-medium">
               Bugs found. Security fixed. Production ready.
             </p>
           </div>
+          <ul className="mt-8 space-y-3 max-w-2xl fade-up">
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Detects security vulnerabilities: SQL injection, XSS, exposed secrets</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Finds bugs, unhandled errors, and edge cases before users do</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Issues prioritized by severity — fix critical problems first</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Works with any codebase — GitHub connect or direct upload</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Actionable fix recommendations, not just issue reports</span>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -127,7 +147,7 @@ export default function LintVibePage() {
                 Connect your codebase
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Link your GitHub repo or upload your code. LintVibe scans everything — no setup required.
+                Link your GitHub repo or upload your code. LintVibe scans everything — no configuration or setup required.
               </p>
             </div>
 
@@ -138,7 +158,7 @@ export default function LintVibePage() {
                 AI finds bugs and threats
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                LintVibe detects bugs, security vulnerabilities, and production risks — prioritized by severity.
+                LintVibe detects bugs, security vulnerabilities, and production risks — each one prioritized by severity so you know what to fix first.
               </p>
             </div>
 
@@ -149,7 +169,7 @@ export default function LintVibePage() {
                 Fix and ship
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Get actionable fixes for every issue. Resolve them, rescan, and ship knowing your code is solid.
+                Get actionable fixes for every issue. Resolve them, rescan, and ship knowing your code is solid and secure.
               </p>
             </div>
           </div>
@@ -158,7 +178,7 @@ export default function LintVibePage() {
 
       <div className="section-divider" />
 
-      {/* PRICING + CTA — Dark alt */}
+      {/* PRICING — Dark alt */}
       <section className="relative bg-[#0a0f1a] z-30 py-24 md:py-32 px-6 md:px-16">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-[#EAE8F4] fade-up">
@@ -197,10 +217,53 @@ export default function LintVibePage() {
 
       <div className="section-divider" />
 
-      {/* UPSELL — Dark */}
-      <section className="relative bg-bg z-30 py-16 md:py-20 px-6 md:px-16 overflow-hidden">
-        <div className="orb w-[300px] h-[300px] bg-[rgba(240,160,48,0.06)] top-[-60px] right-[15%]" />
+      {/* FAQ — Dark */}
+      <section className="relative bg-bg z-30 py-24 md:py-32 px-6 md:px-16 overflow-hidden">
+        <div className="orb w-[300px] h-[300px] bg-[rgba(13,155,176,0.06)] top-[-60px] right-[10%]" />
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <span className="text-xs font-medium tracking-widest uppercase text-teal-lt fade-up">
+            Common questions
+          </span>
+          <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-12 text-[#EAE8F4] fade-up">
+            Everything you need to know about LintVibe.
+          </h2>
 
+          <div className="space-y-10">
+            <div className="fade-up">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What does LintVibe scan for?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                LintVibe scans your codebase for bugs, security vulnerabilities (including SQL injection, XSS, and exposed secrets), unhandled errors, performance issues, and production risks. Each finding is prioritized by severity so you know exactly what to fix first before launch.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is vibe coding and why does it need scanning?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Vibe coding means building apps quickly using AI coding assistants like Cursor or GitHub Copilot. The speed is real, but AI-generated code often contains security holes, unhandled edge cases, and production issues that are invisible until they fail in front of real users. LintVibe catches these before launch — not after.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How do I connect my codebase to LintVibe?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Link your GitHub repository or upload your code directly to LintVibe. No manual setup or configuration is required — LintVibe scans your entire codebase automatically and returns a prioritized issue report.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How much does LintVibe cost?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                LintVibe costs $40/month or $400/year — the annual plan saves 2 months compared to monthly billing. Cancel anytime.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* UPSELL — Dark alt */}
+      <section className="relative bg-[#0a0f1a] z-30 py-16 md:py-20 px-6 md:px-16 overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="glass-card p-8 md:p-10 fade-up">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">

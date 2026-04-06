@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { Radar, Globe, TrendingUp, Eye, ArrowRight } from 'lucide-react'
+import { Radar, Globe, Eye, TrendingUp, ArrowRight } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -64,7 +64,7 @@ export default function GeoRaydarPage() {
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] max-w-3xl mb-4 leading-relaxed">
             Buyers are asking AI for recommendations. ChatGPT, Gemini, Perplexity, Claude.
             GeoRaydar shows you exactly where your brand appears, where competitors appear,
-            and how it changes over time.
+            and how it changes over time — so you can fix the gaps before they cost you deals.
           </p>
           <p className="text-2xl font-semibold text-copper-bright mb-8">
             $100<span className="text-base font-normal text-[rgba(234,232,244,0.75)]">/month</span>
@@ -91,14 +91,34 @@ export default function GeoRaydarPage() {
           </h2>
           <div className="max-w-3xl space-y-4 fade-up">
             <p className="text-base md:text-lg text-[rgba(234,232,244,0.55)] leading-relaxed">
-              When someone asks ChatGPT for a recommendation in your category,
-              does your brand come up? Or does your competitor&apos;s? Right now,
-              you have no way to know. That&apos;s the problem.
+              When someone asks ChatGPT for a recommendation in your category, does your brand come up? Or does your competitor&apos;s? Right now, you have no way to know — and no way to fix what you can&apos;t measure.
             </p>
             <p className="text-base md:text-lg text-[#EAE8F4] font-medium">
               GeoRaydar gives you visibility into AI visibility. Measure it. Track it. Own it.
             </p>
           </div>
+          <ul className="mt-8 space-y-3 max-w-2xl fade-up">
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Track brand mentions across ChatGPT, Gemini, Perplexity, and Claude</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">See exactly which queries surface your brand — and which don&apos;t</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Benchmark your visibility against named competitors</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Week-over-week tracking to see what is improving or slipping</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-teal-lt font-medium mt-0.5">→</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Actionable gap reports showing where to focus content and PR efforts</span>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -114,7 +134,7 @@ export default function GeoRaydarPage() {
             How it works
           </span>
           <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-16 text-[#EAE8F4] fade-up">
-            Three steps. Full picture.
+            Three steps. Full AI visibility picture.
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
@@ -125,7 +145,7 @@ export default function GeoRaydarPage() {
                 Set your brand and competitors
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Tell GeoRaydar your brand, your category, and who you compete with.
+                Tell GeoRaydar your brand name, your product category, and the competitors you want to benchmark against.
               </p>
             </div>
 
@@ -179,10 +199,53 @@ export default function GeoRaydarPage() {
 
       <div className="section-divider" />
 
-      {/* UPSELL — Dark */}
-      <section className="relative bg-bg z-30 py-16 md:py-20 px-6 md:px-16 overflow-hidden">
-        <div className="orb w-[300px] h-[300px] bg-[rgba(240,160,48,0.06)] top-[-60px] right-[15%]" />
+      {/* FAQ — Dark */}
+      <section className="relative bg-bg z-30 py-24 md:py-32 px-6 md:px-16 overflow-hidden">
+        <div className="orb w-[300px] h-[300px] bg-[rgba(13,155,176,0.06)] top-[-60px] right-[10%]" />
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <span className="text-xs font-medium tracking-widest uppercase text-teal-lt fade-up">
+            Common questions
+          </span>
+          <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-12 text-[#EAE8F4] fade-up">
+            Everything you need to know about GeoRaydar.
+          </h2>
 
+          <div className="space-y-10">
+            <div className="fade-up">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is GeoRaydar?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                GeoRaydar is an AI search brand visibility tracker. It monitors how often and how prominently your brand appears when users ask ChatGPT, Gemini, Perplexity, and Claude for recommendations in your category — and shows you exactly where competitors are appearing instead.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Which AI platforms does GeoRaydar track?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                GeoRaydar tracks brand visibility across ChatGPT, Gemini, Perplexity, and Claude — the four major AI search and answer engines where buyers now research products and request vendor recommendations.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is AI search visibility and why does it matter?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                AI search visibility measures how often your brand is recommended when buyers ask AI engines like ChatGPT questions in your category. As more buyers use AI for research instead of traditional search, appearing in these results drives real pipeline — and being absent means losing to competitors who do appear.
+              </p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How much does GeoRaydar cost?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                GeoRaydar costs $100/month with a 7-day free trial included — no credit card required. An annual plan is available at 20% off with pricing locked for life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* UPSELL — Dark alt */}
+      <section className="relative bg-[#0a0f1a] z-30 py-16 md:py-20 px-6 md:px-16 overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="glass-card p-8 md:p-10 fade-up">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
@@ -192,7 +255,7 @@ export default function GeoRaydarPage() {
                   Get all three. Raygency Suite — $250/month.
                 </h3>
                 <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                  Kreashot + Voltic + GeoRaydar. Save $100/month vs buying individually.
+                  Kreashot + Volticlens + GeoRaydar. Save $100/month vs buying individually.
                 </p>
               </div>
               <Link
