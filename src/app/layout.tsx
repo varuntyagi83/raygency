@@ -9,9 +9,45 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: 'Raygency | AI that ships.',
-  description: 'AI-powered tools for performance marketers. Kreashot, Voltic, and GeoRaydar — built by practitioners, shipped in production. Free trial, no credit card.',
-  keywords: 'AI ad creative, Meta ad intelligence, competitor ad research, AI brand visibility, performance marketing tools, ad creative automation, AI search visibility, Kreashot, Voltic, GeoRaydar',
+  title: {
+    default: 'Raygency | AI that ships.',
+    template: '%s | Raygency',
+  },
+  description: 'AI-powered tools for performance marketers. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard — built by practitioners, shipped in production. Free trial, no credit card.',
+  keywords: 'AI ad creative, Meta ad intelligence, competitor ad research, AI brand visibility, performance marketing tools, ad ROI optimization, EU AI Act compliance, code quality scanning, Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe',
+  metadataBase: new URL('https://www.raygency.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    siteName: 'Raygency',
+    title: 'Raygency | AI that ships.',
+    description: 'AI-powered tools for performance marketers. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard — built by practitioners, shipped in production.',
+    url: 'https://www.raygency.com',
+    images: [{ url: '/logo.png', width: 512, height: 512, alt: 'Raygency' }],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Raygency | AI that ships.',
+    description: 'AI-powered tools for performance marketers. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard — built by practitioners.',
+    images: ['/logo.png'],
+  },
+}
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Raygency',
+  url: 'https://www.raygency.com',
+  logo: 'https://www.raygency.com/logo.png',
+  description: 'AI-powered SaaS tools for performance marketers, DTC brands, and compliance teams. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe.',
+  sameAs: ['https://www.raygency.com'],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer support',
+    url: 'https://www.raygency.com/contact',
+  },
 }
 
 export default function RootLayout({
@@ -21,6 +57,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={outfit.variable}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body className="font-sans antialiased">
         <main className="page-enter">{children}</main>
       </body>
