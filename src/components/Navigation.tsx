@@ -67,32 +67,32 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-midnight md:hidden">
-          <div className="flex flex-col p-6 gap-4 text-light-gray">
+        <div className="absolute top-full left-0 right-0 bg-[#020810] border-t border-[rgba(13,155,176,0.15)] md:hidden">
+          <div className="flex flex-col p-6 gap-4">
             <Link
               href="/"
-              className="hover:opacity-70 transition-opacity"
+              className="text-[#EAE8F4] text-sm font-medium hover:text-teal-lt transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/products"
-              className="hover:opacity-70 transition-opacity"
+              className="text-[#EAE8F4] text-sm font-medium hover:text-teal-lt transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Products
             </Link>
             <Link
               href="/studio"
-              className="hover:opacity-70 transition-opacity"
+              className="text-[#EAE8F4] text-sm font-medium hover:text-teal-lt transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               Studio
             </Link>
             <Link
               href="/about"
-              className="hover:opacity-70 transition-opacity"
+              className="text-[#EAE8F4] text-sm font-medium hover:text-teal-lt transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               About
