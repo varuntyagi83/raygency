@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 
@@ -23,7 +24,6 @@ export default function Navigation({ variant = 'dark' }: NavigationProps) {
 
   const effectiveVariant = isScrolled ? 'light' : variant
   const textColor = effectiveVariant === 'dark' ? 'text-light-gray' : 'text-sand-80'
-  const logoGradient = 'bg-gradient-to-b from-orange-light to-orange'
   const bgColor = isScrolled
     ? 'bg-light-gray/95 backdrop-blur-md shadow-[0_1px_3px_rgba(0,0,0,0.08)]'
     : 'bg-transparent'
@@ -31,7 +31,7 @@ export default function Navigation({ variant = 'dark' }: NavigationProps) {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-[100] flex justify-between items-center px-6 md:px-8 py-4 md:py-5 transition-all duration-300 ${bgColor}`}>
       <Link href="/" className="flex items-center gap-3">
-        <div className={`w-8 h-8 rounded-full ${logoGradient}`} />
+        <Image src="/logo.png" alt="Raygency" width={36} height={36} className="rounded-full" />
         <span className={`text-sm font-medium tracking-wider ${textColor}`}>
           RAYGENCY
         </span>
