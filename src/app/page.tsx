@@ -159,51 +159,57 @@ export default function HomePage() {
           </p>
 
           {/* Problem Row 1 */}
-          <div className="grid grid-cols-[64px_1fr_2fr] gap-x-10 items-center py-9 border-t border-[rgba(13,155,176,0.1)] fade-up">
-            <div className="text-xs font-extrabold text-[#18C0D9] tracking-widest uppercase">01.</div>
-            <div>
-              <h3 className="text-lg md:text-xl font-extrabold uppercase text-[#EAE8F4] mb-2 tracking-tight">You can&apos;t produce ad creatives fast enough.</h3>
-              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed font-medium">Brief to designer to revision to export. Too slow. Too expensive. You&apos;re leaving performance on the table while you wait.</p>
-            </div>
-            <Link href="/products/kreashot" className="flex items-center justify-between gap-5 p-5 bg-[rgba(13,155,176,0.05)] border-2 border-[rgba(13,155,176,0.2)] relative hover:bg-[rgba(13,155,176,0.09)] hover:border-[rgba(13,155,176,0.35)] transition-colors">
+          <div className="py-9 border-t border-[rgba(13,155,176,0.1)] fade-up">
+            <div className="flex flex-col md:grid md:grid-cols-[64px_1fr_2fr] md:gap-x-10 md:items-center gap-4">
+              <div className="text-xs font-extrabold text-[#18C0D9] tracking-widest uppercase">01.</div>
               <div>
-                <div className="text-sm font-extrabold text-[#18C0D9] uppercase tracking-wider">Kreashot</div>
-                <div className="text-xs text-[rgba(234,232,244,0.50)] mt-1 font-medium leading-snug">Product photo → Meta-ready ad creative in minutes.</div>
+                <h3 className="text-lg md:text-xl font-extrabold uppercase text-[#EAE8F4] mb-2 tracking-tight">You can&apos;t produce ad creatives fast enough.</h3>
+                <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed font-medium">Brief to designer to revision to export. Too slow. Too expensive. You&apos;re leaving performance on the table while you wait.</p>
               </div>
-              <span className="text-lg font-extrabold text-[#0D9BB0] flex-shrink-0">→</span>
-            </Link>
+              <Link href="/products/kreashot" className="flex items-center justify-between gap-5 p-5 bg-[rgba(13,155,176,0.05)] border-2 border-[rgba(13,155,176,0.2)] relative hover:bg-[rgba(13,155,176,0.09)] hover:border-[rgba(13,155,176,0.35)] transition-colors">
+                <div>
+                  <div className="text-sm font-extrabold text-[#18C0D9] uppercase tracking-wider">Kreashot</div>
+                  <div className="text-xs text-[rgba(234,232,244,0.50)] mt-1 font-medium leading-snug">Product photo → Meta-ready ad creative in minutes.</div>
+                </div>
+                <span className="text-lg font-extrabold text-[#0D9BB0] flex-shrink-0">→</span>
+              </Link>
+            </div>
           </div>
 
           {/* Problem Row 2 */}
-          <div className="grid grid-cols-[64px_1fr_2fr] gap-x-10 items-center py-9 border-t border-[rgba(13,155,176,0.1)] fade-up">
-            <div className="text-xs font-extrabold text-[#18C0D9] tracking-widest uppercase">02.</div>
-            <div>
-              <h3 className="text-lg md:text-xl font-extrabold uppercase text-[#EAE8F4] mb-2 tracking-tight">You don&apos;t know what your competitors are running.</h3>
-              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed font-medium">They&apos;re testing. They&apos;re learning. You&apos;re guessing. You need to see exactly what&apos;s working for them.</p>
-            </div>
-            <Link href="/products/volticlens" className="flex items-center justify-between gap-5 p-5 bg-[rgba(13,155,176,0.05)] border-2 border-[rgba(13,155,176,0.2)] relative hover:bg-[rgba(13,155,176,0.09)] hover:border-[rgba(13,155,176,0.35)] transition-colors">
+          <div className="py-9 border-t border-[rgba(13,155,176,0.1)] fade-up">
+            <div className="flex flex-col md:grid md:grid-cols-[64px_1fr_2fr] md:gap-x-10 md:items-center gap-4">
+              <div className="text-xs font-extrabold text-[#18C0D9] tracking-widest uppercase">02.</div>
               <div>
-                <div className="text-sm font-extrabold text-[#18C0D9] uppercase tracking-wider">Volticlens</div>
-                <div className="text-xs text-[rgba(234,232,244,0.50)] mt-1 font-medium leading-snug">Every ad your competitors are running on Meta. Real time.</div>
+                <h3 className="text-lg md:text-xl font-extrabold uppercase text-[#EAE8F4] mb-2 tracking-tight">You don&apos;t know what your competitors are running.</h3>
+                <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed font-medium">They&apos;re testing. They&apos;re learning. You&apos;re guessing. You need to see exactly what&apos;s working for them.</p>
               </div>
-              <span className="text-lg font-extrabold text-[#0D9BB0] flex-shrink-0">→</span>
-            </Link>
+              <Link href="/products/volticlens" className="flex items-center justify-between gap-5 p-5 bg-[rgba(13,155,176,0.05)] border-2 border-[rgba(13,155,176,0.2)] relative hover:bg-[rgba(13,155,176,0.09)] hover:border-[rgba(13,155,176,0.35)] transition-colors">
+                <div>
+                  <div className="text-sm font-extrabold text-[#18C0D9] uppercase tracking-wider">Volticlens</div>
+                  <div className="text-xs text-[rgba(234,232,244,0.50)] mt-1 font-medium leading-snug">Every ad your competitors are running on Meta. Real time.</div>
+                </div>
+                <span className="text-lg font-extrabold text-[#0D9BB0] flex-shrink-0">→</span>
+              </Link>
+            </div>
           </div>
 
           {/* Problem Row 3 */}
-          <div className="grid grid-cols-[64px_1fr_2fr] gap-x-10 items-center py-9 border-y border-[rgba(13,155,176,0.1)] fade-up">
-            <div className="text-xs font-extrabold text-[#18C0D9] tracking-widest uppercase">03.</div>
-            <div>
-              <h3 className="text-lg md:text-xl font-extrabold uppercase text-[#EAE8F4] mb-2 tracking-tight">You&apos;re not showing up in AI search.</h3>
-              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed font-medium">Buyers ask ChatGPT, Gemini, and Perplexity who to call. If you&apos;re not in those answers, your competitors are.</p>
-            </div>
-            <Link href="/products/georadar" className="flex items-center justify-between gap-5 p-5 bg-[rgba(13,155,176,0.05)] border-2 border-[rgba(13,155,176,0.2)] relative hover:bg-[rgba(13,155,176,0.09)] hover:border-[rgba(13,155,176,0.35)] transition-colors">
+          <div className="py-9 border-y border-[rgba(13,155,176,0.1)] fade-up">
+            <div className="flex flex-col md:grid md:grid-cols-[64px_1fr_2fr] md:gap-x-10 md:items-center gap-4">
+              <div className="text-xs font-extrabold text-[#18C0D9] tracking-widest uppercase">03.</div>
               <div>
-                <div className="text-sm font-extrabold text-[#18C0D9] uppercase tracking-wider">GeoRaydar</div>
-                <div className="text-xs text-[rgba(234,232,244,0.50)] mt-1 font-medium leading-snug">Track your brand across ChatGPT, Gemini, Perplexity, and Claude.</div>
+                <h3 className="text-lg md:text-xl font-extrabold uppercase text-[#EAE8F4] mb-2 tracking-tight">You&apos;re not showing up in AI search.</h3>
+                <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed font-medium">Buyers ask ChatGPT, Gemini, and Perplexity who to call. If you&apos;re not in those answers, your competitors are.</p>
               </div>
-              <span className="text-lg font-extrabold text-[#0D9BB0] flex-shrink-0">→</span>
-            </Link>
+              <Link href="/products/georadar" className="flex items-center justify-between gap-5 p-5 bg-[rgba(13,155,176,0.05)] border-2 border-[rgba(13,155,176,0.2)] relative hover:bg-[rgba(13,155,176,0.09)] hover:border-[rgba(13,155,176,0.35)] transition-colors">
+                <div>
+                  <div className="text-sm font-extrabold text-[#18C0D9] uppercase tracking-wider">GeoRaydar</div>
+                  <div className="text-xs text-[rgba(234,232,244,0.50)] mt-1 font-medium leading-snug">Track your brand across ChatGPT, Gemini, Perplexity, and Claude.</div>
+                </div>
+                <span className="text-lg font-extrabold text-[#0D9BB0] flex-shrink-0">→</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -391,9 +397,9 @@ export default function HomePage() {
             Not consultants.<br />Builders.
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 border-2 border-[rgba(13,155,176,0.15)] relative fade-up">
+          <div className="grid grid-cols-2 md:grid-cols-4 border-2 border-[rgba(13,155,176,0.15)] relative fade-up overflow-hidden md:overflow-visible">
             {/* Brutalist offset shadow */}
-            <div className="absolute top-2 left-2 right-[-10px] bottom-[-10px] border-2 border-[rgba(196,97,42,0.15)] -z-10 pointer-events-none" />
+            <div className="hidden md:block absolute top-2 left-2 right-[-10px] bottom-[-10px] border-2 border-[rgba(196,97,42,0.15)] -z-10 pointer-events-none" />
             <div className="p-8 md:p-11 border-r border-[rgba(13,155,176,0.12)] bg-[rgba(13,155,176,0.03)]">
               <div className="text-4xl md:text-[52px] font-extrabold leading-none mb-3 text-gradient-teal-copper">9</div>
               <div className="text-sm text-[rgba(234,232,244,0.50)] leading-snug font-medium"><strong className="text-[#EAE8F4]">Production apps</strong> shipped and running</div>

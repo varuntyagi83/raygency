@@ -60,11 +60,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   color: var(--text);
   background: var(--bg);
+  overflow-x: hidden;
 }
 
 /* Respect reduced motion preferences */
@@ -215,7 +217,8 @@ body {
   box-shadow: 6px 6px 0px var(--teal);
   transition: all 0.12s ease-out;
   cursor: pointer;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: break-word;
 }
 .btn-brutal:hover {
   background: var(--copper-bright);
@@ -242,7 +245,8 @@ body {
   box-shadow: 6px 6px 0px rgba(13,155,176,0.4);
   transition: all 0.12s ease-out;
   cursor: pointer;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: break-word;
 }
 .btn-brutal-secondary:hover {
   background: rgba(13,155,176,0.12);
@@ -305,6 +309,26 @@ body {
 .glass-card-hover:hover {
   background: rgba(13, 155, 176, 0.08);
   border-color: rgba(13, 155, 176, 0.25);
+}
+
+/* Responsive tables — scroll on mobile instead of overflowing */
+@media (max-width: 767px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+  /* Reduce brutal-card shadow offset on mobile to prevent overflow */
+  .brutal-card::after {
+    top: 4px; left: 4px; right: -6px; bottom: -6px;
+  }
+  .brutal-card:hover {
+    transform: translate(-3px, -3px);
+  }
+  .brutal-card:hover::after {
+    transform: translate(3px, 3px);
+  }
 }
 
 /* Gradient orbs */
