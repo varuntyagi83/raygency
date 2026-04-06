@@ -318,6 +318,196 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Products Grid — Dark */}
+      <section id="products" className="relative bg-midnight py-16 md:py-24 px-6 md:px-16 overflow-hidden transition-dark-to-light">
+        <div className="orb w-[400px] h-[400px] bg-[rgba(250,97,71,0.1)] top-[-80px] right-[5%]" />
+        <div className="orb w-[300px] h-[300px] bg-[rgba(120,100,80,0.12)] bottom-[-60px] left-[10%]" />
+
+        <div className="relative z-10 max-w-6xl mx-auto">
+          <span className="text-xs font-medium tracking-widest uppercase text-[#d4d0ca]/50 fade-up">
+            Live Products
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-[#E5E5DF] fade-up">
+            Tools We&apos;ve Built
+          </h2>
+          <p className="text-lg text-[#d4d0ca] mb-16 max-w-2xl fade-up">
+            Beyond consulting, we ship production-grade AI tools. Each one solves a specific problem, fast.
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Kreashot */}
+            <div className="glass-card glass-card-hover p-8 flex flex-col gap-6 fade-up">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-coral inline-block" />
+                  <span className="text-xs font-medium tracking-widest uppercase text-[#d4d0ca]/60">Kreashot</span>
+                </div>
+                <span className="text-xs font-medium tracking-widest uppercase text-coral border border-coral/40 px-2 py-0.5 rounded">Live</span>
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-semibold text-[#E5E5DF] leading-tight mb-3">
+                  Ad Creative.<br />Fast.
+                </h3>
+                <p className="text-sm text-[#d4d0ca] leading-relaxed">
+                  Product photo to Meta-ready creative in minutes. Built for performance marketers who can&apos;t wait on designers.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {['AI', 'Ad Creative', 'Meta', 'Marketing'].map(tag => (
+                  <span key={tag} className="text-xs text-[#d4d0ca]/50 border border-[#d4d0ca]/20 px-2.5 py-1 rounded">{tag}</span>
+                ))}
+              </div>
+              <div className="mt-auto flex flex-col gap-3">
+                <a
+                  href="https://www.kreashot.com/auth/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center bg-coral hover:bg-coral-hover text-white px-6 py-3 rounded-full text-sm font-medium transition-colors"
+                >
+                  Try Kreashot
+                </a>
+              </div>
+            </div>
+
+            {/* Volticlens */}
+            <div className="glass-card glass-card-hover p-8 flex flex-col gap-6 fade-up">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-coral inline-block" />
+                  <span className="text-xs font-medium tracking-widest uppercase text-[#d4d0ca]/60">Volticlens</span>
+                </div>
+                <span className="text-xs font-medium tracking-widest uppercase text-coral border border-coral/40 px-2 py-0.5 rounded">Live</span>
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-semibold text-[#E5E5DF] leading-tight mb-3">
+                  Competitor Intel.<br />Real Time.
+                </h3>
+                <p className="text-sm text-[#d4d0ca] leading-relaxed">
+                  See every ad your competitors are running on Meta. Know what they&apos;re testing. Move faster than they do.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {['Intelligence', 'Competitor Analysis', 'Meta', 'Marketing'].map(tag => (
+                  <span key={tag} className="text-xs text-[#d4d0ca]/50 border border-[#d4d0ca]/20 px-2.5 py-1 rounded">{tag}</span>
+                ))}
+              </div>
+              <div className="mt-auto flex flex-col gap-3">
+                <a
+                  href="https://www.volticlens.com/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center bg-coral hover:bg-coral-hover text-white px-6 py-3 rounded-full text-sm font-medium transition-colors"
+                >
+                  Try Volticlens
+                </a>
+              </div>
+            </div>
+
+            {/* Georaydar */}
+            <div className="glass-card glass-card-hover p-8 flex flex-col gap-6 fade-up">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-coral inline-block" />
+                  <span className="text-xs font-medium tracking-widest uppercase text-[#d4d0ca]/60">Georaydar</span>
+                </div>
+                <span className="text-xs font-medium tracking-widest uppercase text-coral border border-coral/40 px-2 py-0.5 rounded">Live</span>
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-semibold text-[#E5E5DF] leading-tight mb-3">
+                  AI Search.<br />Owned.
+                </h3>
+                <p className="text-sm text-[#d4d0ca] leading-relaxed">
+                  Track your brand visibility across ChatGPT, Gemini, Perplexity, and Claude. See every gap. Fix it.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {['AEO', 'AI Search', 'Brand', 'Analytics'].map(tag => (
+                  <span key={tag} className="text-xs text-[#d4d0ca]/50 border border-[#d4d0ca]/20 px-2.5 py-1 rounded">{tag}</span>
+                ))}
+              </div>
+              <div className="mt-auto flex flex-col gap-3">
+                <a
+                  href="https://www.georaydar.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center bg-coral hover:bg-coral-hover text-white px-6 py-3 rounded-full text-sm font-medium transition-colors"
+                >
+                  Try Georaydar
+                </a>
+              </div>
+            </div>
+
+            {/* Rayprofit */}
+            <div className="glass-card glass-card-hover p-8 flex flex-col gap-6 fade-up">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-coral inline-block" />
+                  <span className="text-xs font-medium tracking-widest uppercase text-[#d4d0ca]/60">Rayprofit</span>
+                </div>
+                <span className="text-xs font-medium tracking-widest uppercase text-coral border border-coral/40 px-2 py-0.5 rounded">Live</span>
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-semibold text-[#E5E5DF] leading-tight mb-3">
+                  Ad Spend.<br />Profitable.
+                </h3>
+                <p className="text-sm text-[#d4d0ca] leading-relaxed">
+                  Maximize your ad ROI with AI-powered budget optimization. Know exactly where every dollar works — and cut what doesn&apos;t.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {['ROI', 'Budget Optimization', 'DTC', 'Analytics'].map(tag => (
+                  <span key={tag} className="text-xs text-[#d4d0ca]/50 border border-[#d4d0ca]/20 px-2.5 py-1 rounded">{tag}</span>
+                ))}
+              </div>
+              <div className="mt-auto flex flex-col gap-3">
+                <a
+                  href="https://www.rayprofit.com/overview"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center bg-coral hover:bg-coral-hover text-white px-6 py-3 rounded-full text-sm font-medium transition-colors"
+                >
+                  Try Rayprofit
+                </a>
+              </div>
+            </div>
+
+            {/* ActGuard */}
+            <div className="glass-card glass-card-hover p-8 flex flex-col gap-6 fade-up">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-coral inline-block" />
+                  <span className="text-xs font-medium tracking-widest uppercase text-[#d4d0ca]/60">ActGuard</span>
+                </div>
+                <span className="text-xs font-medium tracking-widest uppercase text-coral border border-coral/40 px-2 py-0.5 rounded">Live</span>
+              </div>
+              <div>
+                <h3 className="text-2xl md:text-3xl font-semibold text-[#E5E5DF] leading-tight mb-3">
+                  Compliance.<br />Automated.
+                </h3>
+                <p className="text-sm text-[#d4d0ca] leading-relaxed">
+                  From AI system description to audit-ready documentation in minutes. Built for compliance officers who can&apos;t wait on lawyers.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {['AI', 'Compliance', 'EU AI Act', 'Legal Tech'].map(tag => (
+                  <span key={tag} className="text-xs text-[#d4d0ca]/50 border border-[#d4d0ca]/20 px-2.5 py-1 rounded">{tag}</span>
+                ))}
+              </div>
+              <div className="mt-auto flex flex-col gap-3">
+                <a
+                  href="https://actguard-production.up.railway.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full text-center bg-coral hover:bg-coral-hover text-white px-6 py-3 rounded-full text-sm font-medium transition-colors"
+                >
+                  Try ActGuard
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Entry Point: AI Search Audit — Light with coral accent */}
       <section id="audit" className="relative bg-light-gray py-24 md:py-32 px-6 md:px-16">
         <div className="max-w-4xl mx-auto">
