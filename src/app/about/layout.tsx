@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About – The Team Behind Raygency',
+  title: 'About Raygency – Builders Who Ship AI Products',
   description: 'Raygency builds AI tools that ship. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe. Built by practitioners for practitioners.',
   alternates: { canonical: 'https://www.raygency.com/about' },
   openGraph: {
-    title: 'About – The Team Behind Raygency',
+    title: 'About Raygency – Builders Who Ship AI Products',
     description: 'We build AI tools for performance marketers, DTC brands, and compliance teams. Six products. One mission: AI that ships.',
     url: 'https://www.raygency.com/about',
     type: 'website',
@@ -19,6 +19,61 @@ export const metadata: Metadata = {
   },
 }
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is Raygency?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Raygency is an AI product studio that builds and ships AI-powered tools for performance marketers, DTC brands, compliance teams, and developers. It was founded by Varun Tyagi and Renuka Adnani, who build every product themselves.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Who are the founders of Raygency?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Raygency was founded by Varun Tyagi and Renuka Adnani. Varun is a Director of Data and AI with 18+ years of experience, 9 production apps shipped, and 100+ automation workflows running. Renuka brings 17 years inside organizations across six industries — pharma, semiconductors, IT services, biotech, startups, and design.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What products does Raygency offer?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Raygency offers six AI-powered tools: Kreashot (ad creative generation), Volticlens (Meta competitor ad intelligence), GeoRaydar (AI search brand visibility), Rayprofit (ad ROI optimization), ActGuard (EU AI Act compliance), and LintVibe (code quality and security scanning). All products include a free trial.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How does Raygency Studio work?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Raygency Studio builds custom AI products for teams that need something specific. The process is: send a brief, have a scoping call to discuss feasibility and timeline, Raygency builds the product with visible progress throughout, then hands it off with full documentation.',
+      },
+    },
+  ],
+}
+
+const speakableSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'h2', 'h3'],
+  },
+  url: 'https://www.raygency.com/about',
+}
+
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
+      {children}
+    </>
+  )
 }

@@ -10,7 +10,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Raygency | AI that ships.',
+    default: 'Raygency – AI Tools for Marketers, Builders and Teams',
     template: '%s | Raygency',
   },
   description: 'Six AI tools for performance marketers. Free trials, no credit card. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe.',

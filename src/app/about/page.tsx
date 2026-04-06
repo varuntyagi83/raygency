@@ -297,6 +297,53 @@ export default function AboutPage() {
 
       <div className="section-divider" />
 
+      {/* FAQ — Dark alt */}
+      <section className="relative bg-[#0a0f1a] py-24 md:py-32 px-6 md:px-16 overflow-hidden">
+        <div className="orb w-[300px] h-[300px] bg-[rgba(13,155,176,0.06)] top-[-60px] right-[10%]" />
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <span className="text-xs font-medium tracking-widest uppercase text-teal-lt fade-up">Common questions</span>
+          <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-12 text-[#EAE8F4] fade-up">
+            Frequently asked questions.
+          </h2>
+          <div className="space-y-10">
+            <div className="fade-up">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is Raygency?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Raygency is an AI product studio that builds and ships AI-powered tools for performance marketers, DTC brands, compliance teams, and developers. Every product is built by the founders themselves and shipped into production — not as demos or prototypes.
+              </p>
+            </div>
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Who are the founders of Raygency?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Raygency was founded by Varun Tyagi and Renuka Adnani. Varun brings 18+ years at the intersection of AI, data, and business — with 9 production apps shipped and 100+ automation workflows running. Renuka spent 17 years inside organizations across six industries, learning how technology initiatives actually take hold or fail. That combination — deep technical build capability and real organizational intelligence — is what shapes every Raygency product.
+              </p>
+            </div>
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What products does Raygency offer?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Raygency offers six AI-powered tools, each solving a specific problem:
+              </p>
+              <ul className="mt-4 space-y-2 text-base text-[rgba(234,232,244,0.75)]">
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Kreashot</strong> — AI ad creative generation for performance marketers</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Volticlens</strong> — Real-time Meta competitor ad intelligence</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">GeoRaydar</strong> — AI search brand visibility tracking</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Rayprofit</strong> — Ad ROI optimization across Meta and Google</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">ActGuard</strong> — EU AI Act compliance documentation</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">LintVibe</strong> — Code quality and security scanning</span></li>
+              </ul>
+            </div>
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Does Raygency take on custom builds?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Yes. Raygency Studio builds custom AI products, automations, and data tools for teams that need something specific. The process is direct: send a brief, agree on scope and timeline, Raygency builds with visible progress, then hands off the product with full documentation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
       {/* CTA — Dark */}
       <section className="relative bg-[#020810] py-24 md:py-32 px-6 md:px-16 overflow-hidden">
         <div className="max-w-4xl mx-auto text-center">
@@ -305,7 +352,7 @@ export default function AboutPage() {
             See what we&apos;ve built.
           </h2>
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] mb-10 fade-up">
-            Three products for performance marketers. All with a free trial.
+            Six AI tools for marketers, builders, and compliance teams. All with a free trial.
           </p>
           <Link
             href="/products"

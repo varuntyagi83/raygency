@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact – Get in Touch with Raygency',
+  title: 'Contact – Free Trials, Custom Builds, and Support',
   description: 'Start a free trial or send a studio inquiry. Raygency responds within 48 hours. No credit card required for any free trial.',
   alternates: { canonical: 'https://www.raygency.com/contact' },
   openGraph: {
@@ -17,6 +17,33 @@ export const metadata: Metadata = {
     description: 'Questions about our AI tools? Reach out — we respond within 48 hours.',
     images: ['/logo.png'],
   },
+}
+
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to get started with Raygency',
+  description: 'Two ways to get started with Raygency — free trial or studio inquiry.',
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Choose your path',
+      text: 'Select a product to try free (7-day trial, no credit card) or use the studio inquiry form for a custom AI build.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Start a free trial',
+      text: 'Visit any product page — Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, or LintVibe — and start your free trial in minutes.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Or send a studio inquiry',
+      text: 'Fill in your name, email, and a description of what you need built. Raygency reviews studio inquiries within 48 hours on business days.',
+    },
+  ],
 }
 
 const faqSchema = {
@@ -66,13 +93,22 @@ const faqSchema = {
   ],
 }
 
+const speakableSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'h2', 'h3'],
+  },
+  url: 'https://www.raygency.com/contact',
+}
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       {children}
     </>
   )

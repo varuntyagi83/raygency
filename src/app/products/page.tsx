@@ -59,8 +59,7 @@ export default function ProductsPage() {
             The toolkit. Pick what you need.
           </h1>
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] max-w-3xl leading-relaxed">
-            Three products for performance marketers. Each solves a specific problem.
-            All include a 7-day free trial, no credit card required.
+            Six AI tools for performance marketers, DTC brands, compliance teams, and developers. Each solves a specific problem. All include a free trial — no credit card required.
           </p>
         </div>
       </section>
@@ -195,52 +194,94 @@ export default function ProductsPage() {
         <div className="orb w-[400px] h-[400px] bg-[rgba(240,160,48,0.1)] top-[-100px] left-[-80px]" />
         <div className="orb w-[300px] h-[300px] bg-[rgba(22,58,196,0.12)] bottom-[-60px] right-[5%]" />
 
-        <div className="relative z-10 max-w-4xl mx-auto text-center">
+        <div className="relative z-10 max-w-6xl mx-auto">
           <span className="text-xs font-medium tracking-widest uppercase text-teal-lt fade-up">
-            Best value
+            Bundle plans
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-[#EAE8F4] fade-up">
-            Raygency Suite
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-4 text-[#EAE8F4] fade-up">
+            Use more. Pay less.
           </h2>
-          <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] mb-4 fade-up">
-            All three products. One subscription.
+          <p className="text-base text-[rgba(234,232,244,0.55)] mb-14 font-medium fade-up">
+            Pick any combination. The more you bundle, the more you save.
           </p>
 
-          <div className="glass-card p-8 md:p-12 mt-12 fade-up">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
-              <span className="text-5xl md:text-6xl font-semibold text-copper-bright">$250</span>
-              <span className="text-xl text-[rgba(234,232,244,0.75)]">/month</span>
+          <div className="grid md:grid-cols-3 gap-7">
+            {/* Duo */}
+            <div className="glass-card p-8 md:p-10 fade-up flex flex-col">
+              <p className="text-xs font-semibold uppercase tracking-widest text-teal-lt mb-4">Duo Plan</p>
+              <div className="text-5xl font-extrabold text-copper-bright mb-1">$100<span className="text-base font-normal text-[rgba(234,232,244,0.55)]">/mo</span></div>
+              <p className="text-sm text-[rgba(234,232,244,0.40)] mb-6">Any 2 products of your choice</p>
+              <ul className="space-y-2 text-sm text-[rgba(234,232,244,0.75)] mb-8 flex-1">
+                <li className="flex items-center gap-2"><Sparkles className="w-4 h-4 text-teal-lt flex-shrink-0" />Pick any 2 from the full toolkit</li>
+                <li className="flex items-center gap-2"><Sparkles className="w-4 h-4 text-teal-lt flex-shrink-0" />7-day free trial on each</li>
+                <li className="flex items-center gap-2"><Sparkles className="w-4 h-4 text-teal-lt flex-shrink-0" />Cancel anytime</li>
+              </ul>
+              <Link href="/contact" className="btn-brutal-secondary w-full text-center">Get started</Link>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mb-8 text-[rgba(234,232,244,0.75)]">
-              <div className="flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-teal-lt" />
-                <span>Kreashot</span>
-              </div>
-              <span className="hidden md:inline text-[rgba(234,232,244,0.30)]">+</span>
-              <div className="flex items-center gap-2">
-                <Zap className="w-5 h-5 text-teal-lt" />
-                <span>Volticlens</span>
-              </div>
-              <span className="hidden md:inline text-[rgba(234,232,244,0.30)]">+</span>
-              <div className="flex items-center gap-2">
-                <Radar className="w-5 h-5 text-teal-lt" />
-                <span>GeoRaydar</span>
-              </div>
+            {/* Trio */}
+            <div className="glass-card p-8 md:p-10 fade-up flex flex-col border-[rgba(196,97,42,0.4)]">
+              <p className="text-xs font-semibold uppercase tracking-widest text-copper-bright mb-4">Trio Plan · Most Popular</p>
+              <div className="text-5xl font-extrabold text-copper-bright mb-1">$250<span className="text-base font-normal text-[rgba(234,232,244,0.55)]">/mo</span></div>
+              <p className="text-sm text-[rgba(234,232,244,0.40)] mb-6">Any 3 products of your choice</p>
+              <ul className="space-y-2 text-sm text-[rgba(234,232,244,0.75)] mb-8 flex-1">
+                <li className="flex items-center gap-2"><Zap className="w-4 h-4 text-copper-bright flex-shrink-0" />Pick any 3 from the full toolkit</li>
+                <li className="flex items-center gap-2"><Zap className="w-4 h-4 text-copper-bright flex-shrink-0" />7-day free trial on each</li>
+                <li className="flex items-center gap-2"><Zap className="w-4 h-4 text-copper-bright flex-shrink-0" />Annual plan: 20% off, locked for life</li>
+              </ul>
+              <Link href="/contact" className="btn-brutal w-full text-center">Get started</Link>
             </div>
 
-            <div className="space-y-2 mb-8 text-sm text-[rgba(234,232,244,0.40)]">
-              <p>Save $100/month vs buying individually ($350 → $250)</p>
-              <p>Annual plan: 20% off. Price locked for life.</p>
-              <p>7-day free trial. No credit card required.</p>
+            {/* Full Suite */}
+            <div className="glass-card p-8 md:p-10 fade-up flex flex-col">
+              <p className="text-xs font-semibold uppercase tracking-widest text-teal-lt mb-4">Full Suite</p>
+              <div className="text-5xl font-extrabold text-copper-bright mb-1">$500<span className="text-base font-normal text-[rgba(234,232,244,0.55)]">/mo</span></div>
+              <p className="text-sm text-[rgba(234,232,244,0.40)] mb-6">All 6 products included</p>
+              <ul className="space-y-2 text-sm text-[rgba(234,232,244,0.75)] mb-8 flex-1">
+                <li className="flex items-center gap-2"><Radar className="w-4 h-4 text-teal-lt flex-shrink-0" />Kreashot, Volticlens, GeoRaydar</li>
+                <li className="flex items-center gap-2"><Radar className="w-4 h-4 text-teal-lt flex-shrink-0" />Rayprofit, ActGuard, LintVibe</li>
+                <li className="flex items-center gap-2"><Radar className="w-4 h-4 text-teal-lt flex-shrink-0" />Annual plan: 20% off, locked for life</li>
+              </ul>
+              <Link href="/contact" className="btn-brutal-secondary w-full text-center">Get started</Link>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <Link
-              href="/products/kreashot"
-              className="inline-flex items-center justify-center bg-coral hover:bg-coral-hover text-white px-10 py-4 rounded-full font-medium text-lg transition-colors btn-hover"
-            >
-              Start free trial
-            </Link>
+      <div className="section-divider" />
+
+      {/* FAQ — Dark alt */}
+      <section className="relative bg-[#0a0f1a] z-30 py-24 md:py-32 px-6 md:px-16">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-xs font-medium tracking-widest uppercase text-teal-lt fade-up">Common questions</span>
+          <h2 className="text-3xl md:text-4xl font-semibold mt-4 mb-12 text-[#EAE8F4] fade-up">
+            Frequently asked questions.
+          </h2>
+          <div className="space-y-10">
+            <div className="fade-up">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What products does Raygency offer?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Raygency offers six AI-powered tools: Kreashot ($150/month) for ad creative generation, Volticlens ($100/month) for Meta competitor ad intelligence, GeoRaydar ($100/month) for AI search brand visibility, Rayprofit ($200/month) for ad ROI optimization, ActGuard (free to start) for EU AI Act compliance documentation, and LintVibe ($40/month) for code quality and security scanning.
+              </p>
+            </div>
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Which product should I start with?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Start with the product that solves your most immediate problem. Performance marketers typically start with Kreashot. Teams spending on Meta ads who want competitive intelligence start with Volticlens. If you need to track AI search visibility, start with GeoRaydar. Compliance teams start with ActGuard — it&apos;s free for your first AI system. Developers ship with LintVibe.
+              </p>
+            </div>
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Can I bundle multiple Raygency products?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Yes. Raygency offers three bundle plans: the Duo Plan (any 2 products for $100/month), the Trio Plan (any 3 products for $250/month), and the Full Suite (all 6 products for $500/month). All bundles include 7-day free trials and annual plan options with 20% off.
+              </p>
+            </div>
+            <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
+              <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Do all Raygency products include a free trial?</h3>
+              <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
+                Yes. Kreashot, Volticlens, GeoRaydar, and Rayprofit each include a 7-day free trial with no credit card required. ActGuard is free for your first AI system with no credit card needed. LintVibe offers a free initial scan. All subscriptions can be cancelled at any time — no long-term contracts.
+              </p>
+            </div>
           </div>
         </div>
       </section>

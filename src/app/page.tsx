@@ -10,6 +10,52 @@ import Footer from '@/components/Footer'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is Raygency?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Raygency is an AI product studio. We build, ship, and run production AI tools for performance marketers, developers, and compliance teams — then take on custom builds through our Studio service.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What AI tools does Raygency offer?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Raygency offers six production AI tools: Kreashot (ad creative), Volticlens (competitor ad intelligence), GeoRaydar (AI search visibility), Rayprofit (ad ROI optimization), ActGuard (EU AI Act compliance), and LintVibe (code quality and security scanner). All have free trials.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I get started with Raygency?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Every Raygency product has a free trial — no credit card required. Pick the tool that matches your biggest problem, start the trial, and see results before you pay. If you need a custom build, contact us through the Studio.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I use multiple Raygency tools together?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. All six tools run independently and can be combined. Bundle pricing is available: any 2 apps at $100/month, any 3 apps at $250/month, or the full suite of all 6 apps at $500/month.' },
+    },
+  ],
+}
+
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to get started with Raygency AI tools',
+  description: 'Start using Raygency AI tools in three steps.',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Pick a tool', text: 'Browse the six Raygency products and choose the one that solves your biggest problem — ad creative, competitor intel, AI search visibility, ROI, compliance, or code quality.' },
+    { '@type': 'HowToStep', position: 2, name: 'Start a free trial', text: 'Every product includes a free trial. No credit card required. Start immediately and see results before you commit.' },
+    { '@type': 'HowToStep', position: 3, name: 'Ship faster', text: 'Use the tool in your workflow. If you need a custom build beyond what the products offer, contact the Studio.' },
+  ],
+}
+
+const speakableSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', 'h2', 'h3'] },
+  url: 'https://www.raygency.com',
+}
+
 export default function HomePage() {
   const containerRef = useRef<HTMLDivElement>(null)
 
@@ -39,6 +85,9 @@ export default function HomePage() {
 
   return (
     <div ref={containerRef} className="relative">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       <div className="noise-overlay" />
 
       {/* ═══ HERO ═══ */}
@@ -400,6 +449,46 @@ export default function HomePage() {
             <Link href="/studio" className="btn-brutal-secondary">
               Tell us what you&apos;re building →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ FAQ ═══ */}
+      <section className="relative py-24 md:py-28 px-6 md:px-14">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-xs font-extrabold tracking-[0.26em] uppercase text-[rgba(234,232,244,0.50)] mb-5 fade-up">Common questions</div>
+          <h2 className="text-3xl md:text-[44px] font-extrabold uppercase tracking-tight leading-none text-[#EAE8F4] mb-14 fade-up">
+            Everything you need to know.
+          </h2>
+
+          <div className="space-y-0">
+            <div className="fade-up border-t border-[rgba(13,155,176,0.15)] py-8">
+              <h3 className="text-lg font-extrabold uppercase text-[#EAE8F4] mb-3 tracking-tight">What is Raygency?</h3>
+              <p className="text-[rgba(234,232,244,0.60)] leading-relaxed font-medium">Raygency is an AI product studio. We build, ship, and run production AI tools for performance marketers, developers, and compliance teams — then take on custom builds through our Studio service.</p>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(13,155,176,0.15)] py-8">
+              <h3 className="text-lg font-extrabold uppercase text-[#EAE8F4] mb-3 tracking-tight">What AI tools does Raygency offer?</h3>
+              <p className="text-[rgba(234,232,244,0.60)] leading-relaxed font-medium mb-4">Raygency offers six production AI tools:</p>
+              <ul className="space-y-2 text-[rgba(234,232,244,0.60)] font-medium">
+                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">Kreashot</strong> — product photo to Meta-ready ad creative</li>
+                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">Volticlens</strong> — competitor ad intelligence on Meta</li>
+                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">GeoRaydar</strong> — AI search visibility across ChatGPT, Gemini, and Perplexity</li>
+                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">Rayprofit</strong> — ad spend ROI and budget optimization</li>
+                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">ActGuard</strong> — EU AI Act compliance documentation</li>
+                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">LintVibe</strong> — AI code quality and security scanner</li>
+              </ul>
+            </div>
+
+            <div className="fade-up border-t border-[rgba(13,155,176,0.15)] py-8">
+              <h3 className="text-lg font-extrabold uppercase text-[#EAE8F4] mb-3 tracking-tight">How do I get started with Raygency?</h3>
+              <p className="text-[rgba(234,232,244,0.60)] leading-relaxed font-medium">Every product has a free trial — no credit card required. Pick the tool that matches your biggest problem, start the trial, and see results before you pay. If you need something custom, tell us what you&apos;re building through the Studio.</p>
+            </div>
+
+            <div className="fade-up border-t border-b border-[rgba(13,155,176,0.15)] py-8">
+              <h3 className="text-lg font-extrabold uppercase text-[#EAE8F4] mb-3 tracking-tight">Can I use multiple Raygency tools together?</h3>
+              <p className="text-[rgba(234,232,244,0.60)] leading-relaxed font-medium">Yes. All six tools run independently and can be combined. Bundle pricing is available: any 2 apps at $100/month, any 3 apps at $250/month, or the full suite of all 6 apps at $500/month.</p>
+            </div>
           </div>
         </div>
       </section>
