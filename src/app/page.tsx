@@ -55,23 +55,23 @@ export default function HomePage() {
             <span className="text-xs font-extrabold tracking-[0.28em] uppercase text-[#18C0D9]">AI that ships.</span>
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-[76px] font-extrabold leading-[0.98] tracking-tight uppercase text-[#EAE8F4] mb-8">
-            You&apos;re running<br />Meta ads.<br />
-            <span className="text-gradient-teal-copper">Move faster.</span>
+            Six tools.<br />One studio.<br />
+            <span className="text-gradient-teal-copper">All in production.</span>
           </h1>
-          <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] max-w-[580px] mb-12 leading-relaxed border-l-4 border-[#C4612A] pl-6">
-            <strong className="text-[#EAE8F4]">Kreashot, Volticlens, and GeoRaydar.</strong> We built these because we needed them. Ad creatives in minutes. Competitor intel in real time. AI search visibility tracked daily.
+          <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] max-w-[600px] mb-12 leading-relaxed border-l-4 border-[#C4612A] pl-6">
+            Ad creative. Competitor intel. AI search visibility. ROI optimization. Compliance docs. Code quality. Six tools built for operators who need results — plus a studio that builds whatever comes next.
           </p>
           <div className="flex gap-5 items-center flex-wrap">
-            <Link href="/products/kreashot" className="btn-brutal">
-              Start 7-Day Free Trial
+            <Link href="/products" className="btn-brutal">
+              See all products
             </Link>
-            <Link href="/products" className="btn-brutal-secondary">
-              See the products →
+            <Link href="/studio" className="btn-brutal-secondary">
+              Tell us what you&apos;re building →
             </Link>
           </div>
           <p className="text-xs text-[rgba(234,232,244,0.50)] mt-5 flex items-center gap-2 font-medium tracking-wider">
             <span className="text-[#18C0D9]">✓</span>
-            All three products. Free trial on every one. No credit card.
+            Free trial on every product. No credit card required.
           </p>
         </div>
       </section>
@@ -101,7 +101,7 @@ export default function HomePage() {
       {/* ═══ THREE PROBLEMS → THREE PRODUCTS ═══ */}
       <section className="relative bg-[#020810] z-10 py-24 md:py-28 px-6 md:px-14">
         <div className="max-w-6xl mx-auto">
-          <div className="text-xs font-extrabold tracking-[0.26em] uppercase text-[rgba(234,232,244,0.50)] mb-5 fade-up">The problem sequence</div>
+          <div className="text-xs font-extrabold tracking-[0.26em] uppercase text-[rgba(234,232,244,0.50)] mb-5 fade-up">Marketing &amp; growth</div>
           <h2 className="text-4xl md:text-[52px] font-extrabold uppercase tracking-tight leading-none text-[#EAE8F4] mb-3 fade-up">
             Three problems.<br />Three products.
           </h2>
@@ -171,7 +171,7 @@ export default function HomePage() {
           <h2 className="text-4xl md:text-[52px] font-extrabold uppercase tracking-tight leading-none text-[#EAE8F4] mb-3 fade-up">
             Pick what you need.
           </h2>
-          <p className="text-base text-[rgba(234,232,244,0.50)] mb-16 font-medium fade-up">Or take all three. Either way, you&apos;re running in a day.</p>
+          <p className="text-base text-[rgba(234,232,244,0.50)] mb-16 font-medium fade-up">Six tools. All in production. Free trial on every one.</p>
 
           <div className="grid md:grid-cols-3 gap-7 mb-12">
             {/* Kreashot */}
@@ -190,7 +190,7 @@ export default function HomePage() {
               </Link>
             </div>
 
-            {/* Voltic */}
+            {/* Volticlens */}
             <div className="brutal-card fade-up">
               <div className="card-tag"><span className="card-dot" />Volticlens</div>
               <h3 className="text-[28px] font-extrabold uppercase leading-none mb-3.5 text-[#EAE8F4] tracking-tight">
@@ -219,6 +219,54 @@ export default function HomePage() {
               <div className="card-trial">7 days free · no credit card</div>
               <Link href="/products/georadar" className="btn-brutal-secondary w-full text-center">
                 Start free trial
+              </Link>
+            </div>
+
+            {/* Rayprofit */}
+            <div className="brutal-card fade-up">
+              <div className="card-tag"><span className="card-dot" />Rayprofit</div>
+              <h3 className="text-[28px] font-extrabold uppercase leading-none mb-3.5 text-[#EAE8F4] tracking-tight">
+                Ad ROI.<br />Maximized.
+              </h3>
+              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed mb-8 font-medium">
+                AI profitability scores for every campaign. Cut waste. Reallocate to winners. Across Meta and Google.
+              </p>
+              <div className="card-price">$200<span>/month</span></div>
+              <div className="card-trial">7 days free · no credit card</div>
+              <Link href="/products/rayprofit" className="btn-brutal-secondary w-full text-center">
+                Start free trial
+              </Link>
+            </div>
+
+            {/* ActGuard */}
+            <div className="brutal-card fade-up">
+              <div className="card-tag"><span className="card-dot" />ActGuard</div>
+              <h3 className="text-[28px] font-extrabold uppercase leading-none mb-3.5 text-[#EAE8F4] tracking-tight">
+                EU AI Act.<br />Covered.
+              </h3>
+              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed mb-8 font-medium">
+                From AI system description to audit-ready compliance package in minutes. Free for your first AI system.
+              </p>
+              <div className="card-price">Free<span> to start</span></div>
+              <div className="card-trial">1 AI system included free</div>
+              <Link href="/products/actguard" className="btn-brutal-secondary w-full text-center">
+                Get started free
+              </Link>
+            </div>
+
+            {/* LintVibe */}
+            <div className="brutal-card fade-up">
+              <div className="card-tag"><span className="card-dot" />LintVibe</div>
+              <h3 className="text-[28px] font-extrabold uppercase leading-none mb-3.5 text-[#EAE8F4] tracking-tight">
+                Vibe Code.<br />Production-ready.
+              </h3>
+              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed mb-8 font-medium">
+                Scan for bugs, security vulnerabilities, and production risks. Prioritized by severity. Ship with confidence.
+              </p>
+              <div className="card-price">$40<span>/month</span></div>
+              <div className="card-trial">Free initial scan</div>
+              <Link href="/products/lintvibe" className="btn-brutal-secondary w-full text-center">
+                Start free scan
               </Link>
             </div>
           </div>
@@ -340,17 +388,17 @@ export default function HomePage() {
         <div className="absolute w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(196,97,42,0.14)_0%,transparent_65%)] top-1/2 right-[-5%] -translate-y-1/2 pointer-events-none blur-[60px]" />
         <div className="relative z-10 max-w-3xl mx-auto text-center">
           <h2 className="text-4xl md:text-[52px] font-extrabold uppercase tracking-tight leading-none text-[#EAE8F4] mb-5 fade-up">
-            Seven days.<br />No credit card.
+            Pick a tool.<br />Start in minutes.
           </h2>
           <p className="text-base text-[rgba(234,232,244,0.50)] mb-10 font-medium fade-up">
-            Start with Kreashot. Add the rest when you&apos;re ready.
+            Six products. All free to try. No credit card on any of them.
           </p>
           <div className="flex flex-col sm:flex-row gap-5 justify-center fade-up">
-            <Link href="/products/kreashot" className="btn-brutal text-base px-11 py-4">
-              Start free trial
-            </Link>
-            <Link href="/products" className="btn-brutal-secondary">
+            <Link href="/products" className="btn-brutal text-base px-11 py-4">
               See all products
+            </Link>
+            <Link href="/studio" className="btn-brutal-secondary">
+              Tell us what you&apos;re building →
             </Link>
           </div>
         </div>
