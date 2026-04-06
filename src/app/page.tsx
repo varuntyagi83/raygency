@@ -4,12 +4,8 @@ import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { Target, Sparkles, Compass, Network } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import Navigation from '@/components/Navigation'
-import ConcentricCircles from '@/components/ConcentricCircles'
-import TestimonialCard from '@/components/TestimonialCard'
-import MetricCard from '@/components/MetricCard'
-import ServiceCard from '@/components/ServiceCard'
 import Footer from '@/components/Footer'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -43,349 +39,320 @@ export default function HomePage() {
 
   return (
     <div ref={containerRef} className="relative">
-      {/* SECTION 1: HERO — Dark */}
-      <section className="relative min-h-screen flex flex-col justify-center bg-midnight z-0 overflow-hidden transition-dark-to-light">
-        <Navigation variant="dark" />
+      <div className="noise-overlay" />
 
-        <div className="orb w-[500px] h-[500px] bg-[rgba(250,97,71,0.15)] top-[-100px] right-[-50px]" />
-        <div className="orb w-[400px] h-[400px] bg-[rgba(120,100,80,0.2)] bottom-[-80px] left-[10%]" />
-        <div className="orb w-[300px] h-[300px] bg-[rgba(250,97,71,0.08)] top-[40%] right-[30%]" />
+      {/* ═══ HERO ═══ */}
+      <section className="relative min-h-screen flex flex-col justify-center bg-[#020810] z-0 overflow-hidden">
+        <Navigation />
 
-        <div className="glass-shape w-[200px] h-[200px] top-[60px] right-[80px] rounded-full" />
-        <div className="glass-shape w-[120px] h-[120px] bottom-[100px] right-[200px] rounded-3xl rotate-[15deg]" />
-        <div className="glass-shape w-[80px] h-[80px] top-[200px] right-[350px] rounded-full" />
+        <div className="orb w-[500px] h-[500px] bg-[rgba(240,160,48,0.15)] top-[-100px] right-[-50px]" />
+        <div className="orb w-[400px] h-[400px] bg-[rgba(22,58,196,0.2)] bottom-[-80px] left-[10%]" />
+        <div className="orb w-[300px] h-[300px] bg-[rgba(13,155,176,0.1)] top-[40%] right-[30%]" />
 
-        <div className="relative z-10 px-6 md:px-16 max-w-5xl hero-fade-in">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight text-[#E5E5DF] mb-6">
-            Your competitors are already visible to AI. Are you?
+        <div className="relative z-10 px-6 md:px-16 max-w-[1100px] hero-fade-in">
+          <div className="flex items-center gap-4 mb-7">
+            <span className="block w-12 h-0.5 bg-gradient-to-r from-[#18C0D9] to-transparent" />
+            <span className="text-xs font-extrabold tracking-[0.28em] uppercase text-[#18C0D9]">AI that ships.</span>
+          </div>
+          <h1 className="text-5xl md:text-7xl lg:text-[76px] font-extrabold leading-[0.98] tracking-tight uppercase text-[#EAE8F4] mb-8">
+            You&apos;re running<br />Meta ads.<br />
+            <span className="text-gradient-teal-copper">Move faster.</span>
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-[#d4d0ca] max-w-3xl mb-4 leading-relaxed">
-            Raygency builds AEO, GEO, and SEO strategies that make your company
-            the obvious answer in ChatGPT, Perplexity, Google AI Overviews, and
-            every platform your buyers actually use. Then we build the AI systems
-            to keep you there.
+          <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] max-w-[580px] mb-12 leading-relaxed border-l-4 border-[#C4612A] pl-6">
+            <strong className="text-[#EAE8F4]">Kreashot, Volticlens, and GeoRaydar.</strong> We built these because we needed them. Ad creatives in minutes. Competitor intel in real time. AI search visibility tracked daily.
           </p>
-          <p className="text-base md:text-lg text-[#d4d0ca]/50 mb-6 tracking-wide">
-            For mid-market companies doing real revenue. Not templates. Not shortcuts.
+          <div className="flex gap-5 items-center flex-wrap">
+            <Link href="/products/kreashot" className="btn-brutal">
+              Start 7-Day Free Trial
+            </Link>
+            <Link href="/products" className="btn-brutal-secondary">
+              See the products →
+            </Link>
+          </div>
+          <p className="text-xs text-[rgba(234,232,244,0.50)] mt-5 flex items-center gap-2 font-medium tracking-wider">
+            <span className="text-[#18C0D9]">✓</span>
+            All three products. Free trial on every one. No credit card.
           </p>
-          <p className="text-lg md:text-xl text-[#d4d0ca] max-w-3xl mb-10 leading-relaxed">
-            <span className="text-coral font-medium">Answer Engines are changing how buyers find solutions.</span>{' '}
-            ChatGPT, Claude, Perplexity. These aren&apos;t search engines. They&apos;re
-            decision-making machines. We build{' '}
-            <span className="text-coral font-medium">complete AI search strategy</span>: AEO, GEO,
-            traditional SEO, all integrated into one system that makes your company{' '}
-            <span className="text-coral font-medium">impossible to ignore</span>.
-          </p>
-          <a
-            href="https://cal.com/raygency"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-coral hover:bg-coral-hover text-white px-10 py-5 rounded-full font-medium text-lg transition-colors btn-hover"
-          >
-            Schedule Discovery Call
-          </a>
         </div>
       </section>
 
-      {/* SECTION 2: THE PROBLEM + WHAT CHANGES — Light */}
-      <section className="relative bg-light-gray z-10 py-24 md:py-32 px-6 md:px-16 transition-light-to-dark">
+      {/* ═══ STATS BAR ═══ */}
+      <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 border-y-[3px] border-[rgba(13,155,176,0.25)]">
+        <div className="p-8 md:p-11 border-r border-[rgba(13,155,176,0.15)] fade-up">
+          <div className="text-4xl md:text-[56px] font-extrabold leading-none mb-2.5 text-gradient-teal-copper">9</div>
+          <div className="text-xs font-semibold uppercase tracking-wider text-[rgba(234,232,244,0.50)] leading-snug">Production Apps<br />Shipped</div>
+        </div>
+        <div className="p-8 md:p-11 border-r border-[rgba(13,155,176,0.15)] fade-up">
+          <div className="text-4xl md:text-[56px] font-extrabold leading-none mb-2.5 bg-gradient-to-r from-[#E07840] to-[#C4612A] bg-clip-text text-transparent">100+</div>
+          <div className="text-xs font-semibold uppercase tracking-wider text-[rgba(234,232,244,0.50)] leading-snug">Workflows in<br />Production</div>
+        </div>
+        <div className="p-8 md:p-11 border-r border-[rgba(13,155,176,0.15)] fade-up">
+          <div className="text-4xl md:text-[56px] font-extrabold leading-none mb-2.5 text-gradient-teal-copper">18+</div>
+          <div className="text-xs font-semibold uppercase tracking-wider text-[rgba(234,232,244,0.50)] leading-snug">Years Cross-Industry<br />Experience</div>
+        </div>
+        <div className="p-8 md:p-11 fade-up">
+          <div className="text-4xl md:text-[56px] font-extrabold leading-none mb-2.5 text-[#EAE8F4]">7</div>
+          <div className="text-xs font-semibold uppercase tracking-wider text-[rgba(234,232,244,0.50)] leading-snug">Day Free Trial<br />No Credit Card</div>
+        </div>
+      </div>
+
+      <div className="section-divider" />
+
+      {/* ═══ THREE PROBLEMS → THREE PRODUCTS ═══ */}
+      <section className="relative bg-[#020810] z-10 py-24 md:py-28 px-6 md:px-14">
         <div className="max-w-6xl mx-auto">
-          {/* The Problem */}
-          <div className="max-w-4xl mb-20">
-            <span className="text-xs font-medium tracking-widest uppercase text-coral fade-up">
-              Sound Familiar?
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-6 text-charcoal fade-up">
-              At your scale, being invisible to Answer Engines isn&apos;t a marketing
-              problem. It&apos;s a revenue problem.
-            </h2>
-            <div className="space-y-4 fade-up">
-              <p className="text-lg md:text-xl text-stone leading-relaxed">
-                Your competitors are optimizing for Perplexity. Your SEO strategy
-                was built for 2019 Google. Your knowledge base is locked behind a
-                login. Meanwhile, 40% of buyers under 30 bypass Google entirely.
-              </p>
-              <p className="text-lg md:text-xl text-charcoal font-medium">
-                You don&apos;t need more content. You need to become the answer
-                in the systems your customers actually trust.
-              </p>
+          <div className="text-xs font-extrabold tracking-[0.26em] uppercase text-[rgba(234,232,244,0.50)] mb-5 fade-up">The problem sequence</div>
+          <h2 className="text-4xl md:text-[52px] font-extrabold uppercase tracking-tight leading-none text-[#EAE8F4] mb-3 fade-up">
+            Three problems.<br />Three products.
+          </h2>
+          <p className="text-base text-[rgba(234,232,244,0.50)] mb-16 max-w-xl font-medium leading-relaxed fade-up">
+            If you&apos;re running paid social at a growth-stage company, these hit in order. We built a product for each one.
+          </p>
+
+          {/* Problem Row 1 */}
+          <div className="grid grid-cols-[64px_1fr_2fr] gap-x-10 items-center py-9 border-t border-[rgba(13,155,176,0.1)] fade-up">
+            <div className="text-xs font-extrabold text-[#18C0D9] tracking-widest uppercase">01.</div>
+            <div>
+              <h3 className="text-lg md:text-xl font-extrabold uppercase text-[#EAE8F4] mb-2 tracking-tight">You can&apos;t produce ad creatives fast enough.</h3>
+              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed font-medium">Brief to designer to revision to export. Too slow. Too expensive. You&apos;re leaving performance on the table while you wait.</p>
             </div>
+            <Link href="/products/kreashot" className="flex items-center justify-between gap-5 p-5 bg-[rgba(13,155,176,0.05)] border-2 border-[rgba(13,155,176,0.2)] relative hover:bg-[rgba(13,155,176,0.09)] hover:border-[rgba(13,155,176,0.35)] transition-colors">
+              <div>
+                <div className="text-sm font-extrabold text-[#18C0D9] uppercase tracking-wider">Kreashot</div>
+                <div className="text-xs text-[rgba(234,232,244,0.50)] mt-1 font-medium leading-snug">Product photo → Meta-ready ad creative in minutes.</div>
+              </div>
+              <span className="text-lg font-extrabold text-[#0D9BB0] flex-shrink-0">→</span>
+            </Link>
           </div>
 
-          {/* What Changes — 3 cards on light bg */}
-          <span className="text-xs font-medium tracking-widest uppercase text-stone fade-up">
-            What Changes
-          </span>
-          <div className="grid md:grid-cols-3 gap-8 md:gap-10 mt-8">
-            <div className="bg-cream-white rounded-2xl p-8 md:p-10 border border-cream hover-lift fade-up">
-              <div className="flex justify-center mb-6">
-                <ConcentricCircles rings={1} size={80} />
-              </div>
-              <h3 className="text-xl md:text-2xl font-semibold mb-2 text-charcoal">
-                Visibility
-              </h3>
-              <h4 className="text-base font-medium text-coral mb-3">Answer Engine Dominance</h4>
-              <p className="text-base text-stone leading-relaxed">
-                Your company becomes the preferred answer in Perplexity, ChatGPT,
-                and emerging AI search. Not just indexed. Recommended.
-              </p>
+          {/* Problem Row 2 */}
+          <div className="grid grid-cols-[64px_1fr_2fr] gap-x-10 items-center py-9 border-t border-[rgba(13,155,176,0.1)] fade-up">
+            <div className="text-xs font-extrabold text-[#18C0D9] tracking-widest uppercase">02.</div>
+            <div>
+              <h3 className="text-lg md:text-xl font-extrabold uppercase text-[#EAE8F4] mb-2 tracking-tight">You don&apos;t know what your competitors are running.</h3>
+              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed font-medium">They&apos;re testing. They&apos;re learning. You&apos;re guessing. You need to see exactly what&apos;s working for them.</p>
             </div>
+            <Link href="/products/volticlens" className="flex items-center justify-between gap-5 p-5 bg-[rgba(13,155,176,0.05)] border-2 border-[rgba(13,155,176,0.2)] relative hover:bg-[rgba(13,155,176,0.09)] hover:border-[rgba(13,155,176,0.35)] transition-colors">
+              <div>
+                <div className="text-sm font-extrabold text-[#18C0D9] uppercase tracking-wider">Volticlens</div>
+                <div className="text-xs text-[rgba(234,232,244,0.50)] mt-1 font-medium leading-snug">Every ad your competitors are running on Meta. Real time.</div>
+              </div>
+              <span className="text-lg font-extrabold text-[#0D9BB0] flex-shrink-0">→</span>
+            </Link>
+          </div>
 
-            <div className="bg-cream-white rounded-2xl p-8 md:p-10 border border-cream hover-lift fade-up">
-              <div className="flex justify-center mb-6">
-                <ConcentricCircles rings={2} size={80} />
-              </div>
-              <h3 className="text-xl md:text-2xl font-semibold mb-2 text-charcoal">
-                Authority
-              </h3>
-              <h4 className="text-base font-medium text-coral mb-3">AI-First Knowledge System</h4>
-              <p className="text-base text-stone leading-relaxed">
-                A structured knowledge base that feeds both your customers and
-                Answer Engines. Every resource builds your moat.
-              </p>
+          {/* Problem Row 3 */}
+          <div className="grid grid-cols-[64px_1fr_2fr] gap-x-10 items-center py-9 border-y border-[rgba(13,155,176,0.1)] fade-up">
+            <div className="text-xs font-extrabold text-[#18C0D9] tracking-widest uppercase">03.</div>
+            <div>
+              <h3 className="text-lg md:text-xl font-extrabold uppercase text-[#EAE8F4] mb-2 tracking-tight">You&apos;re not showing up in AI search.</h3>
+              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed font-medium">Buyers ask ChatGPT, Gemini, and Perplexity who to call. If you&apos;re not in those answers, your competitors are.</p>
             </div>
-
-            <div className="bg-cream-white rounded-2xl p-8 md:p-10 border border-cream hover-lift fade-up">
-              <div className="flex justify-center mb-6">
-                <ConcentricCircles rings={3} size={80} />
+            <Link href="/products/georadar" className="flex items-center justify-between gap-5 p-5 bg-[rgba(13,155,176,0.05)] border-2 border-[rgba(13,155,176,0.2)] relative hover:bg-[rgba(13,155,176,0.09)] hover:border-[rgba(13,155,176,0.35)] transition-colors">
+              <div>
+                <div className="text-sm font-extrabold text-[#18C0D9] uppercase tracking-wider">GeoRaydar</div>
+                <div className="text-xs text-[rgba(234,232,244,0.50)] mt-1 font-medium leading-snug">Track your brand across ChatGPT, Gemini, Perplexity, and Claude.</div>
               </div>
-              <h3 className="text-xl md:text-2xl font-semibold mb-2 text-charcoal">
-                Advantage
-              </h3>
-              <h4 className="text-base font-medium text-coral mb-3">Compounding Returns</h4>
-              <p className="text-base text-stone leading-relaxed">
-                While competitors scramble to figure out AEO, you&apos;re already
-                controlling the narrative. Revenue follows visibility.
-              </p>
-            </div>
+              <span className="text-lg font-extrabold text-[#0D9BB0] flex-shrink-0">→</span>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* SECTION 3: SOCIAL PROOF + SERVICES — Dark */}
-      <section className="relative bg-midnight z-20 py-24 md:py-32 px-6 md:px-16 overflow-hidden transition-dark-to-light">
-        <div className="orb w-[400px] h-[400px] bg-[rgba(120,100,80,0.12)] top-[-100px] left-[-50px]" />
-        <div className="orb w-[300px] h-[300px] bg-[rgba(250,97,71,0.08)] bottom-[-50px] right-[10%]" />
+      <div className="section-divider" />
+
+      {/* ═══ PRODUCT CARDS ═══ */}
+      <section className="relative bg-[#020810] z-20 py-24 md:py-28 px-6 md:px-14 overflow-hidden">
+        <div className="orb w-[400px] h-[400px] bg-[rgba(22,58,196,0.12)] top-[-100px] left-[-50px]" />
+        <div className="orb w-[300px] h-[300px] bg-[rgba(13,155,176,0.08)] bottom-[-50px] right-[10%]" />
 
         <div className="relative z-10 max-w-6xl mx-auto">
-          {/* Social Proof */}
-          <span className="text-xs font-medium tracking-widest uppercase text-[#d4d0ca]/50 fade-up">
-            Results
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-16 text-[#E5E5DF] fade-up">
-            What Our Clients See
+          <div className="text-xs font-extrabold tracking-[0.26em] uppercase text-[rgba(234,232,244,0.50)] mb-5 fade-up">The toolkit</div>
+          <h2 className="text-4xl md:text-[52px] font-extrabold uppercase tracking-tight leading-none text-[#EAE8F4] mb-3 fade-up">
+            Pick what you need.
           </h2>
+          <p className="text-base text-[rgba(234,232,244,0.50)] mb-16 font-medium fade-up">Or take all three. Either way, you&apos;re running in a day.</p>
 
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12 mb-16">
-            <div className="text-center fade-up">
-              <div className="text-4xl md:text-5xl font-semibold text-coral mb-2">23-40%</div>
-              <p className="text-sm md:text-base text-[#d4d0ca] leading-relaxed">Average increase in qualified leads from AI search traffic</p>
+          <div className="grid md:grid-cols-3 gap-7 mb-12">
+            {/* Kreashot */}
+            <div className="brutal-card fade-up">
+              <div className="card-tag"><span className="card-dot" />Kreashot</div>
+              <h3 className="text-[28px] font-extrabold uppercase leading-none mb-3.5 text-[#EAE8F4] tracking-tight">
+                Ad Creative.<br />Fast.
+              </h3>
+              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed mb-8 font-medium">
+                Product photo to Meta-ready creative in minutes. Built for performance marketers who can&apos;t wait on designers.
+              </p>
+              <div className="card-price">$150<span>/month</span></div>
+              <div className="card-trial">7 days free · no credit card</div>
+              <Link href="/products/kreashot" className="btn-brutal w-full text-center">
+                Start free trial
+              </Link>
             </div>
-            <div className="text-center fade-up">
-              <div className="text-4xl md:text-5xl font-semibold text-coral mb-2">8-12 mo</div>
-              <p className="text-sm md:text-base text-[#d4d0ca] leading-relaxed">Typical timeline to dominant Answer Engine visibility</p>
-            </div>
-            <div className="text-center fade-up">
-              <div className="text-4xl md:text-5xl font-semibold text-coral mb-2">5 max</div>
-              <p className="text-sm md:text-base text-[#d4d0ca] leading-relaxed">Active client engagements at any time, because quality matters</p>
-            </div>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8 mb-16">
-            <div className="glass-card p-8 md:p-10 fade-up">
-              <blockquote className="text-base md:text-lg text-[#d4d0ca] leading-relaxed mb-6 italic">
-                &ldquo;We were invisible in Perplexity. Six months after Raygency&apos;s AEO strategy, we&apos;re the first answer for three of our core use cases. Revenue impact: 23% increase in qualified inbound.&rdquo;
-              </blockquote>
-              <div className="flex flex-col gap-1">
-                <span className="text-base font-medium text-[#E5E5DF]">Sarah Chen</span>
-                <span className="text-sm text-[#d4d0ca]/70">VP Marketing, TechFlow</span>
-              </div>
+            {/* Voltic */}
+            <div className="brutal-card fade-up">
+              <div className="card-tag"><span className="card-dot" />Volticlens</div>
+              <h3 className="text-[28px] font-extrabold uppercase leading-none mb-3.5 text-[#EAE8F4] tracking-tight">
+                Competitor Intel.<br />Real Time.
+              </h3>
+              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed mb-8 font-medium">
+                See every ad your competitors are running on Meta. Know what they&apos;re testing. Move faster than they do.
+              </p>
+              <div className="card-price">$100<span>/month</span></div>
+              <div className="card-trial">7 days free · no credit card</div>
+              <Link href="/products/volticlens" className="btn-brutal-secondary w-full text-center">
+                Start free trial
+              </Link>
             </div>
-            <div className="glass-card p-8 md:p-10 fade-up">
-              <blockquote className="text-base md:text-lg text-[#d4d0ca] leading-relaxed mb-6 italic">
-                &ldquo;Raygency didn&apos;t just optimize for Google. They built us a complete system: knowledge base, content strategy, AI agents. We went from invisible to authoritative in eight months.&rdquo;
-              </blockquote>
-              <div className="flex flex-col gap-1">
-                <span className="text-base font-medium text-[#E5E5DF]">Marcus Johnson</span>
-                <span className="text-sm text-[#d4d0ca]/70">CEO, Momentum Consulting</span>
-              </div>
-            </div>
-            <div className="glass-card p-8 md:p-10 fade-up">
-              <blockquote className="text-base md:text-lg text-[#d4d0ca] leading-relaxed mb-6 italic">
-                &ldquo;The difference between an SEO agency and Raygency is that they actually understand AI. They don&apos;t treat AEO like a feature. It&apos;s the foundation of everything they recommend.&rdquo;
-              </blockquote>
-              <div className="flex flex-col gap-1">
-                <span className="text-base font-medium text-[#E5E5DF]">Jennifer Torres</span>
-                <span className="text-sm text-[#d4d0ca]/70">Chief of Staff, GrowthLabs</span>
-              </div>
-            </div>
-          </div>
 
-          <div className="text-center fade-up">
-            <p className="text-sm text-[#d4d0ca]/50 mb-4">
-              We optimize your presence across the platforms your customers use
-            </p>
-            <div className="flex flex-wrap justify-center gap-8 md:gap-12 text-[#d4d0ca]/30 text-sm font-medium tracking-wider">
-              <span>PERPLEXITY</span>
-              <span>CHATGPT</span>
-              <span>GOOGLE</span>
-              <span>CLAUDE</span>
-              <span>GEMINI</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 4: SERVICES — Light */}
-      <section id="services" className="relative bg-light-gray z-30 py-24 md:py-32 px-6 md:px-16 transition-light-to-dark">
-        <div className="max-w-6xl mx-auto">
-          <span className="text-xs font-medium tracking-widest uppercase text-stone fade-up">
-            Services
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-16 text-charcoal fade-up">
-            What We Build For You
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-            <ServiceCard
-              icon={<Target className="w-10 h-10" />}
-              headline="AEO & GEO Strategy"
-              subheading="Control How AI Answers About You"
-              copy="We audit, restructure, and optimize your presence in Answer Engines and generative search. Your company becomes the answer AI recommends."
-              cta={{ text: 'Learn More', href: '/services#aeo' }}
-            />
-            <ServiceCard
-              icon={<Compass className="w-10 h-10" />}
-              headline="Advanced SEO Architecture"
-              subheading="Built for 2025+, Not 2019"
-              copy="Modern SEO integrating E-E-A-T signals, topical authority, and Answer Engine alignment into one coherent system."
-              cta={{ text: 'Learn More', href: '/services#seo' }}
-            />
-            <ServiceCard
-              icon={<Sparkles className="w-10 h-10" />}
-              headline="AI Brain Development"
-              subheading="Custom Knowledge Bases & RAG"
-              copy="A searchable knowledge system powered by RAG. Feeds your AI agents, your customers, and Answer Engines with answers only you can provide."
-              cta={{ text: 'Learn More', href: '/services#ai-brain' }}
-            />
-            <ServiceCard
-              icon={<Network className="w-10 h-10" />}
-              headline="Intelligent Automation"
-              subheading="Systems That Learn & Improve"
-              copy="AI agents that handle customer questions, qualify leads, and manage follow-up 24/7. Automations that get smarter as you use them."
-              cta={{ text: 'Learn More', href: '/services#automation' }}
-            />
-          </div>
-
-          {/* Entry-Point Offer */}
-          <div className="mt-12 p-8 md:p-10 bg-cream-white rounded-2xl border border-cream fade-up">
-            <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
-              <div className="flex-1">
-                <h3 className="text-xl md:text-2xl font-medium mb-2 text-charcoal">
-                  Not sure where to start?
-                </h3>
-                <p className="text-base md:text-lg text-stone leading-relaxed">
-                  Our AI Search Audit is a 4-week engagement. We audit your current Answer Engine
-                  visibility, map competitors, and deliver a clear roadmap. Starting at $15,000.
-                </p>
-              </div>
-              <Link
-                href="/contact"
-                className="bg-coral hover:bg-coral-hover text-white px-8 py-4 rounded-full font-medium transition-colors whitespace-nowrap btn-hover"
-              >
-                Schedule Audit
+            {/* GeoRaydar */}
+            <div className="brutal-card fade-up">
+              <div className="card-tag"><span className="card-dot" />GeoRaydar</div>
+              <h3 className="text-[28px] font-extrabold uppercase leading-none mb-3.5 text-[#EAE8F4] tracking-tight">
+                AI Search.<br />Owned.
+              </h3>
+              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed mb-8 font-medium">
+                Track your brand visibility across ChatGPT, Gemini, Perplexity, and Claude. See every gap. Fix it.
+              </p>
+              <div className="card-price">$100<span>/month</span></div>
+              <div className="card-trial">7 days free · no credit card</div>
+              <Link href="/products/georadar" className="btn-brutal-secondary w-full text-center">
+                Start free trial
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* SECTION 5: OUR APPROACH + QUOTE — Dark */}
-      <section className="relative bg-midnight z-30 py-24 md:py-32 px-6 md:px-16 overflow-hidden transition-dark-to-light">
-        <div className="orb w-[350px] h-[350px] bg-[rgba(250,97,71,0.08)] top-[-80px] right-[20%]" />
-        <div className="orb w-[250px] h-[250px] bg-[rgba(120,100,80,0.12)] bottom-[-60px] left-[5%]" />
-
-        <div className="relative z-10 max-w-6xl mx-auto">
-          <span className="text-xs font-medium tracking-widest uppercase text-[#d4d0ca]/50 fade-up">
-            Our Approach
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mt-4 mb-16 text-[#E5E5DF] fade-up">
-            Audit. Architect. Activate.
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12 mb-20">
-            <div className="glass-card glass-card-hover p-8 md:p-10 fade-up">
-              <div className="text-4xl font-semibold text-coral mb-4">01</div>
-              <h3 className="text-xl md:text-2xl font-medium mb-4 text-[#E5E5DF]">
-                Answer Engine Audit
-              </h3>
-              <p className="text-base md:text-lg text-[#d4d0ca] leading-relaxed mb-4">
-                We analyze where you appear in ChatGPT, Claude, Perplexity, and
-                Google AI. We map competitors. We find the exact gaps costing you
-                visibility and revenue.
-              </p>
-              <span className="text-sm text-coral font-medium">2-3 weeks</span>
+      {/* ═══ BUNDLE ═══ */}
+      <section className="relative py-20 md:py-24 px-6 md:px-14 overflow-hidden border-y border-[rgba(13,155,176,0.12)] bg-[rgba(13,155,176,0.025)]">
+        <div className="cell-overlay" />
+        <div className="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-12 md:gap-16">
+          <div className="max-w-xl">
+            <div className="flex items-center gap-3 mb-5">
+              <span className="block w-8 h-0.5 bg-[#C4612A]" />
+              <span className="text-xs font-extrabold tracking-[0.26em] uppercase text-[#E07840]">Raygency Suite</span>
             </div>
-
-            <div className="glass-card glass-card-hover p-8 md:p-10 fade-up">
-              <div className="text-4xl font-semibold text-coral mb-4">02</div>
-              <h3 className="text-xl md:text-2xl font-medium mb-4 text-[#E5E5DF]">
-                AI-First Strategy Design
-              </h3>
-              <p className="text-base md:text-lg text-[#d4d0ca] leading-relaxed mb-4">
-                We design your complete system: content strategy, knowledge
-                architecture, technical SEO, automation foundations. Everything
-                works together.
-              </p>
-              <span className="text-sm text-coral font-medium">3-4 weeks</span>
+            <h2 className="text-3xl md:text-[44px] font-extrabold uppercase tracking-tight leading-none text-[#EAE8F4] mb-4 fade-up">
+              All three.<br /><span className="text-gradient-teal-copper">One price.</span>
+            </h2>
+            <p className="text-base text-[rgba(234,232,244,0.50)] leading-relaxed mb-5 font-medium fade-up">
+              Kreashot, Volticlens, and GeoRaydar together. They solve your three consecutive problems in order. The suite closes every gap.
+            </p>
+            <div className="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-[#E07840] bg-[rgba(196,97,42,0.1)] border-2 border-[rgba(196,97,42,0.3)] px-4 py-1.5 fade-up">
+              Save $100/month · 28% off
             </div>
-
-            <div className="glass-card glass-card-hover p-8 md:p-10 fade-up">
-              <div className="text-4xl font-semibold text-coral mb-4">03</div>
-              <h3 className="text-xl md:text-2xl font-medium mb-4 text-[#E5E5DF]">
-                Build & Activate
-              </h3>
-              <p className="text-base md:text-lg text-[#d4d0ca] leading-relaxed mb-4">
-                We build your knowledge system, implement AEO optimizations,
-                deploy AI agents. Then hand over with full documentation and training.
-              </p>
-              <span className="text-sm text-coral font-medium">4-8 weeks</span>
-            </div>
+            <p className="text-xs text-[rgba(234,232,244,0.50)] mt-3 font-medium fade-up">Annual plan available · 20% off · Price locked for life.</p>
           </div>
-
-          {/* Quote — with attribution */}
-          <div className="max-w-3xl mx-auto text-center fade-up">
-            <div className="w-12 h-0.5 bg-coral mx-auto mb-8" />
-            <blockquote className="text-xl md:text-2xl font-medium text-[#E5E5DF] leading-relaxed mb-6">
-              &ldquo;We don&apos;t optimize for the sake of optimizing. Every recommendation
-              drives toward one outcome: your company becoming the obvious answer in
-              the systems your customers use. That&apos;s it.&rdquo;
-            </blockquote>
-            <p className="text-sm text-[#d4d0ca]/60 font-medium">Raygency Philosophy</p>
+          <div className="flex-shrink-0 text-center fade-up">
+            <div className="text-6xl md:text-7xl font-extrabold leading-none mb-1.5 text-gradient-teal-copper">$250</div>
+            <div className="text-sm text-[rgba(234,232,244,0.50)] uppercase tracking-wider font-semibold mb-6">/month · all three</div>
+            <div className="flex flex-col gap-2 text-left mb-7">
+              <div className="text-sm text-[rgba(234,232,244,0.50)] flex items-center gap-2.5 font-medium"><span className="text-[#0D9BB0] font-extrabold">→</span> Kreashot — $150/month</div>
+              <div className="text-sm text-[rgba(234,232,244,0.50)] flex items-center gap-2.5 font-medium"><span className="text-[#0D9BB0] font-extrabold">→</span> Volticlens — $100/month</div>
+              <div className="text-sm text-[rgba(234,232,244,0.50)] flex items-center gap-2.5 font-medium"><span className="text-[#0D9BB0] font-extrabold">→</span> GeoRaydar — $100/month</div>
+            </div>
+            <Link href="/products/kreashot" className="btn-brutal">Start free trial</Link>
           </div>
         </div>
       </section>
 
-      {/* SECTION 6: CTA — Light */}
-      <section className="relative bg-light-gray z-40 py-24 md:py-32 px-6 md:px-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-charcoal fade-up">
-            Let&apos;s talk about where you stand
-            <br />
-            in Answer Engines.
-          </h2>
-          <p className="text-lg md:text-xl text-stone mb-10 fade-up">
-            30 minutes. No pitch deck. We&apos;ll look at your current AI search
-            visibility and show you exactly what&apos;s possible.
+      {/* ═══ PITCH LINE ═══ */}
+      <section className="relative py-28 md:py-32 px-6 md:px-14 text-center overflow-hidden border-y border-[rgba(13,155,176,0.1)]">
+        <div className="absolute w-[900px] h-[450px] rounded-full bg-[radial-gradient(ellipse,rgba(196,97,42,0.09)_0%,transparent_65%)] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-[50px]" />
+        <div className="relative z-10 max-w-[900px] mx-auto">
+          <p className="text-4xl md:text-[52px] font-extrabold uppercase tracking-tight leading-[1.1] text-[#EAE8F4] mb-9 fade-up">
+            &ldquo;Most of what you need,<br />
+            <span className="text-gradient-teal-copper">we have already built.</span><br />
+            The rest, we build fast.&rdquo;
           </p>
-          <a
-            href="https://cal.com/raygency"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-coral hover:bg-coral-hover text-white px-10 py-5 rounded-full font-medium text-lg transition-colors fade-up btn-hover"
-          >
-            Schedule Discovery Call
-          </a>
+          <div className="text-xs text-[rgba(234,232,244,0.50)] tracking-[0.14em] uppercase font-bold mb-10 fade-up">— Raygency · AI Product Studio</div>
+          <Link href="/studio" className="btn-brutal fade-up">Tell us what you&apos;re building</Link>
+        </div>
+      </section>
+
+      <div className="section-divider" />
+
+      {/* ═══ STUDIO STRIP ═══ */}
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12 px-6 md:px-14 py-14 border-y border-[rgba(13,155,176,0.08)]">
+        <div>
+          <h3 className="text-xl md:text-[22px] font-extrabold uppercase text-[#EAE8F4] mb-2.5 tracking-tight">Need something custom?</h3>
+          <p className="text-[15px] text-[rgba(234,232,244,0.50)] leading-relaxed max-w-xl font-medium">
+            We build marketing tools, AI automation, and data products. Capacity is limited. We take on projects that fit our product DNA.
+          </p>
+        </div>
+        <Link href="/studio" className="btn-brutal-secondary flex-shrink-0">Tell us what you&apos;re building →</Link>
+      </div>
+
+      {/* ═══ PROOF NUMBERS ═══ */}
+      <section className="relative py-24 md:py-28 px-6 md:px-14 overflow-hidden">
+        <div className="cell-overlay opacity-[0.28]" />
+        <div className="relative z-10 max-w-6xl mx-auto">
+          <div className="text-xs font-extrabold tracking-[0.26em] uppercase text-[rgba(234,232,244,0.50)] mb-5 fade-up">Built by practitioners</div>
+          <h2 className="text-4xl md:text-[52px] font-extrabold uppercase tracking-tight leading-none text-[#EAE8F4] mb-14 fade-up">
+            Not consultants.<br />Builders.
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 border-2 border-[rgba(13,155,176,0.15)] relative fade-up">
+            {/* Brutalist offset shadow */}
+            <div className="absolute top-2 left-2 right-[-10px] bottom-[-10px] border-2 border-[rgba(196,97,42,0.15)] -z-10 pointer-events-none" />
+            <div className="p-8 md:p-11 border-r border-[rgba(13,155,176,0.12)] bg-[rgba(13,155,176,0.03)]">
+              <div className="text-4xl md:text-[52px] font-extrabold leading-none mb-3 text-gradient-teal-copper">9</div>
+              <div className="text-sm text-[rgba(234,232,244,0.50)] leading-snug font-medium"><strong className="text-[#EAE8F4]">Production apps</strong> shipped and running</div>
+            </div>
+            <div className="p-8 md:p-11 border-r border-[rgba(13,155,176,0.12)] bg-[rgba(13,155,176,0.03)]">
+              <div className="text-4xl md:text-[52px] font-extrabold leading-none mb-3 text-gradient-teal-copper">100+</div>
+              <div className="text-sm text-[rgba(234,232,244,0.50)] leading-snug font-medium"><strong className="text-[#EAE8F4]">n8n workflows</strong> running in production</div>
+            </div>
+            <div className="p-8 md:p-11 border-r border-[rgba(13,155,176,0.12)] bg-[rgba(13,155,176,0.03)]">
+              <div className="text-4xl md:text-[52px] font-extrabold leading-none mb-3 bg-gradient-to-r from-[#E07840] to-[#C4612A] bg-clip-text text-transparent">18+</div>
+              <div className="text-sm text-[rgba(234,232,244,0.50)] leading-snug font-medium"><strong className="text-[#EAE8F4]">Years inside</strong> organisations where AI meets the real world</div>
+            </div>
+            <div className="p-8 md:p-11 bg-[rgba(13,155,176,0.03)]">
+              <div className="text-4xl md:text-[52px] font-extrabold leading-none mb-3 bg-gradient-to-r from-[#E07840] to-[#C4612A] bg-clip-text text-transparent">6</div>
+              <div className="text-sm text-[rgba(234,232,244,0.50)] leading-snug font-medium"><strong className="text-[#EAE8F4]">Industries</strong> — pharma, semis, IT, biotech, startups, design</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ QUOTE ═══ */}
+      <section className="relative py-20 md:py-24 px-6 md:px-14 border-y border-[rgba(13,155,176,0.1)] overflow-hidden">
+        <div className="absolute w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(13,155,176,0.08)_0%,transparent_65%)] top-1/2 left-[-5%] -translate-y-1/2 pointer-events-none blur-[60px]" />
+        <div className="absolute w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(196,97,42,0.1)_0%,transparent_65%)] top-1/2 right-[-5%] -translate-y-1/2 pointer-events-none blur-[60px]" />
+        <div className="relative z-10 max-w-3xl mx-auto text-center fade-up">
+          <blockquote className="text-xl md:text-2xl font-medium text-[#EAE8F4] leading-relaxed mb-6">
+            &ldquo;The hardest part of any AI product isn&apos;t the technology.
+            It&apos;s the human on the other side of the screen — time-poor,
+            skeptical, with a workflow that already works well enough.
+            Every product we build at Raygency is designed for that person.
+            Not the enthusiast. The resistant one.
+            Design for adoption, not just function.&rdquo;
+          </blockquote>
+          <p className="text-sm text-[rgba(234,232,244,0.50)] font-medium">Renuka Adnani, Co-founder</p>
+        </div>
+      </section>
+
+      {/* ═══ FINAL CTA ═══ */}
+      <section className="relative py-24 md:py-28 px-6 md:px-14 overflow-hidden">
+        <div className="absolute w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(13,155,176,0.12)_0%,transparent_65%)] top-1/2 left-[-5%] -translate-y-1/2 pointer-events-none blur-[60px]" />
+        <div className="absolute w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(196,97,42,0.14)_0%,transparent_65%)] top-1/2 right-[-5%] -translate-y-1/2 pointer-events-none blur-[60px]" />
+        <div className="relative z-10 max-w-3xl mx-auto text-center">
+          <h2 className="text-4xl md:text-[52px] font-extrabold uppercase tracking-tight leading-none text-[#EAE8F4] mb-5 fade-up">
+            Seven days.<br />No credit card.
+          </h2>
+          <p className="text-base text-[rgba(234,232,244,0.50)] mb-10 font-medium fade-up">
+            Start with Kreashot. Add the rest when you&apos;re ready.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-5 justify-center fade-up">
+            <Link href="/products/kreashot" className="btn-brutal text-base px-11 py-4">
+              Start free trial
+            </Link>
+            <Link href="/products" className="btn-brutal-secondary">
+              See all products
+            </Link>
+          </div>
         </div>
       </section>
 

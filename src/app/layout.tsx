@@ -9,9 +9,9 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: 'Raygency | Answer Engine Optimization & AI Strategy',
-  description: 'Elite AI strategy firm specializing in AEO, GEO, SEO, and custom AI systems for mid-market companies. We make your company the obvious answer.',
-  keywords: 'answer engine optimization, AEO, GEO, AI strategy, SEO, knowledge base, RAG, AI agents, generative search optimization, intelligent automation',
+  title: 'Raygency | AI that ships.',
+  description: 'AI-powered tools for performance marketers. Kreashot, Voltic, and GeoRaydar — built by practitioners, shipped in production. Free trial, no credit card.',
+  keywords: 'AI ad creative, Meta ad intelligence, competitor ad research, AI brand visibility, performance marketing tools, ad creative automation, AI search visibility, Kreashot, Voltic, GeoRaydar',
 }
 
 export default function RootLayout({

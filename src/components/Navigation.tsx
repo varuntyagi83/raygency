@@ -5,11 +5,7 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 
-interface NavigationProps {
-  variant?: 'dark' | 'light'
-}
-
-export default function Navigation({ variant = 'dark' }: NavigationProps) {
+export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -22,10 +18,9 @@ export default function Navigation({ variant = 'dark' }: NavigationProps) {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const effectiveVariant = isScrolled ? 'light' : variant
-  const textColor = effectiveVariant === 'dark' ? 'text-light-gray' : 'text-sand-80'
+  const textColor = 'text-text'
   const bgColor = isScrolled
-    ? 'bg-light-gray/95 backdrop-blur-md shadow-[0_1px_3px_rgba(0,0,0,0.08)]'
+    ? 'bg-bg/95 backdrop-blur-md shadow-[0_1px_3px_rgba(0,0,0,0.08)] border-b border-[rgba(13,155,176,0.12)]'
     : 'bg-transparent'
 
   return (
@@ -43,24 +38,22 @@ export default function Navigation({ variant = 'dark' }: NavigationProps) {
           <Link href="/" className="link-underline">
             Home
           </Link>
+          <Link href="/products" className="link-underline">
+            Products
+          </Link>
+          <Link href="/studio" className="link-underline">
+            Studio
+          </Link>
           <Link href="/about" className="link-underline">
             About
           </Link>
-          <Link href="/services" className="link-underline">
-            Services
-          </Link>
-          <Link href="/contact" className="link-underline">
-            Contact
-          </Link>
         </div>
-        <a
-          href="https://cal.com/raygency"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/products/kreashot"
           className="bg-coral hover:bg-coral-hover text-white px-6 py-2.5 rounded-full text-sm font-medium transition-colors btn-hover"
         >
-          Schedule Discovery
-        </a>
+          Start Free Trial
+        </Link>
       </div>
 
       {/* Mobile Menu Button */}
@@ -84,6 +77,20 @@ export default function Navigation({ variant = 'dark' }: NavigationProps) {
               Home
             </Link>
             <Link
+              href="/products"
+              className="hover:opacity-70 transition-opacity"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Products
+            </Link>
+            <Link
+              href="/studio"
+              className="hover:opacity-70 transition-opacity"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Studio
+            </Link>
+            <Link
               href="/about"
               className="hover:opacity-70 transition-opacity"
               onClick={() => setIsMenuOpen(false)}
@@ -91,28 +98,12 @@ export default function Navigation({ variant = 'dark' }: NavigationProps) {
               About
             </Link>
             <Link
-              href="/services"
-              className="hover:opacity-70 transition-opacity"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Services
-            </Link>
-            <Link
-              href="/contact"
-              className="hover:opacity-70 transition-opacity"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
-            </Link>
-            <a
-              href="https://cal.com/raygency"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/products/kreashot"
               className="bg-coral hover:bg-coral-hover text-white px-6 py-3 rounded-full text-sm font-medium transition-colors text-center mt-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Schedule Discovery
-            </a>
+              Start Free Trial
+            </Link>
           </div>
         </div>
       )}

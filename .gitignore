@@ -43,3 +43,6 @@ playwright-report/
 
 # reference files (source photos, old research, competitor HTML)
 _reference/
+
+# old codebase snapshot (reference only, not deployed)
+raygency.com-master/

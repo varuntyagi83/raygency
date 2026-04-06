@@ -3,52 +3,52 @@
 @tailwind utilities;
 
 :root {
-  /* ===== SAND PALETTE (Sunrise Robotics) ===== */
-  --sand-0: #ffffff;
-  --sand-10: #f8f7f7;
-  --sand-20: #ebebea;
-  --sand-30: #d8d6d4;
-  --sand-40: #b0adab;
-  --sand-50: #77736e;
-  --sand-60: #585450;
-  --sand-70: #3f3c39;
-  --sand-80: #2b2926;
-  --sand-90: #000000;
+  /* ===== RAYGENCY PALETTE ===== */
+  --bg:             #020810;
+  --ink:            #030509;
+  --cobalt:         #163AC4;
+  --sapphire:       #1060C0;
+  --teal:           #0D9BB0;
+  --teal-lt:        #18C0D9;
+  --copper:         #C4612A;
+  --copper-lt:      #E07840;
+  --copper-bright:  #F0A030;
+  --text:           #EAE8F4;
+  --text-dim:       rgba(234,232,244,0.50);
+  --text-mid:       rgba(234,232,244,0.75);
 
-  /* ===== PRIMARY ACCENT ===== */
-  --orange: #fa6147;
-  --orange-hover: #e04a32;
-  --orange-light: #ffbfa0;
-  /* Aliases for backward compatibility */
-  --coral: #fa6147;
-  --coral-hover: #e04a32;
-  --coral-light: #fee8e4;
-
-  /* ===== BACKGROUNDS ===== */
-  --light-gray: #e5e5df;     /* Main page background */
-  --mid-gray: #cacac4;       /* Gradient midtone */
-  --charcoal: #0e0e08;       /* Hero dark */
-  --dark-gray: #333328;
-  /* Aliases for backward compatibility */
-  --cream: #e5e5df;
-  --cream-soft: #f8f7f7;
-  --cream-white: #ffffff;
-  --hero-dark: #1e1b18;
-  --midnight: #1e1b18;
-  --midnight-light: #2b2723;
+  /* ===== LEGACY ALIASES ===== */
+  --orange: var(--copper-bright);
+  --orange-hover: var(--copper-lt);
+  --orange-light: var(--copper);
+  --coral: var(--copper-bright);
+  --coral-hover: var(--copper-lt);
+  --coral-light: var(--copper);
+  --light-gray: #0a0f1a;
+  --mid-gray: #0d1220;
+  --charcoal: var(--text);
+  --dark-gray: #141a2a;
+  --cream: rgba(13,155,176,0.15);
+  --cream-soft: var(--ink);
+  --cream-white: rgba(13,155,176,0.04);
+  --hero-dark: var(--bg);
+  --midnight: var(--bg);
+  --midnight-light: #0a0f1a;
+  --sand-80: var(--text);
+  --sand-50: var(--text-dim);
+  --stone: var(--text-dim);
 
   /* ===== TEXT ===== */
-  --text-primary: var(--sand-80);
-  --text-secondary: var(--sand-50);
-  --stone: #77736e;          /* Alias for sand-50 */
+  --text-primary: var(--text);
+  --text-secondary: var(--text-mid);
 
-  /* ===== SHADOWS (warm undertone) ===== */
-  --shadow-color: #2e2b29;
-  --shadow-sm: 0 1px 3px rgba(46, 43, 41, 0.08);
-  --shadow-md: 0 4px 8px rgba(46, 43, 41, 0.1);
-  --shadow-lg: 0 8px 16px rgba(46, 43, 41, 0.12);
-  --shadow-xl: 0 12px 24px rgba(46, 43, 41, 0.14);
-  --shadow-2xl: 0 20px 40px rgba(46, 43, 41, 0.18);
+  /* ===== SHADOWS (cool/neutral) ===== */
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.20);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.25);
+  --shadow-xl: 0 12px 24px rgba(0, 0, 0, 0.30);
+  --shadow-2xl: 0 20px 40px rgba(0, 0, 0, 0.35);
 
   /* ===== TIMING ===== */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -56,10 +56,6 @@
   --duration-fast: 150ms;
   --duration-normal: 300ms;
   --duration-slow: 500ms;
-
-  /* ===== SPECIAL ===== */
-  --slate: #545268;
-  --horizon: rgba(202, 202, 196, 0.25);
 }
 
 html {
@@ -67,8 +63,8 @@ html {
 }
 
 body {
-  color: var(--sand-80);
-  background: var(--light-gray);
+  color: var(--text);
+  background: var(--bg);
 }
 
 /* Respect reduced motion preferences */
@@ -80,39 +76,35 @@ body {
   }
 }
 
-/* Custom scrollbar for better aesthetics */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--light-gray);
+  background: var(--bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--sand-40);
+  background: rgba(13,155,176,0.3);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--sand-60);
+  background: rgba(13,155,176,0.5);
 }
 
 /* Page transition animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .page-enter {
   animation: fadeIn 0.3s ease-out forwards;
 }
 
-/* View Transitions API support for modern browsers */
+/* View Transitions API support */
 @view-transition {
   navigation: auto;
 }
@@ -159,9 +151,32 @@ body {
   }
 }
 
+/* ===== NOISE TEXTURE OVERLAY ===== */
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ===== CELLULAR PATTERN OVERLAY ===== */
+
+.cell-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at center, transparent 55%,
+      rgba(13,155,176,0.1) 55%, rgba(13,155,176,0.1) 57%, transparent 57%);
+  background-size: 72px 62px;
+  pointer-events: none;
+  opacity: 0.45;
+}
+
 /* ===== HOVER EFFECTS & MICRO-INTERACTIONS ===== */
 
-/* Card hover lift effect */
 .hover-lift {
   transition: transform var(--duration-normal) var(--ease-out-expo),
               box-shadow var(--duration-normal) var(--ease-out-expo);
@@ -171,7 +186,7 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
-/* Button hover/press effect */
+/* Button hover/press */
 .btn-hover {
   transition: background-color var(--duration-fast) ease,
               transform var(--duration-fast) ease;
@@ -181,6 +196,60 @@ body {
 }
 .btn-hover:active {
   transform: scale(0.98);
+}
+
+/* Brutalist button — copper fill + teal 3D shadow */
+.btn-brutal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--copper);
+  color: #fff;
+  border: 3px solid var(--copper);
+  padding: 15px 34px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  box-shadow: 6px 6px 0px var(--teal);
+  transition: all 0.12s ease-out;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-brutal:hover {
+  background: var(--copper-bright);
+  border-color: var(--copper-bright);
+  color: var(--ink);
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0px var(--teal);
+}
+
+/* Brutalist secondary — outline + teal shadow */
+.btn-brutal-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--text);
+  border: 3px solid rgba(234,232,244,0.55);
+  padding: 15px 34px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  box-shadow: 6px 6px 0px rgba(13,155,176,0.4);
+  transition: all 0.12s ease-out;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn-brutal-secondary:hover {
+  background: rgba(13,155,176,0.12);
+  border-color: var(--teal-lt);
+  color: var(--teal-lt);
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0px rgba(13,155,176,0.4);
 }
 
 /* Link underline animation */
@@ -201,10 +270,12 @@ body {
   width: 100%;
 }
 
-/* Respect reduced motion for hover effects */
+/* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .hover-lift,
   .btn-hover,
+  .btn-brutal,
+  .btn-brutal-secondary,
   .link-underline::after {
     transition: none;
   }
@@ -219,12 +290,11 @@ body {
 
 /* ===== GLASSMORPHISM UTILITIES ===== */
 
-/* Glass card effect */
 .glass-card {
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(13, 155, 176, 0.04);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(13, 155, 176, 0.15);
   border-radius: 1.5rem;
 }
 
@@ -233,16 +303,17 @@ body {
               border-color var(--duration-normal) ease;
 }
 .glass-card-hover:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(13, 155, 176, 0.08);
+  border-color: rgba(13, 155, 176, 0.25);
 }
 
-/* Gradient orbs for dark sections */
+/* Gradient orbs */
 .orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
+  filter: blur(100px);
   pointer-events: none;
+  mix-blend-mode: screen;
 }
 
 /* Floating glass shapes */
@@ -250,26 +321,32 @@ body {
   position: absolute;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(234, 232, 244, 0.03);
+  border: 1px solid rgba(13, 155, 176, 0.08);
   pointer-events: none;
 }
 
 /* Dark section text colors */
 .dark-section {
-  color: #E5E5DF;
+  color: var(--text);
 }
 .dark-section .text-muted {
-  color: #c4bfb8;
+  color: var(--text-mid);
 }
 .dark-section .text-subtle {
-  color: rgba(196, 191, 184, 0.6);
+  color: var(--text-dim);
+}
+
+/* ===== SECTION DIVIDERS ===== */
+/* Teal-to-copper gradient divider between sections */
+
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(13,155,176,0.18) 30%, rgba(196,97,42,0.14) 70%, transparent);
 }
 
 /* ===== SECTION TRANSITIONS ===== */
-/* Gradient blends between sections to avoid hard edges */
 
-/* Dark section fading into light section below */
 .transition-dark-to-light::after {
   content: '';
   position: absolute;
@@ -277,12 +354,11 @@ body {
   left: 0;
   right: 0;
   height: 120px;
-  background: linear-gradient(to bottom, transparent, var(--light-gray));
+  background: linear-gradient(to bottom, transparent, #0a0f1a);
   pointer-events: none;
   z-index: 1;
 }
 
-/* Light section fading into dark section below */
 .transition-light-to-dark::after {
   content: '';
   position: absolute;
@@ -290,12 +366,11 @@ body {
   left: 0;
   right: 0;
   height: 120px;
-  background: linear-gradient(to bottom, transparent, var(--midnight));
+  background: linear-gradient(to bottom, transparent, var(--bg));
   pointer-events: none;
   z-index: 1;
 }
 
-/* Dark section fading into coral section below */
 .transition-dark-to-coral::after {
   content: '';
   position: absolute;
@@ -303,12 +378,11 @@ body {
   left: 0;
   right: 0;
   height: 120px;
-  background: linear-gradient(to bottom, transparent, var(--orange));
+  background: linear-gradient(to bottom, transparent, var(--copper));
   pointer-events: none;
   z-index: 1;
 }
 
-/* Coral section fading into light section below */
 .transition-coral-to-light::after {
   content: '';
   position: absolute;
@@ -316,12 +390,11 @@ body {
   left: 0;
   right: 0;
   height: 120px;
-  background: linear-gradient(to bottom, transparent, var(--light-gray));
+  background: linear-gradient(to bottom, transparent, #0a0f1a);
   pointer-events: none;
   z-index: 1;
 }
 
-/* Coral section fading into cream section below */
 .transition-coral-to-cream::after {
   content: '';
   position: absolute;
@@ -329,12 +402,11 @@ body {
   left: 0;
   right: 0;
   height: 120px;
-  background: linear-gradient(to bottom, transparent, var(--cream));
+  background: linear-gradient(to bottom, transparent, var(--bg));
   pointer-events: none;
   z-index: 1;
 }
 
-/* Coral section fading into dark section below */
 .transition-coral-to-dark::after {
   content: '';
   position: absolute;
@@ -342,12 +414,11 @@ body {
   left: 0;
   right: 0;
   height: 120px;
-  background: linear-gradient(to bottom, transparent, var(--midnight));
+  background: linear-gradient(to bottom, transparent, var(--bg));
   pointer-events: none;
   z-index: 1;
 }
 
-/* Light section fading into coral section below */
 .transition-light-to-coral::after {
   content: '';
   position: absolute;
@@ -355,7 +426,102 @@ body {
   left: 0;
   right: 0;
   height: 120px;
-  background: linear-gradient(to bottom, transparent, var(--orange));
+  background: linear-gradient(to bottom, transparent, var(--copper));
   pointer-events: none;
   z-index: 1;
+}
+
+/* ===== BRUTALIST PRODUCT CARDS ===== */
+
+.brutal-card {
+  background: rgba(13,155,176,0.04);
+  border: 2px solid rgba(13,155,176,0.25);
+  padding: 40px 32px;
+  position: relative;
+  transition: transform 0.2s ease;
+  z-index: 2;
+}
+/* Brutalist offset shadow — copper */
+.brutal-card::after {
+  content: '';
+  position: absolute;
+  top: 8px; left: 8px; right: -10px; bottom: -10px;
+  border: 2px solid rgba(196,97,42,0.25);
+  z-index: -1;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+/* Teal-to-copper gradient top edge */
+.brutal-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal) 0%, var(--copper) 100%);
+}
+.brutal-card:hover {
+  transform: translate(-5px, -5px);
+}
+.brutal-card:hover::after {
+  transform: translate(5px, 5px);
+  border-color: rgba(196,97,42,0.45);
+}
+
+/* Card tag with glowing dot */
+.card-tag {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--teal);
+  box-shadow: 0 0 8px var(--teal);
+}
+
+/* Card price — copper gradient */
+.card-price {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+  background: linear-gradient(110deg, var(--copper-lt), var(--copper));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.card-price span {
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-text-fill-color: var(--text-dim);
+}
+
+/* Card trial line */
+.card-trial {
+  font-size: 11.5px;
+  color: var(--teal);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.card-trial::before { content: '✓'; font-size: 10px; }
+
+/* ===== GRADIENT TEXT UTILITY ===== */
+
+.text-gradient-teal-copper {
+  background: linear-gradient(110deg, var(--teal-lt) 0%, var(--teal) 40%, var(--copper-lt) 75%, var(--copper) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

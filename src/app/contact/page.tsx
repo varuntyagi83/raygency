@@ -1,9 +1,10 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import Link from 'next/link'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { Calendar, Mail, ArrowRight, CheckCircle } from 'lucide-react'
+import { ArrowRight, Mail, CheckCircle } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
@@ -71,84 +72,94 @@ export default function ContactPage() {
 
   return (
     <div ref={containerRef}>
-      {/* Hero — Dark Midnight */}
-      <section className="relative bg-midnight pt-24 pb-16 md:pt-32 md:pb-24 px-6 md:px-16 overflow-hidden transition-dark-to-light">
-        <Navigation variant="dark" />
+      <div className="noise-overlay" />
 
-        <div className="orb w-[350px] h-[350px] bg-[rgba(250,97,71,0.15)] top-[-60px] right-[-30px]" />
-        <div className="orb w-[250px] h-[250px] bg-[rgba(120,100,80,0.2)] bottom-[-40px] left-[10%]" />
+      {/* Hero — Dark */}
+      <section className="relative bg-[#020810] pt-24 pb-16 md:pt-32 md:pb-24 px-6 md:px-16 overflow-hidden transition-dark-to-light">
+        <Navigation />
+
+        <div className="orb w-[350px] h-[350px] bg-[rgba(240,160,48,0.15)] top-[-60px] right-[-30px]" />
+        <div className="orb w-[250px] h-[250px] bg-[rgba(22,58,196,0.2)] bottom-[-40px] left-[10%]" />
 
         <div className="relative z-10 max-w-6xl mx-auto">
           <div className="max-w-2xl">
-            <span className="text-xs font-medium tracking-widest uppercase text-[#d4d0ca]/60 fade-up">
+            <span className="text-xs font-medium tracking-widest uppercase text-[rgba(234,232,244,0.50)] fade-up">
               Contact
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mt-4 mb-6 text-[#E5E5DF] fade-up">
-              Let&apos;s talk about your AI & search strategy.
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mt-4 mb-6 text-[#EAE8F4] fade-up">
+              Two ways to get started.
             </h1>
-            <p className="text-lg md:text-xl text-[#d4d0ca] leading-relaxed fade-up">
-              Whether you want to audit your Answer Engine visibility, explore AEO
-              opportunities, or discuss a full AI brain implementation, we&apos;d
-              like to hear from you.
+            <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] leading-relaxed fade-up">
+              Try a product with a free trial. Or tell us about a custom build.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Options — Light */}
-      <section className="relative bg-light-gray py-16 md:py-24 px-6 md:px-16 transition-light-to-dark">
+      <div className="section-divider" />
+
+      {/* Two Paths — Dark alt */}
+      <section className="relative bg-[#0a0f1a] py-16 md:py-24 px-6 md:px-16 transition-light-to-dark">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16">
-            {/* Book a Call */}
+            {/* Path 1: Free Trial */}
             <div className="fade-up">
-              <div className="bg-orange rounded-2xl p-8 md:p-10 text-white h-full hover-lift">
-                <Calendar className="w-12 h-12 mb-6" />
+              <div className="bg-gradient-to-br from-copper to-copper-bright rounded-2xl p-8 md:p-10 text-white h-full hover-lift">
                 <h2 className="text-2xl md:text-3xl font-semibold mb-4">
-                  Book a Discovery Call
+                  Start a free trial
                 </h2>
-                <p className="text-white/90 text-lg leading-relaxed mb-8">
-                  30 minutes. No pitch deck. We&apos;ll look at your current AI search
-                  visibility and discuss what&apos;s possible for your company.
+                <p className="text-white/90 text-lg leading-relaxed mb-4">
+                  Pick a product. 7 days free, no credit card required.
+                  Kreashot is where most people start.
                 </p>
-                <a
-                  href="https://cal.com/raygency"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white text-orange hover:bg-white/90 px-8 py-4 rounded-full font-medium transition-colors btn-hover"
+                <ul className="space-y-3 text-white/90 mb-8">
+                  <li className="flex items-start gap-2">
+                    <span className="text-white font-medium mt-0.5">·</span>
+                    <span><strong>Kreashot</strong> — AI ad creative production. $150/month.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-white font-medium mt-0.5">·</span>
+                    <span><strong>Voltic</strong> — Meta ad intelligence. $100/month.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-white font-medium mt-0.5">·</span>
+                    <span><strong>GeoRaydar</strong> — AI brand visibility. $100/month.</span>
+                  </li>
+                </ul>
+                <Link
+                  href="/products/kreashot"
+                  className="inline-flex items-center gap-2 bg-white text-copper-bright hover:bg-white/90 px-8 py-4 rounded-full font-medium transition-colors btn-hover"
                 >
-                  Schedule Now
+                  Start free trial
                   <ArrowRight className="w-5 h-5" />
-                </a>
-                <p className="text-white/60 text-sm mt-6">
-                  Pick a time that works for you
-                </p>
+                </Link>
               </div>
             </div>
 
-            {/* Send a Message */}
+            {/* Path 2: Studio Inquiry */}
             <div className="fade-up">
-              <div className="bg-sand-0 rounded-2xl p-8 md:p-10 border border-sand-20 h-full hover-lift">
-                <Mail className="w-12 h-12 text-orange mb-6" />
-                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-sand-80">
-                  Send a Message
+              <div className="bg-[rgba(13,155,176,0.04)] rounded-2xl p-8 md:p-10 border border-[rgba(13,155,176,0.2)] h-full hover-lift">
+                <Mail className="w-12 h-12 text-teal-lt mb-6" />
+                <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-[#EAE8F4]">
+                  Studio inquiry
                 </h2>
-                <p className="text-sand-50 text-lg leading-relaxed mb-8">
-                  Not ready for a call? Tell us about your situation and we&apos;ll
-                  get back to you within 24 hours.
+                <p className="text-[rgba(234,232,244,0.55)] text-lg leading-relaxed mb-8">
+                  Need a custom AI build? Tell us what you&apos;re working on
+                  and we&apos;ll get back to you within 48 hours.
                 </p>
 
                 {isSubmitted ? (
                   <div className="flex flex-col items-center justify-center py-8 text-center">
-                    <CheckCircle className="w-16 h-16 text-orange mb-4" />
-                    <h3 className="text-xl font-medium text-sand-80 mb-2">
-                      Message Sent!
+                    <CheckCircle className="w-16 h-16 text-teal-lt mb-4" />
+                    <h3 className="text-xl font-medium text-[#EAE8F4] mb-2">
+                      Got it.
                     </h3>
-                    <p className="text-sand-50">
-                      Thanks for reaching out. We&apos;ll get back to you soon.
+                    <p className="text-[rgba(234,232,244,0.55)]">
+                      We&apos;ll review your message and respond within 48 hours.
                     </p>
                     <button
                       onClick={() => setIsSubmitted(false)}
-                      className="mt-6 text-orange hover:underline"
+                      className="mt-6 text-teal-lt hover:underline"
                     >
                       Send another message
                     </button>
@@ -158,9 +169,9 @@ export default function ContactPage() {
                     <div>
                       <label
                         htmlFor="name"
-                        className="block text-sm font-medium text-sand-80 mb-2"
+                        className="block text-sm font-medium text-[#EAE8F4] mb-2"
                       >
-                        Name <span className="text-orange">*</span>
+                        Name
                       </label>
                       <input
                         type="text"
@@ -169,7 +180,7 @@ export default function ContactPage() {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-sand-20 bg-white focus:outline-none focus:ring-2 focus:ring-orange/50 focus:border-orange transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-[rgba(13,155,176,0.2)] bg-[rgba(13,155,176,0.04)] text-[#EAE8F4] placeholder:text-[rgba(234,232,244,0.30)] focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
                         placeholder="Your name"
                       />
                     </div>
@@ -177,9 +188,9 @@ export default function ContactPage() {
                     <div>
                       <label
                         htmlFor="email"
-                        className="block text-sm font-medium text-sand-80 mb-2"
+                        className="block text-sm font-medium text-[#EAE8F4] mb-2"
                       >
-                        Email <span className="text-orange">*</span>
+                        Email
                       </label>
                       <input
                         type="email"
@@ -188,7 +199,7 @@ export default function ContactPage() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-sand-20 bg-white focus:outline-none focus:ring-2 focus:ring-orange/50 focus:border-orange transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-[rgba(13,155,176,0.2)] bg-[rgba(13,155,176,0.04)] text-[#EAE8F4] placeholder:text-[rgba(234,232,244,0.30)] focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors"
                         placeholder="you@example.com"
                       />
                     </div>
@@ -196,9 +207,9 @@ export default function ContactPage() {
                     <div>
                       <label
                         htmlFor="message"
-                        className="block text-sm font-medium text-sand-80 mb-2"
+                        className="block text-sm font-medium text-[#EAE8F4] mb-2"
                       >
-                        Message
+                        What do you need built?
                       </label>
                       <textarea
                         id="message"
@@ -206,8 +217,8 @@ export default function ContactPage() {
                         rows={4}
                         value={formData.message}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-lg border border-sand-20 bg-white focus:outline-none focus:ring-2 focus:ring-orange/50 focus:border-orange transition-colors resize-none"
-                        placeholder="Tell us about your company and what you're looking to achieve with AI and search strategy..."
+                        className="w-full px-4 py-3 rounded-xl border border-[rgba(13,155,176,0.2)] bg-[rgba(13,155,176,0.04)] text-[#EAE8F4] placeholder:text-[rgba(234,232,244,0.30)] focus:outline-none focus:ring-2 focus:ring-teal/30 focus:border-teal transition-colors resize-none"
+                        placeholder="A short description of what you need. We'll take it from there."
                       />
                     </div>
 
@@ -218,85 +229,15 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="w-full bg-orange hover:bg-orange-hover disabled:opacity-50 disabled:cursor-not-allowed text-white px-8 py-4 rounded-full font-medium transition-colors btn-hover"
+                      className="w-full bg-coral hover:bg-coral-hover disabled:opacity-50 disabled:cursor-not-allowed text-white px-8 py-4 rounded-full font-medium transition-colors btn-hover"
                     >
-                      {isSubmitting ? 'Sending...' : 'Send Message'}
+                      {isSubmitting ? 'Sending...' : 'Send inquiry'}
                     </button>
                   </form>
                 )}
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* What to Expect — Dark Midnight + Glass */}
-      <section className="relative bg-midnight py-16 md:py-24 px-6 md:px-16 overflow-hidden transition-dark-to-light">
-        <div className="orb w-[300px] h-[300px] bg-[rgba(120,100,80,0.12)] top-[-60px] left-[20%]" />
-        <div className="orb w-[200px] h-[200px] bg-[rgba(250,97,71,0.08)] bottom-[-40px] right-[15%]" />
-
-        <div className="relative z-10 max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-[#E5E5DF] fade-up">
-            What to Expect
-          </h2>
-
-          <div className="space-y-6">
-            <div className="glass-card glass-card-hover p-8 md:p-10 fade-up">
-              <h3 className="text-xl md:text-2xl font-medium mb-3 text-[#E5E5DF]">
-                On our discovery call
-              </h3>
-              <p className="text-lg text-[#d4d0ca] leading-relaxed">
-                We&apos;ll spend 30 minutes understanding your current AI search
-                visibility, your competitive landscape, and where AEO/GEO/SEO
-                strategy could create the biggest impact. No sales pitch. Just an
-                honest conversation about what&apos;s possible.
-              </p>
-            </div>
-
-            <div className="glass-card glass-card-hover p-8 md:p-10 fade-up">
-              <h3 className="text-xl md:text-2xl font-medium mb-3 text-[#E5E5DF]">
-                After our call
-              </h3>
-              <p className="text-lg text-[#d4d0ca] leading-relaxed">
-                If there&apos;s a good fit, we&apos;ll typically recommend starting with
-                an AI Search Audit ($15K, 4 weeks) to map your current state and
-                build a clear roadmap. If our services aren&apos;t the right solution,
-                we&apos;ll tell you that too.
-              </p>
-            </div>
-
-            <div className="glass-card glass-card-hover p-8 md:p-10 fade-up">
-              <h3 className="text-xl md:text-2xl font-medium mb-3 text-[#E5E5DF]">
-                No pressure
-              </h3>
-              <p className="text-lg text-[#d4d0ca] leading-relaxed">
-                We work with a maximum of 5 clients at a time to ensure quality.
-                If we&apos;re not the right fit or timing isn&apos;t right, we&apos;re
-                happy to point you toward other resources that might help.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA — Light */}
-      <section className="relative bg-light-gray py-24 md:py-32 px-6 md:px-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 text-sand-80 fade-up">
-            Ready to see where you stand in Answer Engines?
-          </h2>
-          <p className="text-lg md:text-xl text-sand-50 mb-10 fade-up">
-            30 minutes. No pitch deck. Just clarity on what&apos;s possible.
-          </p>
-          <a
-            href="https://cal.com/raygency"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-hover text-white px-10 py-5 rounded-full font-medium text-lg transition-colors btn-hover fade-up"
-          >
-            Book Your Discovery Call
-            <ArrowRight className="w-5 h-5" />
-          </a>
         </div>
       </section>
 
