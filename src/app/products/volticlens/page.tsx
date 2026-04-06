@@ -62,7 +62,7 @@ export default function VolticlensPage() {
             See every ad your competitors run on Meta. In real time.
           </h1>
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] max-w-3xl mb-4 leading-relaxed">
-            Know exactly what your competitors are testing on Meta — creative, copy, targeting signals, launch dates. Volticlens gives you real-time intelligence so you can move faster than they do.
+            Know exactly what your competitors are testing on Meta: creative, copy, targeting signals, launch dates. Volticlens gives you real-time intelligence so you can move faster than they do.
           </p>
           <p className="text-2xl font-semibold text-copper-bright mb-8">
             $100<span className="text-base font-normal text-[rgba(234,232,244,0.75)]">/month</span>
@@ -73,7 +73,7 @@ export default function VolticlensPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-coral hover:bg-coral-hover text-white px-10 py-5 rounded-full font-medium text-lg transition-colors btn-hover"
           >
-            Start free trial — 7 days, no credit card
+            Start free trial. 7 days, no credit card.
           </a>
         </div>
       </section>
@@ -119,6 +119,21 @@ export default function VolticlensPage() {
               <span className="text-base text-[rgba(234,232,244,0.75)]">Identify winning creative patterns before spending to test</span>
             </li>
           </ul>
+          <table className="w-full mt-8 border-collapse text-sm fade-up">
+            <thead>
+              <tr className="border-b border-[rgba(13,155,176,0.2)]">
+                <th className="text-left py-3 pr-6 font-semibold text-[#EAE8F4]">Feature</th>
+                <th className="text-left py-3 font-semibold text-[#EAE8F4]">Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Price</td><td className="py-2.5 text-[#EAE8F4] font-medium">$100/month · annual plan 20% off</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Free Trial</td><td className="py-2.5 text-[#EAE8F4] font-medium">7 days · no credit card required</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Data Source</td><td className="py-2.5 text-[#EAE8F4] font-medium">Meta Ad Library, real-time</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Coverage</td><td className="py-2.5 text-[#EAE8F4] font-medium">All active competitor ads on Meta</td></tr>
+              <tr><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Tracking</td><td className="py-2.5 text-[#EAE8F4] font-medium">Multiple competitors from one dashboard</td></tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -156,7 +171,7 @@ export default function VolticlensPage() {
                 See every competitor ad
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Volticlens surfaces all active competitor ads on Meta — creative, copy, targeting signals, and launch dates updated in real time.
+                Volticlens surfaces all active competitor ads on Meta: creative, copy, targeting signals, and launch dates, updated in real time.
               </p>
             </div>
 
@@ -194,7 +209,7 @@ export default function VolticlensPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-coral hover:bg-coral-hover text-white px-10 py-5 rounded-full font-medium text-lg transition-colors fade-up btn-hover"
           >
-            Start free trial — 7 days, no credit card
+            Start free trial. 7 days, no credit card.
           </a>
         </div>
       </section>
@@ -216,28 +231,28 @@ export default function VolticlensPage() {
             <div className="fade-up">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is Volticlens?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Volticlens is a real-time Meta competitor ad intelligence tool. It shows you every ad your competitors are running on Meta — creative, copy, targeting signals, and launch dates — so you can understand what&apos;s working in your category and move faster than the competition.
+                Volticlens is a real-time Meta competitor ad intelligence tool. It shows you every ad your competitors are running on Meta: creative, copy, targeting signals, and launch dates. So you can understand what&apos;s working in your category and move faster than the competition.
               </p>
             </div>
 
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Which platforms does Volticlens monitor?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Volticlens monitors the Meta advertising ecosystem — Facebook and Instagram ads across Feed, Stories, and Reels placements. It tracks active competitor ads in real time so you always have a current view of what is running in your space.
+                Volticlens monitors the Meta ad network: Facebook and Instagram ads across Feed, Stories, and Reels placements. It tracks active competitor ads in real time so you always have a current view of what is running in your space.
               </p>
             </div>
 
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How often is competitor ad data updated?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Volticlens provides real-time competitor ad data. New competitor ads are surfaced as soon as they go live, and paused or stopped ads are flagged immediately — giving you an accurate, up-to-date view of what each competitor is actively spending on.
+                Volticlens provides real-time competitor ad data. New competitor ads are surfaced as soon as they go live, and paused or stopped ads are flagged immediately. You always have an accurate, up-to-date view of what each competitor is actively spending on.
               </p>
             </div>
 
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How much does Volticlens cost?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Volticlens costs $100/month with a 7-day free trial included — no credit card required. An annual plan is available at 20% off with pricing locked for life.
+                Volticlens costs $100/month with a 7-day free trial included. No credit card required. An annual plan is available at 20% off with pricing locked for life.
               </p>
             </div>
           </div>

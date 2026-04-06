@@ -23,7 +23,7 @@ const productSchema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
   name: 'LintVibe',
-  description: 'AI-powered code quality and security scanner. Find bugs, vulnerabilities, and production risks with prioritized fixes.',
+  description: 'AI code quality and security scanner. Find bugs, vulnerabilities, and production risks with prioritized fixes.',
   applicationCategory: 'DeveloperApplication',
   url: 'https://www.lintvibe.com',
   offers: [
@@ -55,7 +55,7 @@ const howToSchema = {
   name: 'How to scan your codebase for bugs and security issues with LintVibe',
   description: 'Find and fix bugs, security vulnerabilities, and production issues in three steps using LintVibe.',
   step: [
-    { '@type': 'HowToStep', position: 1, name: 'Connect your codebase', text: 'Link your GitHub repository or upload your code directly. LintVibe scans everything — no manual configuration required.' },
+    { '@type': 'HowToStep', position: 1, name: 'Connect your codebase', text: 'Link your GitHub repository or upload your code directly. LintVibe scans everything with no manual configuration required.' },
     { '@type': 'HowToStep', position: 2, name: 'AI finds bugs and threats', text: 'LintVibe detects bugs, security vulnerabilities (SQL injection, XSS, exposed secrets), and production risks, prioritized by severity.' },
     { '@type': 'HowToStep', position: 3, name: 'Fix and ship', text: 'Receive actionable fixes for every issue. Resolve them, rescan, and ship knowing your code is production-ready.' },
   ],
@@ -73,7 +73,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How do I connect my codebase to LintVibe?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Link your GitHub repository or upload your code directly to LintVibe. No manual setup or configuration is required — LintVibe scans everything automatically.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Link your GitHub repository or upload your code directly to LintVibe. No manual setup or configuration is required. LintVibe scans everything automatically.' },
     },
     {
       '@type': 'Question',
@@ -83,7 +83,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How much does LintVibe cost?',
-      acceptedAnswer: { '@type': 'Answer', text: 'LintVibe costs $40/month or $400/year — the annual plan saves 2 months compared to monthly billing. Cancel anytime.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'LintVibe costs $40/month or $400/year. The annual plan saves 2 months compared to monthly billing. Cancel anytime.' },
     },
   ],
 }

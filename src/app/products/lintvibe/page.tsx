@@ -63,7 +63,7 @@ export default function LintVibePage() {
           </h1>
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] max-w-3xl mb-4 leading-relaxed">
             LintVibe scans your codebase for bugs, security vulnerabilities, and
-            production issues. Get a prioritized report with fixes — so your app
+            production issues. Get a prioritized report with fixes so your app
             is hack-proof, stable, and ready to ship.
           </p>
           <p className="text-2xl font-semibold text-copper-bright mb-8">
@@ -93,7 +93,7 @@ export default function LintVibePage() {
           </h2>
           <div className="max-w-3xl space-y-4 fade-up">
             <p className="text-base md:text-lg text-[rgba(234,232,244,0.55)] leading-relaxed">
-              You moved fast. You built something real with AI coding assistants. But now you&apos;re launching to real users and you need to know: what&apos;s broken, what&apos;s exploitable, what&apos;s going to cause an incident at 2am. LintVibe tells you — before your users do.
+              You moved fast. You built something real with AI coding assistants. But now you&apos;re launching to real users and you need to know: what&apos;s broken, what&apos;s exploitable, what&apos;s going to cause an incident at 2am. LintVibe tells you before your users do.
             </p>
             <p className="text-base md:text-lg text-[#EAE8F4] font-medium">
               Bugs found. Security fixed. Production ready.
@@ -110,17 +110,32 @@ export default function LintVibePage() {
             </li>
             <li className="flex items-start gap-3">
               <span className="text-teal-lt font-medium mt-0.5">→</span>
-              <span className="text-base text-[rgba(234,232,244,0.75)]">Issues prioritized by severity — fix critical problems first</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Issues prioritized by severity. Fix critical problems first.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-teal-lt font-medium mt-0.5">→</span>
-              <span className="text-base text-[rgba(234,232,244,0.75)]">Works with any codebase — GitHub connect or direct upload</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Works with any codebase. GitHub connect or direct upload.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-teal-lt font-medium mt-0.5">→</span>
               <span className="text-base text-[rgba(234,232,244,0.75)]">Actionable fix recommendations, not just issue reports</span>
             </li>
           </ul>
+          <table className="w-full mt-8 border-collapse text-sm fade-up">
+            <thead>
+              <tr className="border-b border-[rgba(13,155,176,0.2)]">
+                <th className="text-left py-3 pr-6 font-semibold text-[#EAE8F4]">Feature</th>
+                <th className="text-left py-3 font-semibold text-[#EAE8F4]">Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Price</td><td className="py-2.5 text-[#EAE8F4] font-medium">$40/month or $400/year</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Free Trial</td><td className="py-2.5 text-[#EAE8F4] font-medium">Free initial scan. No credit card required.</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Input</td><td className="py-2.5 text-[#EAE8F4] font-medium">GitHub connect or direct upload</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Scan Types</td><td className="py-2.5 text-[#EAE8F4] font-medium">Bugs, security vulnerabilities, performance issues</td></tr>
+              <tr><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Output</td><td className="py-2.5 text-[#EAE8F4] font-medium">Prioritized issues with fix recommendations</td></tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -147,7 +162,7 @@ export default function LintVibePage() {
                 Connect your codebase
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Link your GitHub repo or upload your code. LintVibe scans everything — no configuration or setup required.
+                Link your GitHub repo or upload your code. LintVibe scans everything. No configuration or setup required.
               </p>
             </div>
 
@@ -158,7 +173,7 @@ export default function LintVibePage() {
                 AI finds bugs and threats
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                LintVibe detects bugs, security vulnerabilities, and production risks — each one prioritized by severity so you know what to fix first.
+                LintVibe detects bugs, security vulnerabilities, and production risks. Each one is prioritized by severity so you know what to fix first.
               </p>
             </div>
 
@@ -201,7 +216,7 @@ export default function LintVibePage() {
             <div className="glass-card p-8 text-left border-[rgba(196,97,42,0.4)]">
               <p className="text-xs font-semibold uppercase tracking-widest text-copper-bright mb-3">Annual · Best Value</p>
               <div className="text-4xl font-semibold text-copper-bright mb-1">$400<span className="text-base font-normal text-[rgba(234,232,244,0.55)]">/year</span></div>
-              <p className="text-sm text-teal-lt mb-6">Save $80 — 2 months free</p>
+              <p className="text-sm text-teal-lt mb-6">Save $80. 2 months free.</p>
               <a
                 href="https://www.lintvibe.com"
                 target="_blank"
@@ -239,21 +254,21 @@ export default function LintVibePage() {
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is vibe coding and why does it need scanning?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Vibe coding means building apps quickly using AI coding assistants like Cursor or GitHub Copilot. The speed is real, but AI-generated code often contains security holes, unhandled edge cases, and production issues that are invisible until they fail in front of real users. LintVibe catches these before launch — not after.
+                Vibe coding means building apps quickly using AI coding assistants like Cursor or GitHub Copilot. The speed is real, but AI-generated code often contains security holes, unhandled edge cases, and production issues that are invisible until they fail in front of real users. LintVibe catches these before launch, not after.
               </p>
             </div>
 
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How do I connect my codebase to LintVibe?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Link your GitHub repository or upload your code directly to LintVibe. No manual setup or configuration is required — LintVibe scans your entire codebase automatically and returns a prioritized issue report.
+                Link your GitHub repository or upload your code directly to LintVibe. No manual setup or configuration is required. LintVibe scans your entire codebase automatically and returns a prioritized issue report.
               </p>
             </div>
 
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How much does LintVibe cost?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                LintVibe costs $40/month or $400/year — the annual plan saves 2 months compared to monthly billing. Cancel anytime.
+                LintVibe costs $40/month or $400/year. The annual plan saves 2 months compared to monthly billing. Cancel anytime.
               </p>
             </div>
           </div>
@@ -273,7 +288,7 @@ export default function LintVibePage() {
                   More tools built by Raygency.
                 </h3>
                 <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                  Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard — all built for practitioners who need results.
+                  Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard. All built for practitioners who need results.
                 </p>
               </div>
               <Link

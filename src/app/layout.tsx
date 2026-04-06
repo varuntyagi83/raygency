@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Raygency',
     title: 'Raygency | AI that ships.',
-    description: 'AI-powered tools for performance marketers. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard — built by practitioners, shipped in production.',
+    description: 'AI tools for performance marketers. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard. Built by practitioners, shipped in production.',
     url: 'https://www.raygency.com',
     images: [{ url: '/logo.png', width: 512, height: 512, alt: 'Raygency' }],
   },
   twitter: {
     card: 'summary',
     title: 'Raygency | AI that ships.',
-    description: 'AI-powered tools for performance marketers. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard — built by practitioners.',
+    description: 'AI tools for performance marketers. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard. Built by practitioners.',
     images: ['/logo.png'],
   },
 }
@@ -41,7 +41,7 @@ const organizationSchema = {
   name: 'Raygency',
   url: 'https://www.raygency.com',
   logo: 'https://www.raygency.com/logo.png',
-  description: 'AI-powered SaaS tools for performance marketers, DTC brands, and compliance teams. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe.',
+  description: 'AI tools for performance marketers, DTC brands, and compliance teams. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe.',
   sameAs: ['https://www.raygency.com'],
   contactPoint: {
     '@type': 'ContactPoint',

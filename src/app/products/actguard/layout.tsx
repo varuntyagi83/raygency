@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'ActGuard: EU AI Act Compliance Documentation | Raygency',
-  description: 'From AI system description to audit-ready EU AI Act docs in minutes. Classify risk tier, generate compliance package. Free to start — 1 AI system included.',
+  description: 'From AI system description to audit-ready EU AI Act docs in minutes. Classify risk tier, generate compliance package. Free to start. 1 AI system included.',
   alternates: { canonical: 'https://www.raygency.com/products/actguard' },
   openGraph: {
     title: 'ActGuard: EU AI Act Compliance Documentation | Raygency',
@@ -45,7 +45,7 @@ const howToSchema = {
   step: [
     { '@type': 'HowToStep', position: 1, name: 'Describe your AI system', text: 'Tell ActGuard what your AI system does, who it affects, and how it makes decisions.' },
     { '@type': 'HowToStep', position: 2, name: 'AI classifies your risk tier', text: 'ActGuard applies EU AI Act criteria to classify your system as minimal, limited, high, or unacceptable risk.' },
-    { '@type': 'HowToStep', position: 3, name: 'Download your compliance package', text: 'Receive full audit-ready documentation generated instantly — ready for regulators, auditors, and legal review.' },
+    { '@type': 'HowToStep', position: 3, name: 'Download your compliance package', text: 'Receive full audit-ready documentation generated instantly, ready for regulators, auditors, and legal review.' },
   ],
 }
 
@@ -56,22 +56,22 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'What is the EU AI Act?',
-      acceptedAnswer: { '@type': 'Answer', text: 'The EU AI Act is a regulation that classifies AI systems by risk tier — minimal, limited, high, and unacceptable risk — and requires organizations to produce compliance documentation for each system they deploy in the EU.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'The EU AI Act is a regulation that classifies AI systems by risk tier: minimal, limited, high, and unacceptable risk. Organizations must produce compliance documentation for each system they deploy in the EU.' },
     },
     {
       '@type': 'Question',
       name: 'How does ActGuard generate compliance documentation?',
-      acceptedAnswer: { '@type': 'Answer', text: 'You describe your AI system — what it does, who it affects, and how it makes decisions. ActGuard applies EU AI Act criteria to classify your risk tier, then generates a full audit-ready compliance package instantly.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'You describe your AI system: what it does, who it affects, and how it makes decisions. ActGuard applies EU AI Act criteria to classify your risk tier, then generates a full audit-ready compliance package instantly.' },
     },
     {
       '@type': 'Question',
       name: 'What does ActGuard\'s compliance package include?',
-      acceptedAnswer: { '@type': 'Answer', text: 'ActGuard generates a complete EU AI Act compliance package including risk tier classification, technical documentation, conformity assessment records, and transparency disclosures — all formatted for regulatory audit.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'ActGuard generates a complete EU AI Act compliance package including risk tier classification, technical documentation, conformity assessment records, and transparency disclosures. All outputs are formatted for regulatory audit.' },
     },
     {
       '@type': 'Question',
       name: 'Is ActGuard free to use?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Yes. ActGuard is free to start — 1 AI system is documented at no cost. Additional AI systems require a subscription. No credit card required to get started.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. ActGuard is free to start. 1 AI system is documented at no cost. Additional AI systems require a subscription. No credit card required to get started.' },
     },
   ],
 }

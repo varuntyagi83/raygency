@@ -62,7 +62,7 @@ export default function RayprofitPage() {
             Know exactly where every ad dollar works. Cut the rest.
           </h1>
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] max-w-3xl mb-4 leading-relaxed">
-            Maximize your ad ROI with AI-powered budget optimization. Rayprofit shows you which campaigns are profitable, which are wasting spend, and exactly where to reallocate for maximum return — across Meta, Google, and more.
+            Maximize your ad ROI with AI budget optimization. Rayprofit shows you which campaigns are profitable, which are wasting spend, and exactly where to reallocate for maximum return. Works across Meta, Google, and more.
           </p>
           <p className="text-2xl font-semibold text-copper-bright mb-8">
             $200<span className="text-base font-normal text-[rgba(234,232,244,0.75)]">/month</span>
@@ -73,7 +73,7 @@ export default function RayprofitPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-coral hover:bg-coral-hover text-white px-10 py-5 rounded-full font-medium text-lg transition-colors btn-hover"
           >
-            Start free trial — 7 days, no credit card
+            Start free trial. 7 days, no credit card.
           </a>
         </div>
       </section>
@@ -119,6 +119,21 @@ export default function RayprofitPage() {
               <span className="text-base text-[rgba(234,232,244,0.75)]">Real-time alerts when campaigns shift from profitable to losing</span>
             </li>
           </ul>
+          <table className="w-full mt-8 border-collapse text-sm fade-up">
+            <thead>
+              <tr className="border-b border-[rgba(13,155,176,0.2)]">
+                <th className="text-left py-3 pr-6 font-semibold text-[#EAE8F4]">Feature</th>
+                <th className="text-left py-3 font-semibold text-[#EAE8F4]">Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Price</td><td className="py-2.5 text-[#EAE8F4] font-medium">$200/month · annual plan 20% off</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Free Trial</td><td className="py-2.5 text-[#EAE8F4] font-medium">7 days · no credit card required</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Ad Platforms</td><td className="py-2.5 text-[#EAE8F4] font-medium">Meta, Google, and more</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Analysis</td><td className="py-2.5 text-[#EAE8F4] font-medium">AI profitability score per campaign and ad set</td></tr>
+              <tr><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Alerts</td><td className="py-2.5 text-[#EAE8F4] font-medium">Real-time when campaigns turn unprofitable</td></tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -145,7 +160,7 @@ export default function RayprofitPage() {
                 Connect your ad accounts
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Link Meta, Google, and other platforms. Rayprofit pulls your spend and performance data automatically — no manual exports.
+                Link Meta, Google, and other platforms. Rayprofit pulls your spend and performance data automatically. No manual exports.
               </p>
             </div>
 
@@ -167,7 +182,7 @@ export default function RayprofitPage() {
                 Reallocate with confidence
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Act on AI-powered recommendations to shift budget to profitable campaigns and cut what is not delivering return.
+                Act on data-driven recommendations to shift budget to profitable campaigns and cut what is not delivering return.
               </p>
             </div>
           </div>
@@ -194,7 +209,7 @@ export default function RayprofitPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-coral hover:bg-coral-hover text-white px-10 py-5 rounded-full font-medium text-lg transition-colors fade-up btn-hover"
           >
-            Start free trial — 7 days, no credit card
+            Start free trial. 7 days, no credit card.
           </a>
         </div>
       </section>
@@ -216,7 +231,7 @@ export default function RayprofitPage() {
             <div className="fade-up">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is Rayprofit?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Rayprofit is an AI-powered ad ROI optimization platform. It connects to your ad accounts across Meta and Google, scores every campaign by profitability, and tells you exactly where to reallocate budget to maximize return on ad spend — replacing guesswork with data-backed decisions.
+                Rayprofit is an ad ROI optimization platform built on AI. It connects to your ad accounts across Meta and Google, scores every campaign by profitability, and tells you exactly where to reallocate budget to maximize return on ad spend. No guesswork.
               </p>
             </div>
 
@@ -230,14 +245,14 @@ export default function RayprofitPage() {
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How does Rayprofit improve ad ROI?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Rayprofit uses AI to score every campaign and ad set by profitability in real time. It identifies which spend is generating return and which is wasted, then provides specific reallocation recommendations — so you stop guessing and start acting on data immediately.
+                Rayprofit uses AI to score every campaign and ad set by profitability in real time. It identifies which spend is generating return and which is wasted, then provides specific reallocation recommendations. Stop guessing and start acting on data.
               </p>
             </div>
 
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How much does Rayprofit cost?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Rayprofit costs $200/month with a 7-day free trial — no credit card required. An annual plan is available at 20% off with pricing locked for life.
+                Rayprofit costs $200/month with a 7-day free trial. No credit card required. An annual plan is available at 20% off with pricing locked for life.
               </p>
             </div>
           </div>

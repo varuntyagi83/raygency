@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Studio – Custom AI Builds and Automations',
-  description: 'Raygency Studio builds custom AI products, automations, and data tools. Project-based. Scoped tight. Shipped in production. Not generic dev — AI products.',
+  description: 'Raygency Studio builds custom AI products, automations, and data tools. Project-based. Scoped tight. Shipped in production. Not generic dev. AI products.',
   alternates: { canonical: 'https://www.raygency.com/studio' },
   openGraph: {
     title: 'Raygency Studio – Custom AI Builds and Automations',
-    description: 'Custom AI automations, workflows, and tools built for your specific problem. Not a product — a build.',
+    description: 'Custom AI automations, workflows, and tools built for your specific problem. Not a product. A build.',
     url: 'https://www.raygency.com/studio',
     type: 'website',
     images: [{ url: '/logo.png', width: 512, height: 512, alt: 'Raygency Studio' }],
@@ -35,13 +35,13 @@ const howToSchema = {
       '@type': 'HowToStep',
       position: 2,
       name: 'Scoping call',
-      text: 'Raygency discusses feasibility, timeline, and cost. No surprises — everything is agreed upfront.',
+      text: 'Raygency discusses feasibility, timeline, and cost. No surprises. Everything is agreed upfront.',
     },
     {
       '@type': 'HowToStep',
       position: 3,
       name: 'Build phase',
-      text: 'Raygency builds the product with visible progress throughout. No black box — you see the work as it happens.',
+      text: 'Raygency builds the product with visible progress throughout. No black box. You see the work as it happens.',
     },
     {
       '@type': 'HowToStep',
@@ -61,7 +61,7 @@ const faqSchema = {
       name: 'What is Raygency Studio?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Raygency Studio is the custom build arm of Raygency. It builds AI products, automation systems, and data tools for teams that need something specific to their use case — not an off-the-shelf subscription.',
+        text: 'Raygency Studio is the custom build arm of Raygency. It builds AI products, automation systems, and data tools for teams that need something specific to their use case. Not an off-the-shelf subscription.',
       },
     },
     {
@@ -69,7 +69,7 @@ const faqSchema = {
       name: 'What kind of projects does Raygency Studio take on?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Raygency Studio builds marketing tools, AI automation workflows, and data products. This includes creative automation systems, campaign intelligence tools, n8n or similar workflow automation, dashboards, and internal AI tools. Raygency does not do generic app development — only AI products.',
+        text: 'Raygency Studio builds marketing tools, AI automation workflows, and data products. This includes creative automation systems, campaign intelligence tools, n8n or similar workflow automation, dashboards, and internal AI tools. Raygency does not do generic app development. Only AI products.',
       },
     },
     {
@@ -85,7 +85,7 @@ const faqSchema = {
       name: 'How long does a Raygency Studio project take?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Timeline varies by scope. Raygency is a small team that builds everything themselves, which means projects move in weeks rather than months — but capacity is limited. If a project cannot be given the attention it needs, Raygency will say so upfront.',
+        text: 'Timeline varies by scope. Raygency is a small team that builds everything themselves, which means projects move in weeks rather than months. Capacity is limited. If a project cannot be given the attention it needs, Raygency will say so upfront.',
       },
     },
   ],

@@ -1,20 +1,20 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Rayprofit: AI-Powered Ad ROI Optimization Tool | Raygency',
+  title: 'Rayprofit: Ad ROI Optimization Tool | Raygency',
   description: 'Know exactly where every ad dollar works and cut the rest. AI budget optimization for DTC brands and media buyers. 7-day free trial, no credit card.',
   alternates: { canonical: 'https://www.raygency.com/products/rayprofit' },
   openGraph: {
-    title: 'Rayprofit: AI-Powered Ad ROI Optimization Tool | Raygency',
-    description: 'Maximize ad ROI with AI-powered budget optimization. Know which campaigns are profitable and where to reallocate.',
+    title: 'Rayprofit: Ad ROI Optimization Tool | Raygency',
+    description: 'Maximize ad ROI with AI budget optimization. Know which campaigns are profitable and where to reallocate.',
     url: 'https://www.raygency.com/products/rayprofit',
     type: 'website',
     images: [{ url: '/logo.png', width: 512, height: 512, alt: 'Rayprofit by Raygency' }],
   },
   twitter: {
     card: 'summary',
-    title: 'Rayprofit: AI Ad ROI Optimization | Raygency',
-    description: 'Know exactly where every ad dollar works. AI-powered budget optimization.',
+    title: 'Rayprofit: Ad ROI Optimization | Raygency',
+    description: 'Know exactly where every ad dollar works. AI budget optimization.',
     images: ['/logo.png'],
   },
 }
@@ -23,7 +23,7 @@ const productSchema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
   name: 'Rayprofit',
-  description: 'AI-powered ad ROI optimization. Maximize your ad spend by knowing exactly which campaigns are profitable.',
+  description: 'Ad ROI optimization built on AI. Maximize your ad spend by knowing exactly which campaigns are profitable.',
   applicationCategory: 'BusinessApplication',
   url: 'https://www.rayprofit.com/overview',
   offers: {
@@ -45,7 +45,7 @@ const howToSchema = {
   step: [
     { '@type': 'HowToStep', position: 1, name: 'Connect your ad accounts', text: 'Link Meta, Google, and other ad platforms to Rayprofit. It pulls your spend and performance data automatically.' },
     { '@type': 'HowToStep', position: 2, name: 'AI surfaces what\'s working', text: 'Rayprofit scores each campaign by profitability and flags exactly where budget is being wasted across your account.' },
-    { '@type': 'HowToStep', position: 3, name: 'Reallocate with confidence', text: 'Act on AI-powered recommendations to shift budget to profitable campaigns and cut what is not delivering return.' },
+    { '@type': 'HowToStep', position: 3, name: 'Reallocate with confidence', text: 'Act on data-driven recommendations to shift budget to profitable campaigns and cut what is not delivering return.' },
   ],
 }
 
@@ -56,7 +56,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'What is Rayprofit?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Rayprofit is an AI-powered ad ROI optimization platform. It connects to your ad accounts, scores each campaign by profitability, and tells you exactly where to reallocate budget to maximize return on ad spend.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Rayprofit is an ad ROI optimization platform built on AI. It connects to your ad accounts, scores each campaign by profitability, and tells you exactly where to reallocate budget to maximize return on ad spend.' },
     },
     {
       '@type': 'Question',
@@ -66,12 +66,12 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How does Rayprofit improve ad ROI?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Rayprofit uses AI to score every campaign and ad set by profitability. It identifies which spend is generating return, which is wasted, and provides specific recommendations for reallocation — so you stop guessing and start acting on data.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Rayprofit uses AI to score every campaign and ad set by profitability. It identifies which spend is generating return, which is wasted, and provides specific recommendations for reallocation. Stop guessing and start acting on data.' },
     },
     {
       '@type': 'Question',
       name: 'How much does Rayprofit cost?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Rayprofit costs $200/month with a 7-day free trial — no credit card required. An annual plan is available at 20% off with pricing locked for life.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Rayprofit costs $200/month with a 7-day free trial. No credit card required. An annual plan is available at 20% off with pricing locked for life.' },
     },
   ],
 }

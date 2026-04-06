@@ -283,7 +283,7 @@ export default function StudioPage() {
             <div className="fade-up">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is Raygency Studio?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Raygency Studio is the custom build arm of Raygency. It builds AI products, automation systems, and data tools for teams that need something specific to their use case — not an off-the-shelf subscription. If your problem doesn&apos;t fit an existing product, Studio builds it.
+                Raygency Studio is the custom build arm of Raygency. It builds AI products, automation systems, and data tools for teams that need something specific to their use case. Not an off-the-shelf subscription. If your problem doesn&apos;t fit an existing product, Studio builds it.
               </p>
             </div>
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
@@ -292,10 +292,23 @@ export default function StudioPage() {
                 Studio builds in three areas:
               </p>
               <ul className="mt-4 space-y-2 text-base text-[rgba(234,232,244,0.75)]">
-                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Marketing tools</strong> — Creative automation, campaign intelligence, audience tools built for teams running real ad spend</span></li>
-                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">AI automation</strong> — Workflows, agents, and data pipelines that do the work so your team doesn&apos;t have to</span></li>
-                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Data products</strong> — Dashboards, intelligence platforms, and monitoring systems that turn raw data into decisions</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Marketing tools</strong>: Creative automation, campaign intelligence, audience tools built for teams running real ad spend</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">AI automation</strong>: Workflows, agents, and data pipelines that do the work so your team doesn&apos;t have to</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Data products</strong>: Dashboards, intelligence platforms, and monitoring systems that turn raw data into decisions</span></li>
               </ul>
+              <table className="w-full mt-6 border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-[rgba(13,155,176,0.2)]">
+                    <th className="text-left py-3 pr-6 font-semibold text-[#EAE8F4]">Build Type</th>
+                    <th className="text-left py-3 font-semibold text-[#EAE8F4]">What it includes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Marketing tools</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">Creative automation, campaign intelligence, audience tools for teams running real ad spend</td></tr>
+                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">AI automation</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">Workflows, agents, and data pipelines that automate high-volume tasks</td></tr>
+                  <tr><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Data products</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">Dashboards, intelligence platforms, and monitoring systems for data-driven decisions</td></tr>
+                </tbody>
+              </table>
             </div>
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How does the Raygency Studio build process work?</h3>
@@ -306,7 +319,7 @@ export default function StudioPage() {
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How long does a Raygency Studio project take?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Timeline varies by scope. Raygency is a small team that builds everything themselves, which means projects move in weeks rather than months. Capacity is limited — if a project can&apos;t be given the attention it needs, Raygency will say so upfront.
+                Timeline varies by scope. Raygency is a small team that builds everything themselves, which means projects move in weeks rather than months. Capacity is limited. If a project can&apos;t be given the attention it needs, Raygency will say so upfront.
               </p>
             </div>
           </div>

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
     title: 'Contact Raygency',
-    description: 'Questions about our AI tools? Reach out — we respond within 48 hours.',
+    description: 'Questions about our AI tools? Reach out. We respond within 48 hours.',
     images: ['/logo.png'],
   },
 }
@@ -23,7 +23,7 @@ const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
   name: 'How to get started with Raygency',
-  description: 'Two ways to get started with Raygency — free trial or studio inquiry.',
+  description: 'Two ways to get started with Raygency: free trial or studio inquiry.',
   step: [
     {
       '@type': 'HowToStep',
@@ -35,7 +35,7 @@ const howToSchema = {
       '@type': 'HowToStep',
       position: 2,
       name: 'Start a free trial',
-      text: 'Visit any product page — Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, or LintVibe — and start your free trial in minutes.',
+      text: 'Visit any product page: Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, or LintVibe. Start your free trial in minutes.',
     },
     {
       '@type': 'HowToStep',
@@ -63,7 +63,7 @@ const faqSchema = {
       name: 'What products does Raygency offer?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Raygency builds six AI-powered tools: Kreashot (ad creative generation), Volticlens (Meta competitor ad intelligence), GeoRaydar (AI search brand visibility), Rayprofit (ad ROI optimization), ActGuard (EU AI Act compliance), and LintVibe (code quality and security scanning).',
+        text: 'Raygency builds six AI tools: Kreashot (ad creative generation), Volticlens (Meta competitor ad intelligence), GeoRaydar (AI search brand visibility), Rayprofit (ad ROI optimization), ActGuard (EU AI Act compliance), and LintVibe (code quality and security scanning).',
       },
     },
     {

@@ -73,7 +73,7 @@ export default function KreashotPage() {
             href="/products/kreashot"
             className="inline-flex items-center justify-center bg-coral hover:bg-coral-hover text-white px-10 py-5 rounded-full font-medium text-lg transition-colors btn-hover"
           >
-            Start free trial — 7 days, no credit card
+            Start free trial. 7 days, no credit card.
           </Link>
         </div>
       </section>
@@ -101,7 +101,7 @@ export default function KreashotPage() {
           <ul className="mt-8 space-y-3 max-w-2xl fade-up">
             <li className="flex items-start gap-3">
               <span className="text-teal-lt font-medium mt-0.5">→</span>
-              <span className="text-base text-[rgba(234,232,244,0.75)]">Multiple creative variants per product photo — no extra work</span>
+              <span className="text-base text-[rgba(234,232,244,0.75)]">Multiple creative variants per product photo. No extra work.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-teal-lt font-medium mt-0.5">→</span>
@@ -120,6 +120,22 @@ export default function KreashotPage() {
               <span className="text-base text-[rgba(234,232,244,0.75)]">Creatives ready to download and launch in minutes</span>
             </li>
           </ul>
+          <table className="w-full mt-8 border-collapse text-sm fade-up">
+            <thead>
+              <tr className="border-b border-[rgba(13,155,176,0.2)]">
+                <th className="text-left py-3 pr-6 font-semibold text-[#EAE8F4]">Feature</th>
+                <th className="text-left py-3 font-semibold text-[#EAE8F4]">Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Price</td><td className="py-2.5 text-[#EAE8F4] font-medium">$150/month · annual plan 20% off</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Free Trial</td><td className="py-2.5 text-[#EAE8F4] font-medium">7 days · no credit card required</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Input</td><td className="py-2.5 text-[#EAE8F4] font-medium">Any product photo</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Output Formats</td><td className="py-2.5 text-[#EAE8F4] font-medium">Meta Feed, Stories, Reels</td></tr>
+              <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Copy Included</td><td className="py-2.5 text-[#EAE8F4] font-medium">Yes. Multiple ad copy variations.</td></tr>
+              <tr><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Design Skills</td><td className="py-2.5 text-[#EAE8F4] font-medium">None required</td></tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -146,7 +162,7 @@ export default function KreashotPage() {
                 Upload your product photo
               </h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Any product shot. No editing or preparation required — Kreashot handles the rest.
+                Any product shot. No editing or preparation required. Kreashot handles the rest.
               </p>
             </div>
 
@@ -193,7 +209,7 @@ export default function KreashotPage() {
             href="/products/kreashot"
             className="inline-flex items-center justify-center bg-coral hover:bg-coral-hover text-white px-10 py-5 rounded-full font-medium text-lg transition-colors fade-up btn-hover"
           >
-            Start free trial — 7 days, no credit card
+            Start free trial. 7 days, no credit card.
           </Link>
         </div>
       </section>
@@ -215,7 +231,7 @@ export default function KreashotPage() {
             <div className="fade-up">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is Kreashot?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Kreashot is an AI-powered ad creative generator that turns product photos into Meta-ready ad creatives in minutes. It produces multiple variants, formats (Feed, Stories, Reels), and ad copy variations — no design skills, no software, no waiting for a designer.
+                Kreashot is an AI ad creative tool that turns product photos into Meta-ready ad creatives in minutes. It produces multiple variants, formats (Feed, Stories, Reels), and ad copy variations. No design skills, no software, no waiting for a designer.
               </p>
             </div>
 
@@ -229,14 +245,14 @@ export default function KreashotPage() {
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How long does it take to create ad creatives with Kreashot?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Kreashot produces a full set of ad creatives in minutes. Upload a product photo, and your Meta-ready creatives are ready to download almost immediately — no briefing, no revision rounds, no waiting.
+                Kreashot produces a full set of ad creatives in minutes. Upload a product photo, and your Meta-ready creatives are ready to download almost immediately. No briefing, no revision rounds, no waiting.
               </p>
             </div>
 
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">How much does Kreashot cost?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Kreashot costs $150/month with a 7-day free trial included — no credit card required. An annual plan is available at 20% off, with pricing locked for life.
+                Kreashot costs $150/month with a 7-day free trial included. No credit card required. An annual plan is available at 20% off, with pricing locked for life.
               </p>
             </div>
           </div>

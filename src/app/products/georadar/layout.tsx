@@ -61,17 +61,17 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'Which AI platforms does GeoRaydar track?',
-      acceptedAnswer: { '@type': 'Answer', text: 'GeoRaydar tracks brand visibility across ChatGPT, Gemini, Perplexity, and Claude — the four major AI search and answer engines where buyers now research products and request vendor recommendations.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'GeoRaydar tracks brand visibility across ChatGPT, Gemini, Perplexity, and Claude: the four major AI search and answer engines where buyers now research products and request vendor recommendations.' },
     },
     {
       '@type': 'Question',
       name: 'What is AI search visibility and why does it matter?',
-      acceptedAnswer: { '@type': 'Answer', text: 'AI search visibility measures how often your brand is recommended by AI engines like ChatGPT when buyers ask questions in your category. As more buyers use AI for research instead of traditional search, appearing in these results drives real pipeline — and being absent means losing deals to competitors who do appear.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'AI search visibility measures how often your brand is recommended by AI engines like ChatGPT when buyers ask questions in your category. As more buyers use AI for research instead of traditional search, appearing in these results drives real pipeline. Being absent means losing deals to competitors who do appear.' },
     },
     {
       '@type': 'Question',
       name: 'How much does GeoRaydar cost?',
-      acceptedAnswer: { '@type': 'Answer', text: 'GeoRaydar costs $100/month with a 7-day free trial — no credit card required. An annual plan is available at 20% off with pricing locked for life.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'GeoRaydar costs $100/month with a 7-day free trial. No credit card required. An annual plan is available at 20% off with pricing locked for life.' },
     },
   ],
 }

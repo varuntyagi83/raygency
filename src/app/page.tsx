@@ -17,7 +17,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'What is Raygency?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Raygency is an AI product studio. We build, ship, and run production AI tools for performance marketers, developers, and compliance teams — then take on custom builds through our Studio service.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Raygency is an AI product studio. We build, ship, and run production AI tools for performance marketers, developers, and compliance teams. We also take on custom builds through our Studio service.' },
     },
     {
       '@type': 'Question',
@@ -27,7 +27,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How do I get started with Raygency?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Every Raygency product has a free trial — no credit card required. Pick the tool that matches your biggest problem, start the trial, and see results before you pay. If you need a custom build, contact us through the Studio.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Every Raygency product has a free trial. No credit card required. Pick the tool that matches your biggest problem, start the trial, and see results before you pay. If you need a custom build, contact us through the Studio.' },
     },
     {
       '@type': 'Question',
@@ -43,7 +43,7 @@ const howToSchema = {
   name: 'How to get started with Raygency AI tools',
   description: 'Start using Raygency AI tools in three steps.',
   step: [
-    { '@type': 'HowToStep', position: 1, name: 'Pick a tool', text: 'Browse the six Raygency products and choose the one that solves your biggest problem — ad creative, competitor intel, AI search visibility, ROI, compliance, or code quality.' },
+    { '@type': 'HowToStep', position: 1, name: 'Pick a tool', text: 'Browse the six Raygency products and choose the one that solves your biggest problem: ad creative, competitor intel, AI search visibility, ROI, compliance, or code quality.' },
     { '@type': 'HowToStep', position: 2, name: 'Start a free trial', text: 'Every product includes a free trial. No credit card required. Start immediately and see results before you commit.' },
     { '@type': 'HowToStep', position: 3, name: 'Ship faster', text: 'Use the tool in your workflow. If you need a custom build beyond what the products offer, contact the Studio.' },
   ],
@@ -108,7 +108,7 @@ export default function HomePage() {
             <span className="text-gradient-teal-copper">All in production.</span>
           </h1>
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] max-w-[600px] mb-12 leading-relaxed border-l-4 border-[#C4612A] pl-6">
-            Ad creative. Competitor intel. AI search visibility. ROI optimization. Compliance docs. Code quality. Six tools built for operators who need results — plus a studio that builds whatever comes next.
+            Ad creative. Competitor intel. AI search visibility. ROI optimization. Compliance docs. Code quality. Six tools built for operators who need results. Plus a studio that builds whatever comes next.
           </p>
           <div className="flex gap-5 items-center flex-wrap">
             <Link href="/products" className="btn-brutal">
@@ -346,9 +346,9 @@ export default function HomePage() {
             <div className="text-6xl md:text-7xl font-extrabold leading-none mb-1.5 text-gradient-teal-copper">$250</div>
             <div className="text-sm text-[rgba(234,232,244,0.50)] uppercase tracking-wider font-semibold mb-6">/month · all three</div>
             <div className="flex flex-col gap-2 text-left mb-7">
-              <div className="text-sm text-[rgba(234,232,244,0.50)] flex items-center gap-2.5 font-medium"><span className="text-[#0D9BB0] font-extrabold">→</span> Kreashot — $150/month</div>
-              <div className="text-sm text-[rgba(234,232,244,0.50)] flex items-center gap-2.5 font-medium"><span className="text-[#0D9BB0] font-extrabold">→</span> Volticlens — $100/month</div>
-              <div className="text-sm text-[rgba(234,232,244,0.50)] flex items-center gap-2.5 font-medium"><span className="text-[#0D9BB0] font-extrabold">→</span> GeoRaydar — $100/month</div>
+              <div className="text-sm text-[rgba(234,232,244,0.50)] flex items-center gap-2.5 font-medium"><span className="text-[#0D9BB0] font-extrabold">→</span> Kreashot: $150/month</div>
+              <div className="text-sm text-[rgba(234,232,244,0.50)] flex items-center gap-2.5 font-medium"><span className="text-[#0D9BB0] font-extrabold">→</span> Volticlens: $100/month</div>
+              <div className="text-sm text-[rgba(234,232,244,0.50)] flex items-center gap-2.5 font-medium"><span className="text-[#0D9BB0] font-extrabold">→</span> GeoRaydar: $100/month</div>
             </div>
             <Link href="/products/kreashot" className="btn-brutal">Start free trial</Link>
           </div>
@@ -364,7 +364,7 @@ export default function HomePage() {
             <span className="text-gradient-teal-copper">we have already built.</span><br />
             The rest, we build fast.&rdquo;
           </p>
-          <div className="text-xs text-[rgba(234,232,244,0.50)] tracking-[0.14em] uppercase font-bold mb-10 fade-up">— Raygency · AI Product Studio</div>
+          <div className="text-xs text-[rgba(234,232,244,0.50)] tracking-[0.14em] uppercase font-bold mb-10 fade-up">Raygency · AI Product Studio</div>
           <Link href="/studio" className="btn-brutal fade-up">Tell us what you&apos;re building</Link>
         </div>
       </section>
@@ -408,7 +408,7 @@ export default function HomePage() {
             </div>
             <div className="p-8 md:p-11 bg-[rgba(13,155,176,0.03)]">
               <div className="text-4xl md:text-[52px] font-extrabold leading-none mb-3 bg-gradient-to-r from-[#E07840] to-[#C4612A] bg-clip-text text-transparent">6</div>
-              <div className="text-sm text-[rgba(234,232,244,0.50)] leading-snug font-medium"><strong className="text-[#EAE8F4]">Industries</strong> — pharma, semis, IT, biotech, startups, design</div>
+              <div className="text-sm text-[rgba(234,232,244,0.50)] leading-snug font-medium"><strong className="text-[#EAE8F4]">Industries</strong>: pharma, semis, IT, biotech, startups, design</div>
             </div>
           </div>
         </div>
@@ -421,7 +421,7 @@ export default function HomePage() {
         <div className="relative z-10 max-w-3xl mx-auto text-center fade-up">
           <blockquote className="text-xl md:text-2xl font-medium text-[#EAE8F4] leading-relaxed mb-6">
             &ldquo;The hardest part of any AI product isn&apos;t the technology.
-            It&apos;s the human on the other side of the screen — time-poor,
+            It&apos;s the human on the other side of the screen: time-poor,
             skeptical, with a workflow that already works well enough.
             Every product we build at Raygency is designed for that person.
             Not the enthusiast. The resistant one.
@@ -464,25 +464,42 @@ export default function HomePage() {
           <div className="space-y-0">
             <div className="fade-up border-t border-[rgba(13,155,176,0.15)] py-8">
               <h3 className="text-lg font-extrabold uppercase text-[#EAE8F4] mb-3 tracking-tight">What is Raygency?</h3>
-              <p className="text-[rgba(234,232,244,0.60)] leading-relaxed font-medium">Raygency is an AI product studio. We build, ship, and run production AI tools for performance marketers, developers, and compliance teams — then take on custom builds through our Studio service.</p>
+              <p className="text-[rgba(234,232,244,0.60)] leading-relaxed font-medium">Raygency is an AI product studio. We build, ship, and run production AI tools for performance marketers, developers, and compliance teams. We also take on custom builds through our Studio service.</p>
             </div>
 
             <div className="fade-up border-t border-[rgba(13,155,176,0.15)] py-8">
               <h3 className="text-lg font-extrabold uppercase text-[#EAE8F4] mb-3 tracking-tight">What AI tools does Raygency offer?</h3>
               <p className="text-[rgba(234,232,244,0.60)] leading-relaxed font-medium mb-4">Raygency offers six production AI tools:</p>
               <ul className="space-y-2 text-[rgba(234,232,244,0.60)] font-medium">
-                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">Kreashot</strong> — product photo to Meta-ready ad creative</li>
-                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">Volticlens</strong> — competitor ad intelligence on Meta</li>
-                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">GeoRaydar</strong> — AI search visibility across ChatGPT, Gemini, and Perplexity</li>
-                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">Rayprofit</strong> — ad spend ROI and budget optimization</li>
-                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">ActGuard</strong> — EU AI Act compliance documentation</li>
-                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">LintVibe</strong> — AI code quality and security scanner</li>
+                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">Kreashot</strong>: product photo to Meta-ready ad creative</li>
+                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">Volticlens</strong>: competitor ad intelligence on Meta</li>
+                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">GeoRaydar</strong>: AI search visibility across ChatGPT, Gemini, and Perplexity</li>
+                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">Rayprofit</strong>: ad spend ROI and budget optimization</li>
+                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">ActGuard</strong>: EU AI Act compliance documentation</li>
+                <li className="flex items-start gap-2.5"><span className="text-[#0D9BB0] font-extrabold flex-shrink-0">→</span> <strong className="text-[#EAE8F4]">LintVibe</strong>: AI code quality and security scanner</li>
               </ul>
+              <table className="w-full mt-6 border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-[rgba(13,155,176,0.2)]">
+                    <th className="text-left py-3 pr-6 font-semibold text-[#EAE8F4]">Product</th>
+                    <th className="text-left py-3 pr-6 font-semibold text-[#EAE8F4]">Category</th>
+                    <th className="text-left py-3 font-semibold text-[#EAE8F4]">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Kreashot</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Ad Creative Generation</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$150/month</td></tr>
+                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Volticlens</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Competitor Intelligence</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$100/month</td></tr>
+                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">GeoRaydar</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">AI Search Visibility</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$100/month</td></tr>
+                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Rayprofit</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Ad ROI Optimization</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$200/month</td></tr>
+                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">ActGuard</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">EU AI Act Compliance</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">Free to start</td></tr>
+                  <tr><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">LintVibe</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Code Quality &amp; Security</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$40/month</td></tr>
+                </tbody>
+              </table>
             </div>
 
             <div className="fade-up border-t border-[rgba(13,155,176,0.15)] py-8">
               <h3 className="text-lg font-extrabold uppercase text-[#EAE8F4] mb-3 tracking-tight">How do I get started with Raygency?</h3>
-              <p className="text-[rgba(234,232,244,0.60)] leading-relaxed font-medium">Every product has a free trial — no credit card required. Pick the tool that matches your biggest problem, start the trial, and see results before you pay. If you need something custom, tell us what you&apos;re building through the Studio.</p>
+              <p className="text-[rgba(234,232,244,0.60)] leading-relaxed font-medium">Every product has a free trial. No credit card required. Pick the tool that matches your biggest problem, start the trial, and see results before you pay. If you need something custom, tell us what you&apos;re building through the Studio.</p>
             </div>
 
             <div className="fade-up border-t border-b border-[rgba(13,155,176,0.15)] py-8">

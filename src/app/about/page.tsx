@@ -56,7 +56,7 @@ export default function AboutPage() {
             An AI product studio. Built by two people who ship.
           </h1>
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] leading-relaxed fade-up max-w-3xl mb-8">
-            Raygency builds AI-powered products for performance marketers.
+            Raygency builds AI products for performance marketers.
             9 production apps shipped. 100+ automation workflows running.
             We build what we know, and we ship it fast.
           </p>
@@ -283,14 +283,14 @@ export default function AboutPage() {
           </h2>
           <blockquote className="text-xl md:text-2xl lg:text-3xl leading-relaxed text-[#EAE8F4] fade-up mb-6">
             &ldquo;The hardest part of any AI product isn&apos;t the technology.
-            It&apos;s the human on the other side of the screen — time-poor,
+            It&apos;s the human on the other side of the screen: time-poor,
             skeptical, with a workflow that already works well enough. Every
             product we build at Raygency is designed for that person. Not the
             enthusiast. The resistant one. Design for adoption, not just
             function.&rdquo;
           </blockquote>
           <p className="text-base text-[rgba(234,232,244,0.55)] font-medium fade-up">
-            — Renuka Adnani
+            Renuka Adnani
           </p>
         </div>
       </section>
@@ -309,28 +309,45 @@ export default function AboutPage() {
             <div className="fade-up">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What is Raygency?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Raygency is an AI product studio that builds and ships AI-powered tools for performance marketers, DTC brands, compliance teams, and developers. Every product is built by the founders themselves and shipped into production — not as demos or prototypes.
+                Raygency is an AI product studio that builds and ships AI tools for performance marketers, DTC brands, compliance teams, and developers. Every product is built by the founders themselves and shipped into production. Not demos or prototypes.
               </p>
             </div>
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Who are the founders of Raygency?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Raygency was founded by Varun Tyagi and Renuka Adnani. Varun brings 18+ years at the intersection of AI, data, and business — with 9 production apps shipped and 100+ automation workflows running. Renuka spent 17 years inside organizations across six industries, learning how technology initiatives actually take hold or fail. That combination — deep technical build capability and real organizational intelligence — is what shapes every Raygency product.
+                Raygency was founded by Varun Tyagi and Renuka Adnani. Varun brings 18+ years at the intersection of AI, data, and business, with 9 production apps shipped and 100+ automation workflows running. Renuka spent 17 years inside organizations across six industries, learning how technology initiatives actually take hold or fail. That combination of deep technical build capability and real organizational intelligence is what shapes every Raygency product.
               </p>
             </div>
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What products does Raygency offer?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Raygency offers six AI-powered tools, each solving a specific problem:
+                Raygency offers six AI tools, each solving a specific problem:
               </p>
               <ul className="mt-4 space-y-2 text-base text-[rgba(234,232,244,0.75)]">
-                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Kreashot</strong> — AI ad creative generation for performance marketers</span></li>
-                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Volticlens</strong> — Real-time Meta competitor ad intelligence</span></li>
-                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">GeoRaydar</strong> — AI search brand visibility tracking</span></li>
-                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Rayprofit</strong> — Ad ROI optimization across Meta and Google</span></li>
-                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">ActGuard</strong> — EU AI Act compliance documentation</span></li>
-                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">LintVibe</strong> — Code quality and security scanning</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Kreashot</strong>: AI ad creative generation for performance marketers</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Volticlens</strong>: Real-time Meta competitor ad intelligence</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">GeoRaydar</strong>: AI search brand visibility tracking</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Rayprofit</strong>: Ad ROI optimization across Meta and Google</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">ActGuard</strong>: EU AI Act compliance documentation</span></li>
+                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">LintVibe</strong>: Code quality and security scanning</span></li>
               </ul>
+              <table className="w-full mt-6 border-collapse text-sm">
+                <thead>
+                  <tr className="border-b border-[rgba(13,155,176,0.2)]">
+                    <th className="text-left py-3 pr-6 font-semibold text-[#EAE8F4]">Product</th>
+                    <th className="text-left py-3 pr-6 font-semibold text-[#EAE8F4]">Category</th>
+                    <th className="text-left py-3 font-semibold text-[#EAE8F4]">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Kreashot</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Ad Creative Generation</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$150/month</td></tr>
+                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Volticlens</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Competitor Intelligence</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$100/month</td></tr>
+                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">GeoRaydar</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">AI Search Visibility</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$100/month</td></tr>
+                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Rayprofit</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Ad ROI Optimization</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$200/month</td></tr>
+                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">ActGuard</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">EU AI Act Compliance</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">Free to start</td></tr>
+                  <tr><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">LintVibe</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Code Quality &amp; Security</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$40/month</td></tr>
+                </tbody>
+              </table>
             </div>
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Does Raygency take on custom builds?</h3>

@@ -23,15 +23,27 @@ const itemListSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
   name: 'Raygency Products',
-  description: 'AI-powered tools for performance marketers, DTC brands, and compliance teams.',
+  description: 'AI tools for performance marketers, DTC brands, and compliance teams.',
   url: 'https://www.raygency.com/products',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Kreashot', url: 'https://www.raygency.com/products/kreashot', description: 'AI ad creative generator for performance marketers.' },
+    { '@type': 'ListItem', position: 1, name: 'Kreashot', url: 'https://www.raygency.com/products/kreashot', description: 'AI ad creative tool for performance marketers.' },
     { '@type': 'ListItem', position: 2, name: 'Volticlens', url: 'https://www.raygency.com/products/volticlens', description: 'Real-time Meta competitor ad intelligence.' },
     { '@type': 'ListItem', position: 3, name: 'GeoRaydar', url: 'https://www.raygency.com/products/georadar', description: 'AI search brand visibility tracker across ChatGPT, Gemini, Perplexity, and Claude.' },
-    { '@type': 'ListItem', position: 4, name: 'Rayprofit', url: 'https://www.raygency.com/products/rayprofit', description: 'AI-powered ad ROI and budget optimization.' },
+    { '@type': 'ListItem', position: 4, name: 'Rayprofit', url: 'https://www.raygency.com/products/rayprofit', description: 'Ad ROI and budget optimization tool built on AI.' },
     { '@type': 'ListItem', position: 5, name: 'ActGuard', url: 'https://www.raygency.com/products/actguard', description: 'EU AI Act compliance documentation automation.' },
     { '@type': 'ListItem', position: 6, name: 'LintVibe', url: 'https://www.raygency.com/products/lintvibe', description: 'AI code quality and security scanner.' },
+  ],
+}
+
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'How to choose the right Raygency product',
+  description: 'Pick the Raygency AI tool that matches your biggest problem in three steps.',
+  step: [
+    { '@type': 'HowToStep', position: 1, name: 'Identify your problem', text: 'Decide what you need most: faster ad creatives (Kreashot), competitor intelligence (Volticlens), AI search visibility (GeoRaydar), ad ROI (Rayprofit), compliance docs (ActGuard), or code quality (LintVibe).' },
+    { '@type': 'HowToStep', position: 2, name: 'Start a free trial', text: 'Every Raygency product includes a free trial. No credit card required. Start the trial for the tool you picked and test it with your real data.' },
+    { '@type': 'HowToStep', position: 3, name: 'Scale or bundle', text: 'Once a product proves value, continue on the monthly plan. If you need multiple tools, use a bundle plan: Duo ($100/any 2), Trio ($250/any 3), or Full Suite ($500/all 6).' },
   ],
 }
 
@@ -44,7 +56,7 @@ const faqSchema = {
       name: 'What products does Raygency offer?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Raygency offers six AI-powered tools: Kreashot (ad creative generation, $150/month), Volticlens (Meta competitor ad intelligence, $100/month), GeoRaydar (AI search brand visibility, $100/month), Rayprofit (ad ROI optimization, $200/month), ActGuard (EU AI Act compliance, free to start), and LintVibe (code quality and security scanning, $40/month).',
+        text: 'Raygency offers six AI tools: Kreashot (ad creative generation, $150/month), Volticlens (Meta competitor ad intelligence, $100/month), GeoRaydar (AI search brand visibility, $100/month), Rayprofit (ad ROI optimization, $200/month), ActGuard (EU AI Act compliance, free to start), and LintVibe (code quality and security scanning, $40/month).',
       },
     },
     {
@@ -88,6 +100,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableSchema) }} />
       {children}

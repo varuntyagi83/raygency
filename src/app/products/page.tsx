@@ -59,7 +59,7 @@ export default function ProductsPage() {
             The toolkit. Pick what you need.
           </h1>
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] max-w-3xl leading-relaxed">
-            Six AI tools for performance marketers, DTC brands, compliance teams, and developers. Each solves a specific problem. All include a free trial — no credit card required.
+            Six AI tools for performance marketers, DTC brands, compliance teams, and developers. Each solves a specific problem. All include a free trial. No credit card required.
           </p>
         </div>
       </section>
@@ -134,7 +134,7 @@ export default function ProductsPage() {
                 Ad Spend.<br />Profitable.
               </h2>
               <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed mb-8 font-medium flex-1">
-                Maximize your ad ROI with AI-powered budget optimization. Know exactly where every dollar works — and cut what doesn&apos;t.
+                Maximize your ad ROI with AI budget optimization. Know exactly where every dollar works. Cut what doesn&apos;t.
               </p>
               <div className="card-price">$200<span>/month</span></div>
               <div className="card-trial">7 days free · no credit card</div>
@@ -261,13 +261,31 @@ export default function ProductsPage() {
             <div className="fade-up">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What products does Raygency offer?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Raygency offers six AI-powered tools: Kreashot ($150/month) for ad creative generation, Volticlens ($100/month) for Meta competitor ad intelligence, GeoRaydar ($100/month) for AI search brand visibility, Rayprofit ($200/month) for ad ROI optimization, ActGuard (free to start) for EU AI Act compliance documentation, and LintVibe ($40/month) for code quality and security scanning.
+                Raygency offers six AI tools: Kreashot ($150/month) for ad creative generation, Volticlens ($100/month) for Meta competitor ad intelligence, GeoRaydar ($100/month) for AI search brand visibility, Rayprofit ($200/month) for ad ROI optimization, ActGuard (free to start) for EU AI Act compliance documentation, and LintVibe ($40/month) for code quality and security scanning.
               </p>
             </div>
+            <table className="w-full mt-6 mb-4 border-collapse text-sm fade-up">
+              <thead>
+                <tr className="border-b border-[rgba(13,155,176,0.2)]">
+                  <th className="text-left py-3 pr-6 font-semibold text-[#EAE8F4]">Product</th>
+                  <th className="text-left py-3 pr-6 font-semibold text-[#EAE8F4]">Category</th>
+                  <th className="text-left py-3 pr-6 font-semibold text-[#EAE8F4]">Price</th>
+                  <th className="text-left py-3 font-semibold text-[#EAE8F4]">Free Trial</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Kreashot</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Ad Creative</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">$150/mo</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">7 days</td></tr>
+                <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Volticlens</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Competitor Intel</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">$100/mo</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">7 days</td></tr>
+                <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">GeoRaydar</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">AI Search Visibility</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">$100/mo</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">7 days</td></tr>
+                <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Rayprofit</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Ad ROI</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">$200/mo</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">7 days</td></tr>
+                <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">ActGuard</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">EU AI Act Compliance</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Free to start</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">1 system free</td></tr>
+                <tr><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">LintVibe</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Code Quality</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">$40/mo</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">Free scan</td></tr>
+              </tbody>
+            </table>
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Which product should I start with?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Start with the product that solves your most immediate problem. Performance marketers typically start with Kreashot. Teams spending on Meta ads who want competitive intelligence start with Volticlens. If you need to track AI search visibility, start with GeoRaydar. Compliance teams start with ActGuard — it&apos;s free for your first AI system. Developers ship with LintVibe.
+                Start with the product that solves your most immediate problem. Performance marketers typically start with Kreashot. Teams spending on Meta ads who want competitive intelligence start with Volticlens. If you need to track AI search visibility, start with GeoRaydar. Compliance teams start with ActGuard. It&apos;s free for your first AI system. Developers ship with LintVibe.
               </p>
             </div>
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
@@ -279,7 +297,7 @@ export default function ProductsPage() {
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Do all Raygency products include a free trial?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Yes. Kreashot, Volticlens, GeoRaydar, and Rayprofit each include a 7-day free trial with no credit card required. ActGuard is free for your first AI system with no credit card needed. LintVibe offers a free initial scan. All subscriptions can be cancelled at any time — no long-term contracts.
+                Yes. Kreashot, Volticlens, GeoRaydar, and Rayprofit each include a 7-day free trial with no credit card required. ActGuard is free for your first AI system with no credit card needed. LintVibe offers a free initial scan. All subscriptions can be cancelled at any time. No long-term contracts.
               </p>
             </div>
           </div>

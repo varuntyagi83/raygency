@@ -23,7 +23,7 @@ const productSchema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
   name: 'Kreashot',
-  description: 'AI-powered ad creative generator. Turn product photos into Meta-ready creatives in minutes.',
+  description: 'AI ad creative tool. Turn product photos into Meta-ready creatives in minutes.',
   applicationCategory: 'BusinessApplication',
   url: 'https://www.raygency.com/products/kreashot',
   offers: {
@@ -43,7 +43,7 @@ const howToSchema = {
   name: 'How to create Meta ad creatives with Kreashot',
   description: 'Generate professional Meta ad creatives from a product photo in three steps using Kreashot.',
   step: [
-    { '@type': 'HowToStep', position: 1, name: 'Upload your product photo', text: 'Upload any product shot to Kreashot. No editing or preparation required — any angle, any background.' },
+    { '@type': 'HowToStep', position: 1, name: 'Upload your product photo', text: 'Upload any product shot to Kreashot. No editing or preparation required. Any angle, any background.' },
     { '@type': 'HowToStep', position: 2, name: 'AI generates ad creatives', text: 'Kreashot generates multiple creative variants, Meta-optimized formats, and ad copy variations automatically.' },
     { '@type': 'HowToStep', position: 3, name: 'Export and launch', text: 'Download ready-to-run creatives in all Meta formats and launch your campaign immediately.' },
   ],
@@ -56,7 +56,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'What is Kreashot?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Kreashot is an AI-powered ad creative generator that turns product photos into Meta-ready ad creatives in minutes. It produces multiple variants, formats (Feed, Stories, Reels), and ad copy variations — no design skills or software required.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Kreashot is an AI ad creative tool that turns product photos into Meta-ready ad creatives in minutes. It produces multiple variants, formats (Feed, Stories, Reels), and ad copy variations. No design skills or software required.' },
     },
     {
       '@type': 'Question',
@@ -66,12 +66,12 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How long does it take to create ad creatives with Kreashot?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Kreashot produces a full set of ad creatives in minutes. Upload a product photo, and your Meta-ready creatives are ready to download almost immediately — no waiting for designers.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Kreashot produces a full set of ad creatives in minutes. Upload a product photo, and your Meta-ready creatives are ready to download almost immediately. No waiting for designers.' },
     },
     {
       '@type': 'Question',
       name: 'How much does Kreashot cost?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Kreashot costs $150/month with a 7-day free trial included — no credit card required. An annual plan is available at 20% off with pricing locked for life.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Kreashot costs $150/month with a 7-day free trial included. No credit card required. An annual plan is available at 20% off with pricing locked for life.' },
     },
   ],
 }

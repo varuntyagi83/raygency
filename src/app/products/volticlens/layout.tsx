@@ -44,7 +44,7 @@ const howToSchema = {
   description: 'Monitor every ad your competitors run on Meta in three steps using Volticlens.',
   step: [
     { '@type': 'HowToStep', position: 1, name: 'Connect your Meta account', text: 'Link your Meta ad account to Volticlens and set the competitors you want to monitor.' },
-    { '@type': 'HowToStep', position: 2, name: 'See every competitor ad', text: 'Volticlens surfaces all active competitor ads on Meta — creative, copy, targeting signals, and launch dates.' },
+    { '@type': 'HowToStep', position: 2, name: 'See every competitor ad', text: 'Volticlens surfaces all active competitor ads on Meta: creative, copy, targeting signals, and launch dates.' },
     { '@type': 'HowToStep', position: 3, name: 'React faster', text: 'Understand what competitors are testing, identify winning patterns, and outpace them with your next campaign.' },
   ],
 }
@@ -56,12 +56,12 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'What is Volticlens?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Volticlens is a real-time Meta competitor ad intelligence tool. It shows you every ad your competitors are running on Meta — including creative, copy, and targeting signals — so you can move faster than they do.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Volticlens is a real-time Meta competitor ad intelligence tool. It shows you every ad your competitors are running on Meta: creative, copy, and targeting signals. So you can move faster than they do.' },
     },
     {
       '@type': 'Question',
       name: 'Which platforms does Volticlens monitor?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Volticlens monitors the Meta advertising ecosystem, including Facebook and Instagram. It tracks competitor ads across Feed, Stories, and Reels placements.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Volticlens monitors the Meta ad network, including Facebook and Instagram. It tracks competitor ads across Feed, Stories, and Reels placements.' },
     },
     {
       '@type': 'Question',
@@ -71,7 +71,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How much does Volticlens cost?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Volticlens costs $100/month with a 7-day free trial — no credit card required. An annual plan is available at 20% off with pricing locked for life.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Volticlens costs $100/month with a 7-day free trial. No credit card required. An annual plan is available at 20% off with pricing locked for life.' },
     },
   ],
 }
