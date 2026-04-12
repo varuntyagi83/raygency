@@ -70,7 +70,7 @@ export default function GeoRaydarPage() {
             $100<span className="text-base font-normal text-[rgba(234,232,244,0.75)]">/month</span>
           </p>
           <Link
-            href="/products/georadar"
+            href="https://www.georaydar.com"
             className="inline-flex items-center justify-center bg-coral hover:bg-coral-hover text-white px-10 py-5 rounded-full font-medium text-lg transition-colors btn-hover"
           >
             Start free trial. 7 days, no credit card.
@@ -204,7 +204,7 @@ export default function GeoRaydarPage() {
             Annual plan: 20% off, price locked for life.
           </p>
           <Link
-            href="/products/georadar"
+            href="https://www.georaydar.com"
             className="inline-flex items-center justify-center bg-coral hover:bg-coral-hover text-white px-10 py-5 rounded-full font-medium text-lg transition-colors fade-up btn-hover"
           >
             Start free trial. 7 days, no credit card.
