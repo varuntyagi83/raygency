@@ -53,7 +53,7 @@ export default function AboutPage() {
             About Raygency
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mt-4 mb-6 text-[#EAE8F4] leading-tight fade-up max-w-4xl">
-            An AI product studio. Built by two people who ship.
+            An AI product studio. Built by practitioners who ship.
           </h1>
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] leading-relaxed fade-up max-w-3xl mb-8">
             Raygency builds AI products for performance marketers.
@@ -129,66 +129,6 @@ export default function AboutPage() {
                 No &ldquo;platform play.&rdquo; Clear scope, clear price, clear value.
                 You know exactly what you&apos;re getting.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="section-divider" />
-
-      {/* Varun Section — Dark */}
-      <section className="relative bg-[#020810] py-16 md:py-24 px-6 md:px-16 overflow-hidden transition-dark-to-light">
-        <div className="orb w-[350px] h-[350px] bg-[rgba(22,58,196,0.12)] top-[-80px] right-[10%]" />
-        <div className="orb w-[250px] h-[250px] bg-[rgba(240,160,48,0.08)] bottom-[-50px] left-[15%]" />
-
-        <div className="relative z-10 max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
-            <div className="fade-up order-2 md:order-1">
-              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[rgba(13,155,176,0.15)]">
-                <Image
-                  src="/varun-tyagi.jpg"
-                  alt="Varun Tyagi - Co-Founder of Raygency"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="fade-up order-1 md:order-2">
-              <span className="text-xs font-medium tracking-widest uppercase text-[rgba(234,232,244,0.50)]">
-                Co-Founder
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mt-2 mb-2 text-[#EAE8F4]">
-                Varun Tyagi
-              </h2>
-              <p className="text-xl text-teal-lt font-medium mb-6">
-                The builder.
-              </p>
-              <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] leading-relaxed mb-6">
-                Director of Data &amp; AI by day. AI product builder by nature.
-                9 production apps shipped. 100+ n8n workflows running.
-                AI cohort instructor. Building in public.
-              </p>
-              <p className="text-lg md:text-xl text-[#EAE8F4] font-medium mb-8">
-                18+ years building at the intersection of AI, data, and business.
-                The products at Raygency exist because Varun understands the problems
-                firsthand and builds the solutions himself.
-              </p>
-
-              <div className="grid grid-cols-3 gap-4 mb-8">
-                <div className="glass-card p-4 text-center">
-                  <div className="text-2xl md:text-3xl font-semibold text-copper-bright">9</div>
-                  <p className="text-xs md:text-sm text-[rgba(234,232,244,0.75)] mt-1">Production apps shipped</p>
-                </div>
-                <div className="glass-card p-4 text-center">
-                  <div className="text-2xl md:text-3xl font-semibold text-copper-bright">100+</div>
-                  <p className="text-xs md:text-sm text-[rgba(234,232,244,0.75)] mt-1">Workflows running</p>
-                </div>
-                <div className="glass-card p-4 text-center">
-                  <div className="text-2xl md:text-3xl font-semibold text-copper-bright">18+</div>
-                  <p className="text-xs md:text-sm text-[rgba(234,232,244,0.75)] mt-1">Years in AI &amp; data</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -315,18 +255,17 @@ export default function AboutPage() {
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Who are the founders of Raygency?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Raygency was founded by Varun Tyagi and Renuka Adnani. Varun brings 18+ years at the intersection of AI, data, and business, with 9 production apps shipped and 100+ automation workflows running. Renuka spent 17 years inside organizations across six industries, learning how technology initiatives actually take hold or fail. That combination of deep technical build capability and real organizational intelligence is what shapes every Raygency product.
+                Raygency was founded by Renuka Adnani. Renuka spent 17 years inside organizations across six industries, learning how technology initiatives actually take hold or fail. That organizational intelligence shapes every Raygency product.
               </p>
             </div>
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What products does Raygency offer?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Raygency offers six AI tools, each solving a specific problem:
+                Raygency offers five AI tools, each solving a specific problem:
               </p>
               <ul className="mt-4 space-y-2 text-base text-[rgba(234,232,244,0.75)]">
                 <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Kreashot</strong>: AI ad creative generation for performance marketers</span></li>
                 <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Volticlens</strong>: Real-time Meta competitor ad intelligence</span></li>
-                <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">GeoRaydar</strong>: AI search brand visibility tracking</span></li>
                 <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">Rayprofit</strong>: Ad ROI optimization across Meta and Google</span></li>
                 <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">ActGuard</strong>: EU AI Act compliance documentation</span></li>
                 <li className="flex items-start gap-2"><span className="text-teal-lt mt-0.5">→</span><span><strong className="text-[#EAE8F4]">LintVibe</strong>: Code quality and security scanning</span></li>
@@ -342,7 +281,6 @@ export default function AboutPage() {
                 <tbody>
                   <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Kreashot</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Ad Creative Generation</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$150/month</td></tr>
                   <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Volticlens</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Competitor Intelligence</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$100/month</td></tr>
-                  <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">GeoRaydar</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">AI Search Visibility</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$100/month</td></tr>
                   <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Rayprofit</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Ad ROI Optimization</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$200/month</td></tr>
                   <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">ActGuard</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">EU AI Act Compliance</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">Free to start</td></tr>
                   <tr><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">LintVibe</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Code Quality &amp; Security</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">$40/month</td></tr>
@@ -369,7 +307,7 @@ export default function AboutPage() {
             See what we&apos;ve built.
           </h2>
           <p className="text-lg md:text-xl text-[rgba(234,232,244,0.75)] mb-10 fade-up">
-            Six AI tools for marketers, builders, and compliance teams. All with a free trial.
+            Five AI tools for marketers, builders, and compliance teams. All with a free trial.
           </p>
           <Link
             href="/products"

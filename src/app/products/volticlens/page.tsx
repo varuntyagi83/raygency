@@ -267,19 +267,19 @@ export default function VolticlensPage() {
           <div className="glass-card p-8 md:p-10 fade-up">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               <div>
-                <p className="text-sm text-teal-lt mb-2">Next step</p>
+                <p className="text-sm text-teal-lt mb-2">See all products</p>
                 <h3 className="text-xl md:text-2xl font-semibold text-[#EAE8F4] mb-2">
-                  You know what competitors are running. Now track where your brand appears in AI search.
+                  More tools built by Raygency.
                 </h3>
                 <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                  Add GeoRaydar to monitor your brand visibility across ChatGPT, Gemini, Perplexity, and Claude.
+                  Kreashot, Rayprofit, ActGuard, LintVibe. All built for practitioners who need results, not demos.
                 </p>
               </div>
               <Link
-                href="/products/georadar"
+                href="/products"
                 className="inline-flex items-center gap-2 bg-coral hover:bg-coral-hover text-white px-8 py-3.5 rounded-full font-medium transition-colors whitespace-nowrap btn-hover"
               >
-                See GeoRaydar <ArrowRight className="w-4 h-4" />
+                See all products <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>

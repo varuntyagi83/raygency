@@ -274,7 +274,7 @@ export default function ActGuardPage() {
                   More tools built by Raygency.
                 </h3>
                 <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                  Kreashot, Volticlens, GeoRaydar, Rayprofit. All built for practitioners who need results, not demos.
+                  Kreashot, Volticlens, Rayprofit. All built for practitioners who need results, not demos.
                 </p>
               </div>
               <Link

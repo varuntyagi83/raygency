@@ -288,7 +288,7 @@ export default function LintVibePage() {
                   More tools built by Raygency.
                 </h3>
                 <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                  Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard. All built for practitioners who need results.
+                  Kreashot, Volticlens, Rayprofit, ActGuard. All built for practitioners who need results.
                 </p>
               </div>
               <Link

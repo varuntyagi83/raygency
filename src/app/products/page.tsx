@@ -108,25 +108,6 @@ export default function ProductsPage() {
               </Link>
             </div>
 
-            {/* GeoRaydar */}
-            <div className="brutal-card fade-up flex flex-col">
-              <div className="card-tag"><span className="card-dot" />GeoRaydar</div>
-              <h2 className="text-2xl md:text-3xl font-extrabold uppercase leading-none mb-3 text-[#EAE8F4] tracking-tight">
-                AI Search.<br />Owned.
-              </h2>
-              <p className="text-sm text-[rgba(234,232,244,0.50)] leading-relaxed mb-8 font-medium flex-1">
-                Track your brand visibility across ChatGPT, Gemini, Perplexity, and Claude. See every gap. Fix it.
-              </p>
-              <div className="card-price">$100<span>/month</span></div>
-              <div className="card-trial">7 days free · no credit card</div>
-              <Link href="/products/georadar" className="btn-brutal-secondary w-full text-center mb-3">
-                Start free trial
-              </Link>
-              <Link href="/products/georadar" className="inline-flex items-center justify-center gap-2 text-teal-lt font-semibold text-xs uppercase tracking-wider">
-                Learn more <ArrowRight className="w-3 h-3" />
-              </Link>
-            </div>
-
             {/* Rayprofit */}
             <div className="brutal-card fade-up flex flex-col">
               <div className="card-tag"><span className="card-dot" />Rayprofit</div>
@@ -236,10 +217,10 @@ export default function ProductsPage() {
             <div className="glass-card p-8 md:p-10 fade-up flex flex-col">
               <p className="text-xs font-semibold uppercase tracking-widest text-teal-lt mb-4">Full Suite</p>
               <div className="text-5xl font-extrabold text-copper-bright mb-1">$500<span className="text-base font-normal text-[rgba(234,232,244,0.55)]">/mo</span></div>
-              <p className="text-sm text-[rgba(234,232,244,0.40)] mb-6">All 6 products included</p>
+              <p className="text-sm text-[rgba(234,232,244,0.40)] mb-6">All 5 products included</p>
               <ul className="space-y-2 text-sm text-[rgba(234,232,244,0.75)] mb-8 flex-1">
-                <li className="flex items-center gap-2"><Radar className="w-4 h-4 text-teal-lt flex-shrink-0" />Kreashot, Volticlens, GeoRaydar</li>
-                <li className="flex items-center gap-2"><Radar className="w-4 h-4 text-teal-lt flex-shrink-0" />Rayprofit, ActGuard, LintVibe</li>
+                <li className="flex items-center gap-2"><Radar className="w-4 h-4 text-teal-lt flex-shrink-0" />Kreashot, Volticlens, Rayprofit</li>
+                <li className="flex items-center gap-2"><Radar className="w-4 h-4 text-teal-lt flex-shrink-0" />ActGuard, LintVibe</li>
                 <li className="flex items-center gap-2"><Radar className="w-4 h-4 text-teal-lt flex-shrink-0" />Annual plan: 20% off, locked for life</li>
               </ul>
               <Link href="/contact" className="btn-brutal-secondary w-full text-center">Get started</Link>
@@ -261,7 +242,7 @@ export default function ProductsPage() {
             <div className="fade-up">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What products does Raygency offer?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Raygency offers six AI tools: Kreashot ($150/month) for ad creative generation, Volticlens ($100/month) for Meta competitor ad intelligence, GeoRaydar ($100/month) for AI search brand visibility, Rayprofit ($200/month) for ad ROI optimization, ActGuard (free to start) for EU AI Act compliance documentation, and LintVibe ($40/month) for code quality and security scanning.
+                Raygency offers five AI tools: Kreashot ($150/month) for ad creative generation, Volticlens ($100/month) for Meta competitor ad intelligence, Rayprofit ($200/month) for ad ROI optimization, ActGuard (free to start) for EU AI Act compliance documentation, and LintVibe ($40/month) for code quality and security scanning.
               </p>
             </div>
             <table className="w-full mt-6 mb-4 border-collapse text-sm fade-up">
@@ -276,7 +257,6 @@ export default function ProductsPage() {
               <tbody>
                 <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Kreashot</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Ad Creative</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">$150/mo</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">7 days</td></tr>
                 <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Volticlens</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Competitor Intel</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">$100/mo</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">7 days</td></tr>
-                <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">GeoRaydar</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">AI Search Visibility</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">$100/mo</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">7 days</td></tr>
                 <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">Rayprofit</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Ad ROI</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">$200/mo</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">7 days</td></tr>
                 <tr className="border-b border-[rgba(255,255,255,0.04)]"><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">ActGuard</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">EU AI Act Compliance</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Free to start</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">1 system free</td></tr>
                 <tr><td className="py-2.5 pr-6 text-[#EAE8F4] font-medium">LintVibe</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">Code Quality</td><td className="py-2.5 pr-6 text-[rgba(234,232,244,0.60)]">$40/mo</td><td className="py-2.5 text-[rgba(234,232,244,0.60)]">Free scan</td></tr>
@@ -285,19 +265,19 @@ export default function ProductsPage() {
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Which product should I start with?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Start with the product that solves your most immediate problem. Performance marketers typically start with Kreashot. Teams spending on Meta ads who want competitive intelligence start with Volticlens. If you need to track AI search visibility, start with GeoRaydar. Compliance teams start with ActGuard. It&apos;s free for your first AI system. Developers ship with LintVibe.
+                Start with the product that solves your most immediate problem. Performance marketers typically start with Kreashot. Teams spending on Meta ads who want competitive intelligence start with Volticlens. Compliance teams start with ActGuard. It&apos;s free for your first AI system. Developers ship with LintVibe.
               </p>
             </div>
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Can I bundle multiple Raygency products?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Yes. Raygency offers three bundle plans: the Duo Plan (any 2 products for $100/month), the Trio Plan (any 3 products for $250/month), and the Full Suite (all 6 products for $500/month). All bundles include 7-day free trials and annual plan options with 20% off.
+                Yes. Raygency offers three bundle plans: the Duo Plan (any 2 products for $100/month), the Trio Plan (any 3 products for $250/month), and the Full Suite (all 5 products for $500/month). All bundles include 7-day free trials and annual plan options with 20% off.
               </p>
             </div>
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Do all Raygency products include a free trial?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Yes. Kreashot, Volticlens, GeoRaydar, and Rayprofit each include a 7-day free trial with no credit card required. ActGuard is free for your first AI system with no credit card needed. LintVibe offers a free initial scan. All subscriptions can be cancelled at any time. No long-term contracts.
+                Yes. Kreashot, Volticlens, and Rayprofit each include a 7-day free trial with no credit card required. ActGuard is free for your first AI system with no credit card needed. LintVibe offers a free initial scan. All subscriptions can be cancelled at any time. No long-term contracts.
               </p>
             </div>
           </div>

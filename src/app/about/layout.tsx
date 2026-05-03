@@ -2,11 +2,11 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About Raygency – Builders Who Ship AI Products',
-  description: 'Raygency builds AI tools that ship. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe. Built by practitioners for practitioners.',
+  description: 'Raygency builds AI tools that ship. Kreashot, Volticlens, Rayprofit, ActGuard, LintVibe. Built by practitioners for practitioners.',
   alternates: { canonical: 'https://www.raygency.com/about' },
   openGraph: {
     title: 'About Raygency – Builders Who Ship AI Products',
-    description: 'We build AI tools for performance marketers, DTC brands, and compliance teams. Six products. One mission: AI that ships.',
+    description: 'We build AI tools for performance marketers, DTC brands, and compliance teams. Five products. One mission: AI that ships.',
     url: 'https://www.raygency.com/about',
     type: 'website',
     images: [{ url: '/logo.png', width: 512, height: 512, alt: 'Raygency' }],
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
     title: 'About Raygency – AI that ships.',
-    description: 'We build AI tools for marketers and builders. Six products in production.',
+    description: 'We build AI tools for marketers and builders. Five products in production.',
     images: ['/logo.png'],
   },
 }
@@ -28,7 +28,7 @@ const faqSchema = {
       name: 'What is Raygency?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Raygency is an AI product studio that builds and ships AI tools for performance marketers, DTC brands, compliance teams, and developers. It was founded by Varun Tyagi and Renuka Adnani, who build every product themselves.',
+        text: 'Raygency is an AI product studio that builds and ships AI tools for performance marketers, DTC brands, compliance teams, and developers. Every product is built by the founders themselves.',
       },
     },
     {
@@ -36,7 +36,7 @@ const faqSchema = {
       name: 'Who are the founders of Raygency?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Raygency was founded by Varun Tyagi and Renuka Adnani. Varun is a Director of Data and AI with 18+ years of experience, 9 production apps shipped, and 100+ automation workflows running. Renuka brings 17 years inside organizations across six industries: pharma, semiconductors, IT services, biotech, startups, and design.',
+        text: 'Raygency was founded by Renuka Adnani. Renuka brings 17 years inside organizations across six industries: pharma, semiconductors, IT services, biotech, startups, and design.',
       },
     },
     {
@@ -44,7 +44,7 @@ const faqSchema = {
       name: 'What products does Raygency offer?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Raygency offers six AI tools: Kreashot (ad creative generation), Volticlens (Meta competitor ad intelligence), GeoRaydar (AI search brand visibility), Rayprofit (ad ROI optimization), ActGuard (EU AI Act compliance), and LintVibe (code quality and security scanning). All products include a free trial.',
+        text: 'Raygency offers five AI tools: Kreashot (ad creative generation), Volticlens (Meta competitor ad intelligence), Rayprofit (ad ROI optimization), ActGuard (EU AI Act compliance), and LintVibe (code quality and security scanning). All products include a free trial.',
       },
     },
     {

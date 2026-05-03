@@ -35,7 +35,7 @@ const howToSchema = {
       '@type': 'HowToStep',
       position: 2,
       name: 'Start a free trial',
-      text: 'Visit any product page: Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, or LintVibe. Start your free trial in minutes.',
+      text: 'Visit any product page: Kreashot, Volticlens, Rayprofit, ActGuard, or LintVibe. Start your free trial in minutes.',
     },
     {
       '@type': 'HowToStep',
@@ -63,7 +63,7 @@ const faqSchema = {
       name: 'What products does Raygency offer?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Raygency builds six AI tools: Kreashot (ad creative generation), Volticlens (Meta competitor ad intelligence), GeoRaydar (AI search brand visibility), Rayprofit (ad ROI optimization), ActGuard (EU AI Act compliance), and LintVibe (code quality and security scanning).',
+        text: 'Raygency builds five AI tools: Kreashot (ad creative generation), Volticlens (Meta competitor ad intelligence), Rayprofit (ad ROI optimization), ActGuard (EU AI Act compliance), and LintVibe (code quality and security scanning).',
       },
     },
     {
@@ -71,7 +71,7 @@ const faqSchema = {
       name: 'Do all products include a free trial?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Kreashot, Volticlens, GeoRaydar, and Rayprofit each include a 7-day free trial with no credit card required. ActGuard is free for your first AI system. LintVibe offers a free initial scan so you can see what it finds before committing.',
+        text: 'Yes. Kreashot, Volticlens, and Rayprofit each include a 7-day free trial with no credit card required. ActGuard is free for your first AI system. LintVibe offers a free initial scan so you can see what it finds before committing.',
       },
     },
     {

@@ -123,10 +123,6 @@ export default function ContactPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-white font-medium mt-0.5">·</span>
-                    <span><strong>GeoRaydar</strong>: AI brand visibility tracking. $100/month.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-white font-medium mt-0.5">·</span>
                     <span><strong>Rayprofit</strong>: Ad ROI optimization. $200/month.</span>
                   </li>
                   <li className="flex items-start gap-2">
@@ -149,7 +145,6 @@ export default function ContactPage() {
                   <tbody>
                     <tr className="border-b border-white/10"><td className="py-2 pr-6 font-medium">Kreashot</td><td className="py-2 pr-6 text-white/75">Ad Creative</td><td className="py-2 text-white/75">$150/mo</td></tr>
                     <tr className="border-b border-white/10"><td className="py-2 pr-6 font-medium">Volticlens</td><td className="py-2 pr-6 text-white/75">Competitor Intel</td><td className="py-2 text-white/75">$100/mo</td></tr>
-                    <tr className="border-b border-white/10"><td className="py-2 pr-6 font-medium">GeoRaydar</td><td className="py-2 pr-6 text-white/75">AI Search Visibility</td><td className="py-2 text-white/75">$100/mo</td></tr>
                     <tr className="border-b border-white/10"><td className="py-2 pr-6 font-medium">Rayprofit</td><td className="py-2 pr-6 text-white/75">Ad ROI</td><td className="py-2 text-white/75">$200/mo</td></tr>
                     <tr className="border-b border-white/10"><td className="py-2 pr-6 font-medium">ActGuard</td><td className="py-2 pr-6 text-white/75">EU AI Act Compliance</td><td className="py-2 text-white/75">Free to start</td></tr>
                     <tr><td className="py-2 pr-6 font-medium">LintVibe</td><td className="py-2 pr-6 text-white/75">Code Quality</td><td className="py-2 text-white/75">$40/mo</td></tr>
@@ -294,14 +289,14 @@ export default function ContactPage() {
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">What products does Raygency offer?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Raygency builds six AI tools: Kreashot (ad creative generation), Volticlens (Meta competitor ad intelligence), GeoRaydar (AI search brand visibility), Rayprofit (ad ROI optimization), ActGuard (EU AI Act compliance), and LintVibe (code quality and security scanning). All products are built for practitioners who need results, not demos.
+                Raygency builds five AI tools: Kreashot (ad creative generation), Volticlens (Meta competitor ad intelligence), Rayprofit (ad ROI optimization), ActGuard (EU AI Act compliance), and LintVibe (code quality and security scanning). All products are built for practitioners who need results, not demos.
               </p>
             </div>
 
             <div className="fade-up border-t border-[rgba(255,255,255,0.06)] pt-10">
               <h3 className="text-xl font-semibold text-[#EAE8F4] mb-3">Do all products include a free trial?</h3>
               <p className="text-base text-[rgba(234,232,244,0.75)] leading-relaxed">
-                Yes. Kreashot, Volticlens, GeoRaydar, and Rayprofit each include a 7-day free trial with no credit card required. ActGuard is free for your first AI system. LintVibe offers a free initial scan so you can see what it finds before committing.
+                Yes. Kreashot, Volticlens, and Rayprofit each include a 7-day free trial with no credit card required. ActGuard is free for your first AI system. LintVibe offers a free initial scan so you can see what it finds before committing.
               </p>
             </div>
 

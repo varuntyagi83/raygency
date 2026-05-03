@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     default: 'Raygency – AI Tools for Marketers, Builders and Teams',
     template: '%s | Raygency',
   },
-  description: 'Six AI tools for performance marketers. Free trials, no credit card. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe.',
-  keywords: 'AI ad creative, Meta ad intelligence, competitor ad research, AI brand visibility, performance marketing tools, ad ROI optimization, EU AI Act compliance, code quality scanning, Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe',
+  description: 'Five AI tools for performance marketers. Free trials, no credit card. Kreashot, Volticlens, Rayprofit, ActGuard, LintVibe.',
+  keywords: 'AI ad creative, Meta ad intelligence, competitor ad research, performance marketing tools, ad ROI optimization, EU AI Act compliance, code quality scanning, Kreashot, Volticlens, Rayprofit, ActGuard, LintVibe',
   metadataBase: new URL('https://www.raygency.com'),
   alternates: {
     canonical: '/',
@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Raygency',
     title: 'Raygency | AI that ships.',
-    description: 'AI tools for performance marketers. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard. Built by practitioners, shipped in production.',
+    description: 'AI tools for performance marketers. Kreashot, Volticlens, Rayprofit, ActGuard. Built by practitioners, shipped in production.',
     url: 'https://www.raygency.com',
     images: [{ url: '/logo.png', width: 512, height: 512, alt: 'Raygency' }],
   },
   twitter: {
     card: 'summary',
     title: 'Raygency | AI that ships.',
-    description: 'AI tools for performance marketers. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard. Built by practitioners.',
+    description: 'AI tools for performance marketers. Kreashot, Volticlens, Rayprofit, ActGuard. Built by practitioners.',
     images: ['/logo.png'],
   },
 }
@@ -41,7 +41,7 @@ const organizationSchema = {
   name: 'Raygency',
   url: 'https://www.raygency.com',
   logo: 'https://www.raygency.com/logo.png',
-  description: 'AI tools for performance marketers, DTC brands, and compliance teams. Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe.',
+  description: 'AI tools for performance marketers, DTC brands, and compliance teams. Kreashot, Volticlens, Rayprofit, ActGuard, LintVibe.',
   sameAs: ['https://www.raygency.com'],
   contactPoint: {
     '@type': 'ContactPoint',

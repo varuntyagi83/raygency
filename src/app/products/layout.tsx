@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Products – AI Tools for Marketers & Builders',
-  description: 'Six AI tools for marketers and builders: Kreashot, Volticlens, GeoRaydar, Rayprofit, ActGuard, LintVibe. All include a free trial.',
+  description: 'Five AI tools for marketers and builders: Kreashot, Volticlens, Rayprofit, ActGuard, LintVibe. All include a free trial.',
   alternates: { canonical: 'https://www.raygency.com/products' },
   openGraph: {
     title: 'Products – AI Tools for Marketers & Builders | Raygency',
@@ -28,10 +28,9 @@ const itemListSchema = {
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Kreashot', url: 'https://www.raygency.com/products/kreashot', description: 'AI ad creative tool for performance marketers.' },
     { '@type': 'ListItem', position: 2, name: 'Volticlens', url: 'https://www.raygency.com/products/volticlens', description: 'Real-time Meta competitor ad intelligence.' },
-    { '@type': 'ListItem', position: 3, name: 'GeoRaydar', url: 'https://www.raygency.com/products/georadar', description: 'AI search brand visibility tracker across ChatGPT, Gemini, Perplexity, and Claude.' },
-    { '@type': 'ListItem', position: 4, name: 'Rayprofit', url: 'https://www.raygency.com/products/rayprofit', description: 'Ad ROI and budget optimization tool built on AI.' },
-    { '@type': 'ListItem', position: 5, name: 'ActGuard', url: 'https://www.raygency.com/products/actguard', description: 'EU AI Act compliance documentation automation.' },
-    { '@type': 'ListItem', position: 6, name: 'LintVibe', url: 'https://www.raygency.com/products/lintvibe', description: 'AI code quality and security scanner.' },
+    { '@type': 'ListItem', position: 3, name: 'Rayprofit', url: 'https://www.raygency.com/products/rayprofit', description: 'Ad ROI and budget optimization tool built on AI.' },
+    { '@type': 'ListItem', position: 4, name: 'ActGuard', url: 'https://www.raygency.com/products/actguard', description: 'EU AI Act compliance documentation automation.' },
+    { '@type': 'ListItem', position: 5, name: 'LintVibe', url: 'https://www.raygency.com/products/lintvibe', description: 'AI code quality and security scanner.' },
   ],
 }
 
@@ -41,9 +40,9 @@ const howToSchema = {
   name: 'How to choose the right Raygency product',
   description: 'Pick the Raygency AI tool that matches your biggest problem in three steps.',
   step: [
-    { '@type': 'HowToStep', position: 1, name: 'Identify your problem', text: 'Decide what you need most: faster ad creatives (Kreashot), competitor intelligence (Volticlens), AI search visibility (GeoRaydar), ad ROI (Rayprofit), compliance docs (ActGuard), or code quality (LintVibe).' },
+    { '@type': 'HowToStep', position: 1, name: 'Identify your problem', text: 'Decide what you need most: faster ad creatives (Kreashot), competitor intelligence (Volticlens), ad ROI (Rayprofit), compliance docs (ActGuard), or code quality (LintVibe).' },
     { '@type': 'HowToStep', position: 2, name: 'Start a free trial', text: 'Every Raygency product includes a free trial. No credit card required. Start the trial for the tool you picked and test it with your real data.' },
-    { '@type': 'HowToStep', position: 3, name: 'Scale or bundle', text: 'Once a product proves value, continue on the monthly plan. If you need multiple tools, use a bundle plan: Duo ($100/any 2), Trio ($250/any 3), or Full Suite ($500/all 6).' },
+    { '@type': 'HowToStep', position: 3, name: 'Scale or bundle', text: 'Once a product proves value, continue on the monthly plan. If you need multiple tools, use a bundle plan: Duo ($100/any 2), Trio ($250/any 3), or Full Suite ($500/all 5).' },
   ],
 }
 
@@ -56,7 +55,7 @@ const faqSchema = {
       name: 'What products does Raygency offer?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Raygency offers six AI tools: Kreashot (ad creative generation, $150/month), Volticlens (Meta competitor ad intelligence, $100/month), GeoRaydar (AI search brand visibility, $100/month), Rayprofit (ad ROI optimization, $200/month), ActGuard (EU AI Act compliance, free to start), and LintVibe (code quality and security scanning, $40/month).',
+        text: 'Raygency offers five AI tools: Kreashot (ad creative generation, $150/month), Volticlens (Meta competitor ad intelligence, $100/month), Rayprofit (ad ROI optimization, $200/month), ActGuard (EU AI Act compliance, free to start), and LintVibe (code quality and security scanning, $40/month).',
       },
     },
     {
@@ -64,7 +63,7 @@ const faqSchema = {
       name: 'Which Raygency product should I start with?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Start with the product that solves your most pressing problem. Performance marketers typically start with Kreashot for ad creative generation. If you need competitor intelligence, start with Volticlens. If you need to track AI search visibility, start with GeoRaydar. Compliance teams start with ActGuard. Developers building with AI tools start with LintVibe.',
+        text: 'Start with the product that solves your most pressing problem. Performance marketers typically start with Kreashot for ad creative generation. If you need competitor intelligence, start with Volticlens. Compliance teams start with ActGuard. Developers building with AI tools start with LintVibe.',
       },
     },
     {
@@ -72,7 +71,7 @@ const faqSchema = {
       name: 'Do all Raygency products include a free trial?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. Kreashot, Volticlens, GeoRaydar, and Rayprofit each include a 7-day free trial with no credit card required. ActGuard is free for your first AI system with no credit card needed. LintVibe offers a free initial scan. All products can be cancelled at any time.',
+        text: 'Yes. Kreashot, Volticlens, and Rayprofit each include a 7-day free trial with no credit card required. ActGuard is free for your first AI system with no credit card needed. LintVibe offers a free initial scan. All products can be cancelled at any time.',
       },
     },
     {
