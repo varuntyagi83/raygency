@@ -147,7 +147,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
             <div className="fade-up">
               <span className="text-xs font-medium tracking-widest uppercase text-[rgba(234,232,244,0.50)]">
-                Co-Founder
+                Founder
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mt-2 mb-2 text-[#EAE8F4]">
                 Renuka Adnani
@@ -200,7 +200,7 @@ export default function AboutPage() {
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-[rgba(13,155,176,0.15)]">
                 <Image
                   src="/renuka-adnani.jpg"
-                  alt="Renuka Adnani - Co-Founder of Raygency"
+                  alt="Renuka Adnani - Founder of Raygency"
                   fill
                   className="object-cover"
                 />
